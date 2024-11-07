@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import Card from "../components/Card";
 
 // const series = [
 //   {
@@ -25,6 +26,7 @@ function Series() {
   return (
     <>
       <h1>Hello from Series {id}</h1>
+      <Card />
     </>
   );
 }
