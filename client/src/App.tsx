@@ -1,13 +1,17 @@
 import NavBar from "./components/NavBar";
 import "./App.css";
 import "./components/Navbar.css";
-// import Header from "./components/Header";
-// import "./components/Headers.css";
+import Footer from "./components/Footer";
+import { Outlet } from "react-router-dom";
+
+
 function App() {
   return (
     <>
+      <h1>Voici App</h1>
       <NavBar />
-      {/* <Header /> */}
+      <Outlet />
+      <Footer />
     </>
   );
 }
