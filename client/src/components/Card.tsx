@@ -34,7 +34,11 @@ const character = [
 ];
 
 function Card() {
-  return <></>;
+  return (
+    <>
+      <p>This is {character[0].firstName}</p>
+    </>
+  );
 }
 
 export default Card;
