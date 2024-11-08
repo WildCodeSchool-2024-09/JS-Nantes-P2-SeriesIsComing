@@ -1,12 +1,10 @@
 import "./Card.css";
 
-interface Character {
+export interface Character {
   id: number;
   firstName: string;
   lastName: string;
-  title: string;
-  family: string;
-  image: string;
+  imageUrl: string;
 }
 
 interface CardProps {
@@ -15,18 +13,19 @@ interface CardProps {
 
 function Card({ character }: CardProps) {
   return (
-    <div className="card-container">
-      {character.map((personnage) => (
-        <div className="card" key={personnage.id}>
-          <figure>
-            <img
-              src={personnage.image}
-              alt="This is a representation of ${personnage.firstName}"
-            />
-            <figcaption>{personnage.firstName}</figcaption>
-          </figure>
-        </div>
-      ))}
+    <div>
+      <div className="card-container">
+        {character.map((personnage) => (
+          <div className="card" key={personnage.id}>
+            <figure>
+              <img src={personnage.imageUrl} alt="This is a representation" />
+              <figcaption>
+                {personnage.firstName} {personnage.lastName}
+              </figcaption>
+            </figure>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
