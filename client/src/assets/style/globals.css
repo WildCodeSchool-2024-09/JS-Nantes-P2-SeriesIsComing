@@ -12,7 +12,7 @@
 
   /* Font size */
   --text-size: ;
-  --title-size: ;
+  --title-size: 16px;
 
   /* Font style */
   --all-font-style: "Montserrat", sans-serif;
@@ -27,6 +27,7 @@
 
 body {
   box-sizing: border-box;
+  background-color: var(--main-font-color);
 }
 
 a,
@@ -39,4 +40,9 @@ h2 {
 
 h1 {
   color: var(--main-font-color);
+  font-size: var(--title-size);
+}
+
+h3 {
+  font-size: 16px;
 }

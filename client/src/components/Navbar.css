@@ -1,40 +1,40 @@
 nav > ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav > ul,
+nav > ul > li > ul {
   list-style: none;
 }
 
-nav > ul > li > a {
-  text-decoration: none;
-  color: rgba(255, 255, 245, 0.966);
-}
 nav > h1 {
   text-align: center;
+  margin: 0;
+  font-size: 32px;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  height: 20vh;
-  background-color: rgb(243, 238, 248);
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: var(--overlay-background-color);
+  border: 1px solid black;
 }
 
 nav > img {
   height: auto;
   width: 200px;
 }
-nav > ul {
-  display: flex;
-  gap: 3rem;
-  flex-grow: 1;
-  justify-content: space-around;
-}
 
 nav ul li {
   flex: 1;
 }
 
-nav ul li a {
+.link-nav {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -45,11 +45,13 @@ nav ul li a {
   text-decoration: none;
   color: #000;
   transition: background-color 0.3s;
+  width: 150px;
 }
 
 nav ul li a:hover {
   background-color: #ee6060;
 }
+
 /* menu deroulant */
 
 .dropdown {

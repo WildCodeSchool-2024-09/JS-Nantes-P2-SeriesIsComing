@@ -1,3 +1,5 @@
+import "./Navbar.css";
+
 function NavBar() {
   return (
     <nav>
@@ -6,21 +8,21 @@ function NavBar() {
         alt="logo"
       />
 
-      <h1>Serie is Comming</h1>
+      <h1>Serie is Coming</h1>
 
       <ul>
         <li>
-          <a href="/">
+          <a href="/" className="link-nav">
             <h3>A propos</h3>
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/" className="link-nav">
             <h3>Nous contacter</h3>
           </a>
         </li>
         <li className="dropdown">
-          <a href="/">
+          <a href="/" className="link-nav">
             <h3>
               Plus de Série <span className="arrow">▼</span>
             </h3>

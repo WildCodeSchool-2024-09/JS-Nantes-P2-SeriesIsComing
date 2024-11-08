@@ -1,5 +1,5 @@
 function Contact() {
-  return <h1>Je suis sur Contact</h1>;
+  return <h2>Je suis sur Contact</h2>;
 }
 
 export default Contact;
