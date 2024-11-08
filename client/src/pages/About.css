@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.a-propos {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2vw;
+  padding: 1vw;
+  font-size: 64px;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 32px;
+  padding: 2vw;
+  margin: 64px 0px 64px;
+}
+
+h2 {
+  padding: 4vw;
+  text-align: center;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.profil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profil-item {
+  flex: 1 1 45%;
+}
+
+#emma {
+  justify-content: center;
+  text-align: center;
+  padding: 2vw;
+}
+#lucas {
+  justify-content: center;
+  text-align: center;
+  padding: 2vw;
+}
+#sofia {
+  justify-content: center;
+  text-align: center;
+  padding: 2vw;
+}
+#karim {
+  justify-content: center;
+  text-align: center;
+  padding: 2vw;
+}
+#julie {
+  justify-content: center;
+  text-align: center;
+  padding: 2vw;
+}
+
+.pic {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 2px solid black;
+  padding: 0;
+}
+
+.post {
+  padding: 1.5vw;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.role {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1vw;
+  font-size: 16px;
+}
+.last-role {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
