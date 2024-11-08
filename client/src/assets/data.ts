@@ -106,7 +106,7 @@ const data = [
   {
     id: 13,
     firstName: "Joffrey",
-    lastName: "Baratheo",
+    lastName: "Baratheon",
     title: "Lord of the Seven Kingdoms, Protector of the Realm",
     family: "House Baratheon",
     imageUrl: "https://thronesapi.com/assets/images/joffrey.jpg",
@@ -169,7 +169,7 @@ const data = [
   },
   {
     id: 21,
-    firstName: "Margaer",
+    firstName: "Margaery",
     lastName: "Tyrell",
     title: "Queen of the Seven Kingdoms",
     family: "House Tyrell",
