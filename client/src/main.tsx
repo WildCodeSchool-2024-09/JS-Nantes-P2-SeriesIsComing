@@ -1,5 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
+import "./assets/style/gobals.css";
 
 import router from "./router";
 

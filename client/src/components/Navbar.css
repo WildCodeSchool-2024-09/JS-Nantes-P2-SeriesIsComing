@@ -1,27 +1,14 @@
-/* global setting */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-ul {
+nav > ul {
   list-style: none;
 }
-a {
+
+nav > ul > li > a {
   text-decoration: none;
   color: beige;
 }
-/* navbarre */
 
-nav h1 {
-  color: blue;
-  font-weight: bold;
-  flex-grow: 1; /* Permet au titre de prendre de l'espace */
-  text-align: center; /* Centre le texte */
+nav > h1 {
+  text-align: center;
 }
 
 nav {
@@ -33,11 +20,11 @@ nav {
   background-color: rgb(247, 244, 250);
 }
 
-nav img {
+nav > img {
   height: auto;
   width: 200px;
 }
-nav ul {
+nav > ul {
   display: flex;
   gap: 3rem;
   flex-grow: 1; /* Permet aux éléments de prendre de l'espace */
