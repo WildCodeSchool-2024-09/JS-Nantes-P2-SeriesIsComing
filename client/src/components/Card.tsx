@@ -15,12 +15,12 @@ function Card({ character }: CardProps) {
   return (
     <div>
       <div className="card-container">
-        {character.map((personnage) => (
-          <div className="card" key={personnage.id}>
+        {character.map((charac) => (
+          <div className="card" key={charac.id}>
             <figure>
-              <img src={personnage.imageUrl} alt="This is a representation" />
+              <img src={charac.imageUrl} alt="This is a representation" />
               <figcaption>
-                {personnage.firstName} {personnage.lastName}
+                {charac.firstName} {charac.lastName}
               </figcaption>
             </figure>
           </div>

@@ -21,7 +21,7 @@ const data = [
     lastName: "Snow",
     title: "King of the North",
     family: "House Stark",
-    imageUrl: "https://thronesapi.com/assets/images/sam.jpg",
+    imageUrl: "https://thronesapi.com/assets/images/jon-snow.jpg",
   },
   {
     id: 3,
@@ -276,8 +276,8 @@ const data = [
     firstName: "Robert",
     lastName: "Baratheon",
     title: "King",
-    family: "Mormont",
-    imageUrl: "https://thronesapi.com/assets/images/jorah-mormont.jpg",
+    family: "House Baratheon",
+    imageUrl: "https://thronesapi.com/assets/images/king-robert.jpg",
   },
   {
     id: 35,
