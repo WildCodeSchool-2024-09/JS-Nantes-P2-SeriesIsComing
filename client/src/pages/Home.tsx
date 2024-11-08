@@ -1,6 +1,7 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 
-function Main() {
+function Home() {
   const articles = [
     {
       image:
@@ -31,18 +32,20 @@ function Main() {
   return (
     <main>
       <section id="recent-articles">
-        {articles.map((article, index) => (
-          <article
-            key={index}
-            onClick={() => (window.location.href = article.link)}
-            className="clickable-card"
-          >
-            <img src={article.image} alt={article.altText} />
-          </article>
-        ))}
+        {articles.map((article) => {
+          return (
+            <Link
+              to={article.link}
+              key={article.link}
+              className="clickable-card"
+            >
+              <img src={article.image} alt={article.altText} />
+            </Link>
+          );
+        })}
       </section>
     </main>
   );
 }
 
-export default Main;
+export default Home;

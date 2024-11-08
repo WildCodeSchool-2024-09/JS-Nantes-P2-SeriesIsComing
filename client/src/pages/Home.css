@@ -14,8 +14,8 @@ body {
 .clickable-card {
   max-width: 500px;
   max-height: 500px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2cap;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
