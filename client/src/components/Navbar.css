@@ -13,15 +13,15 @@ ul {
 }
 a {
   text-decoration: none;
-  color: beige;
+  color: white;
 }
 /* navbarre */
 
 nav h1 {
   color: blue;
   font-weight: bold;
-  flex-grow: 1; /* Permet au titre de prendre de l'espace */
-  text-align: center; /* Centre le texte */
+  flex-grow: 1;
+  text-align: center;
 }
 
 nav {
@@ -40,29 +40,29 @@ nav img {
 nav ul {
   display: flex;
   gap: 3rem;
-  flex-grow: 1; /* Permet aux éléments de prendre de l'espace */
-  justify-content: space-around; /* Distribue l'espace entre les éléments */
+  flex-grow: 1;
+  justify-content: space-around;
 }
 
 nav ul li {
-  flex: 1; /* Permet aux éléments de s'étendre également */
+  flex: 1;
 }
 
 nav ul li a {
-  width: 100%; /* Permet au lien d'occuper toute la largeur de l'élément li */
-  display: flex; /* Utilise flexbox pour centrer le texte */
-  justify-content: center; /* Centre le texte horizontalement */
-  align-items: center; /* Centre le texte verticalement */
-  padding: 15px 0; /* Ajustez le rembourrage pour le rendre plus équilibré sans trop d'espace */
-  border: 2px solid #000; /* Ajoute une bordure noire de 2px */
-  border-radius: 15px; /* Bords arrondis de 15px */
-  text-decoration: none; /* Supprime le soulignement par défaut */
-  color: #000; /* Couleur du texte */
-  transition: background-color 0.3s; /* Ajoute une transition douce pour le hover */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  border: 2px solid #000;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #ee6060; /* Change la couleur de fond au survol */
+  background-color: #ee6060;
 }
 /* menu deroulant */
 
@@ -98,16 +98,15 @@ nav ul li a:hover {
 }
 
 .dropdown-content li a:hover {
-  background-color: rgba(82, 17, 167, 0.1); /* Couleur de fond au survol du lien */
-  color: rgb(82, 17, 167); /* Couleur du texte au survol (si vous souhaitez la conserver) */
+  background-color: rgba(82, 17, 167, 0.1);
+  color: rgb(82, 17, 167);
 }
 
 .dropdown:hover + h1 {
-  transform: translateY(-10px); /* Le h1 remonte de 10px */
+  transform: translateY(-10px);
 }
 
-/* Vous pouvez également changer la taille du h1 */
 .dropdown:hover h1 {
-  font-size: 2.5rem; /* Change la taille de la police */
-  transition: all 0.3s ease-in-out; /* Une transition douce */
+  font-size: 2.5rem;
+  transition: all 0.3s ease-in-out;
 }
