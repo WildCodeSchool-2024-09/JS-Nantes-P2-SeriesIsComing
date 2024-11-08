@@ -27,7 +27,7 @@ function About() {
           <img
             className="pic"
             src="https://www.portraitprofessionnel.fr/wp-content/uploads/2022/02/Portrait_professionnel_CV_et_linkedin_a_Paris.jpg"
-            alt="profile-pic-emma"
+            alt="This is the profil representation of Emma "
           />
           <p className="post">Emma Lefevre – Cheffe de projet et UX Designer</p>
           <p className="role">
@@ -46,7 +46,7 @@ function About() {
           <img
             className="pic"
             src="https://studiolecarre.com/wp-content/uploads/2022/10/2019-03-12-photographe-portrait-corporate-exterieur-2.webp"
-            alt="profile-pic-Lucas"
+            alt="This is the profil representation of Lucas"
           />
           <p className="post">Lucas Martin – Développeur Full Stack</p>
           <p className="role">
@@ -65,7 +65,7 @@ function About() {
           <img
             className="pic"
             src="https://studio-mir.fr/wp-content/uploads/2020/04/seance-photo-professionelle-femme-ile-de-france.jpg"
-            alt="profile-pic-sofia"
+            alt="This is the profil representation of Sofia"
           />
           <p className="post">
             Sofia Durand – Développeuse Front-End et Web Designer
@@ -86,7 +86,7 @@ function About() {
           <img
             className="pic"
             src="https://www.portraitprofessionnel.fr/wp-content/uploads/2022/04/Photographe_trombinoscope_entreprise.jpg"
-            alt="profile-pic-karim"
+            alt="This is the profil representation of Karim"
           />
           <p className="post">
             Karim Ben Ali – Responsable du contenu et spécialiste SEO
@@ -107,7 +107,7 @@ function About() {
           <img
             className="pic"
             src="https://static.wixstatic.com/media/331f88_3929f9f015014ba58e48a9aba94e3fe4~mv2.jpg/v1/fill/w_980,h_972,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/331f88_3929f9f015014ba58e48a9aba94e3fe4~mv2.jpg"
-            alt="profile-pic-julie"
+            alt="This is the profil representation of Julie"
           />
           <p className="post">
             Julie Nguyen – Développeuse Back-End et Responsable Data
