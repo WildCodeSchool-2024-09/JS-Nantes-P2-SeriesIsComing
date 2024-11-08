@@ -1,0 +1,42 @@
+/* Font Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Variables */
+:root {
+  /* Colors */
+  --main-background-color: black;
+  --overlay-background-color: white;
+  --button-content-color: #d9d9d9;
+  --main-font-color: black;
+  --title-font-color: white;
+
+  /* Font size */
+  --text-size: ;
+  --title-size: ;
+
+  /* Font style */
+  --all-font-style: "Montserrat", sans-serif;
+
+  /* Border of cards */
+}
+
+/* Global settings */
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a,
+p,
+h1,
+h2 {
+  font-family: var(--all-font-style);
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--main-font-color);
+}
