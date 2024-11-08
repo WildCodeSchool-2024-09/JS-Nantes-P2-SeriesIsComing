@@ -1,67 +1,37 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import data from "../assets/data";
 import Card from "../components/Card";
-
-// const series = [
-//   {
-//     id: 1,
-//     seriesName: "Game Of Thrones",
-//   },
-//   {
-//     id: 2,
-//     seriesName: "The Walking Dead",
-//   },
-//   {
-//     id: 3,
-//     seriesName: "House of Cards",
-//   },
-//   {
-//     id: 4,
-//     seriesName: "Breaking Bad",
-//   }
-// ]
-
-const character = [
-  {
-    id: 0,
-    firstName: "Daenerys",
-    lastName: "Targaryen",
-    title: "Mother of Dragons",
-    family: "House Targaryen",
-    image: "https://thronesapi.com/assets/images/daenerys.jpg",
-  },
-  {
-    id: 1,
-    firstName: "Samwell",
-    lastName: "Tarly",
-    title: "Maester",
-    family: "House Tarly",
-    image: "https://thronesapi.com/assets/images/sam.jpg",
-  },
-  {
-    id: 2,
-    firstName: "Jon",
-    lastName: "Snow",
-    title: "King of the North",
-    family: "House Stark",
-    image: "https://thronesapi.com/assets/images/jon-snow.jpg",
-  },
-  {
-    id: 3,
-    firstName: "Arya",
-    lastName: "Stark",
-    title: "No One",
-    family: "House Stark",
-    image: "https://thronesapi.com/assets/images/arya-stark.jpg",
-  },
-];
+import type { Character } from "../components/Card";
 
 function Series() {
   const { id } = useParams();
 
+  const [character, setCharacter] = useState<null | Character[]>(null);
+
+  useEffect(() => {
+    setCharacter(data);
+  });
+
+  // console.warn(character);
+
+  // useEffect(() => {
+  //   async function getApi() {
+  //     // if(id) {
+  //     //   const url = urls[id as keyof typeof urls]
+
+  //     // }
+  //     const response = await fetch("https://thronesapi..com/api/v2/Characters");
+  //     const data = await response.json();
+  //     setCharacter(data);
+  //   }
+  //   getApi();
+  // }, []);
+
   return (
     <>
       <h1>Hello from Series {id}</h1>
-      <Card character={character} />
+      {character ? <Card character={character} /> : <p>loading</p>}
     </>
   );
 }
