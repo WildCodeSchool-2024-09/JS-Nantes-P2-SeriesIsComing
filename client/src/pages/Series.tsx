@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import data from "../assets/data";
 import Card from "../components/Card";
 import type { Character } from "../components/Card";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function Series() {
   const { id } = useParams();
@@ -32,6 +33,7 @@ function Series() {
     <>
       <h1>Hello from Series {id}</h1>
       {character ? <Card character={character} /> : <p>loading</p>}
+      <ScrollToTopButton />
     </>
   );
 }
