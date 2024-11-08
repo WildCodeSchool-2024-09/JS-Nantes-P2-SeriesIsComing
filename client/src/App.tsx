@@ -4,7 +4,7 @@ import ContactUs from "./pages/ContactUs";
 function App() {
   return (
     <>
-      <ContactUs/>
+      <ContactUs />
     </>
   );
 }

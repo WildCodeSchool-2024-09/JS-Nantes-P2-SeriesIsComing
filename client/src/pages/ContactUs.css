@@ -1,8 +1,7 @@
-.div-cu {
+.div-contact-us{
   display: flex;
   flex-direction: column;
   background-color: black;
-  box-sizing: border-box;
 }
 
 .section-1 {
@@ -23,7 +22,7 @@
 p {
   margin: 20px;
 }
-.explain-zone {
+.explain-contain {
   display: flexbox;
   flex-direction: column;
 }

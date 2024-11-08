@@ -1,21 +1,29 @@
 import "../pages/ContactUs.css";
 function ContactUs() {
   return (
-    <div className="div-cu">
+    <div className="div-contact-us">
       <section className="section-1">
         <div className="left-part">
-          <input className="name-cu" type="text" placeholder="Nom" />
-          <input className="first-name-cu" type="text" placeholder="Prenom" />
-          <input className="mail-cu" type="text" placeholder="Adresse mail" />
+          <input className="name_contact_user" type="text" placeholder="Nom" />
+          <input
+            className="first_name-contact_user"
+            type="text"
+            placeholder="Prenom"
+          />
+          <input
+            className="mail_contact_user"
+            type="text"
+            placeholder="Adresse mail"
+          />
         </div>
         <div className="right-part">
           <p>Des series que tu souhaite voire sur le site ?</p>
           <input type="text" placeholder="Nom d'une série" />
-          <input type="text" placeholder="" />
+          <input type="text" />
         </div>
       </section>
       <section className="section-2">
-        <div className="explain-zone">
+        <div className="explain-contain">
           <input
             className="user-explain"
             type="text"
