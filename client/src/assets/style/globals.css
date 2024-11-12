@@ -35,6 +35,7 @@ h1,
 h2 {
   font-family: var(--all-font-style);
   text-decoration: none;
+  color: var(--main-font-color);
 }
 
 h1 {
