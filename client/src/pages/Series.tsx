@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import data from "../assets/data";
+import GOTdata from "../assets/data";
 import Card from "../components/Card";
 import type { Character } from "../components/Card";
 
@@ -10,7 +10,7 @@ function Series() {
   const [character, setCharacter] = useState<null | Character[]>(null);
 
   useEffect(() => {
-    setCharacter(data);
+    setCharacter(GOTdata);
   });
 
   return (
