@@ -7,20 +7,26 @@ body {
 #recent-articles {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
   justify-content: center;
 }
 
 .clickable-card {
   max-width: 500px;
   max-height: 500px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(17, 17, 17, 0.842);
+  animation: slideIn 2.5s forwards;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
 }
 
 .clickable-card:hover {
@@ -31,4 +37,16 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 15px;
+}
+
+/* animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
