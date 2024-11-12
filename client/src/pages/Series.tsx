@@ -11,6 +11,7 @@ export interface GOTdataI {
   family: string;
   imageUrl: string;
 }
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function Series() {
   const { id } = useParams();
@@ -25,6 +26,7 @@ function Series() {
     <>
       <h1>Hello from Series {id}</h1>
       {character ? <Card character={character} /> : <p>loading</p>}
+      <ScrollToTopButton />
     </>
   );
 }
