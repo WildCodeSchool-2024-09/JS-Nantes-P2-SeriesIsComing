@@ -1,5 +1,8 @@
 import "../pages/About.css";
+import "../components/ScrollToTopButton";
 import profil from "../assets/profil";
+import ScrollToTopButton from "../components/ScrollToTopButton";
+
 function About() {
   return (
     <>
@@ -31,6 +34,7 @@ function About() {
           </section>
         ))}
       </section>
+      <ScrollToTopButton />
     </>
   );
 }
