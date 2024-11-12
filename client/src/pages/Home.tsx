@@ -14,24 +14,24 @@ const Home: React.FC = () => {
       image:
         "https://th.bing.com/th/id/R.0130ebbdd9706106e8c6904611e87765?rik=%2bU1w5z%2f10v6CkQ&pid=ImgRaw&r=0",
       altText: "Article 1",
-      link: "https://youtu.be/KPLWWIOCOOQ",
+      link: "/series/1",
     },
     {
       image:
         "https://th.bing.com/th/id/OIP.DvMkNmw3ZHi8X2E9Fqi4wgHaHa?rs=1&pid=ImgDetMain",
       altText: "Article 2",
-      link: "#",
+      link: "/series/2",
     },
     {
       image:
         "https://th.bing.com/th/id/OIP.KrsIyNANssJxIHjmS2r-mQHaKR?rs=1&pid=ImgDetMain",
-      altText: "Article 3",
+      altText: "/series/3",
       link: "#",
     },
     {
       image:
         "https://m.media-amazon.com/images/M/MV5BMGU2NjZhMmUtNTYzYS00OTMyLTkzZDAtMTkzNDIwNWFkM2I0XkEyXkFqcGdeQXVyMTY3NTgwODk5._V1_.jpg",
-      altText: "Article 4",
+      altText: "/series/4",
       link: "#",
     },
   ];

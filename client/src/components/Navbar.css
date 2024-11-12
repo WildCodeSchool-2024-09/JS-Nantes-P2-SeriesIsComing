@@ -1,26 +1,12 @@
-/* global setting */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-ul {
+nav > ul {
   list-style: none;
 }
-a {
+
+nav > ul > li {
   text-decoration: none;
   color: rgba(255, 255, 245, 0.966);
 }
-/* navbarre */
-
-nav h1 {
-  color: blue;
-  font-weight: bold;
-  flex-grow: 1;
+nav > h1 {
   text-align: center;
 }
 
@@ -33,11 +19,11 @@ nav {
   background-color: rgb(243, 238, 248);
 }
 
-nav img {
+#logo {
   height: auto;
   width: 200px;
 }
-nav ul {
+nav > ul {
   display: flex;
   gap: 3rem;
   flex-grow: 1;
@@ -48,7 +34,7 @@ nav ul li {
   flex: 1;
 }
 
-nav ul li a {
+nav ul li {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -61,7 +47,7 @@ nav ul li a {
   transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
   background-color: #ee6060;
 }
 /* menu deroulant */
@@ -89,7 +75,7 @@ nav ul li a:hover {
   padding: 8px 16px;
 }
 
-.dropdown-content li a {
+.dropdown-content li {
   text-decoration: none;
   color: rgb(82, 17, 167);
   display: block;
@@ -97,7 +83,7 @@ nav ul li a:hover {
   transition: background-color 0.3s;
 }
 
-.dropdown-content li a:hover {
+.dropdown-content li:hover {
   background-color: rgba(82, 17, 167, 0.1);
   color: rgb(82, 17, 167);
 }
