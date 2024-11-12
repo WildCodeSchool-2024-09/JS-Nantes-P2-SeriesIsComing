@@ -10,12 +10,12 @@ function NavBar() {
 
       <ul>
         <li>
-          <a href="/">
+          <a href="/about">
             <h3>A propos</h3>
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/contact">
             <h3>Nous contacter</h3>
           </a>
         </li>
@@ -27,20 +27,16 @@ function NavBar() {
           </a>
           <ul className="dropdown-content">
             <li>
-              <a href="https://www.justwatch.com/fr/serie/from">Série 1</a>
+              <a href="/series/1">Game of Thrones</a>
             </li>
             <li>
-              <a href="https://www.justwatch.com/fr/serie/doragon-boru-daima">
-                Série 2
-              </a>
+              <a href="/series/2">Série 2</a>
             </li>
             <li>
-              <a href="https://www.justwatch.com/fr/serie/greys-anatomy">
-                Série 3
-              </a>
+              <a href="/series/3">Série 3</a>
             </li>
             <li>
-              <a href="https://www.justwatch.com/fr/serie/friends">Série 4</a>
+              <a href="/series/4">Série 4</a>
             </li>
           </ul>
         </li>
