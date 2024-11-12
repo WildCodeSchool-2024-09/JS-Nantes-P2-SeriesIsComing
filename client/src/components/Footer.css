@@ -1,7 +1,9 @@
 footer {
+  margin-top: 20px;
   display: flex;
   text-align: center;
   justify-content: space-between;
+  background-color: var(--overlay-background-color);
 }
 
 footer > section > a > img {
