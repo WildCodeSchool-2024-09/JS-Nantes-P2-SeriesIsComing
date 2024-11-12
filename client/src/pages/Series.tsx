@@ -2,16 +2,24 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import GOTdata from "../assets/data";
 import Card from "../components/Card";
-import type { Character } from "../components/Card";
+
+export interface GOTdataI {
+  id: number;
+  firstName: string;
+  lastName: string;
+  title: string;
+  family: string;
+  imageUrl: string;
+}
 
 function Series() {
   const { id } = useParams();
 
-  const [character, setCharacter] = useState<null | Character[]>(null);
+  const [character, setCharacter] = useState<null | GOTdataI[]>(null);
 
   useEffect(() => {
     setCharacter(GOTdata);
-  });
+  }, []);
 
   return (
     <>

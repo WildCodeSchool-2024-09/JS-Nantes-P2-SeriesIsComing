@@ -25,6 +25,7 @@ nav {
   height: auto;
   width: 200px;
 }
+
 nav > ul {
   display: flex;
   gap: 3rem;
@@ -56,12 +57,13 @@ nav ul li:hover {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+
   background-color: rgb(230, 224, 224);
   min-width: 100%;
   box-shadow: 0 8px 16px rgba(2, 2, 3, 0.2);
@@ -70,7 +72,9 @@ nav ul li:hover {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .dropdown-content li {

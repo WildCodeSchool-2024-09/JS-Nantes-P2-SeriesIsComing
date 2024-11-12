@@ -1,17 +1,7 @@
 import "./Card.css";
+import type { GOTdataI } from "../pages/Series";
 
-export interface Character {
-  id: number;
-  firstName: string;
-  lastName: string;
-  imageUrl: string;
-}
-
-interface CardProps {
-  character: Character[];
-}
-
-function Card({ character }: CardProps) {
+function Card({ character }: { character: GOTdataI[] }) {
   return (
     <div>
       <div className="card-container">
