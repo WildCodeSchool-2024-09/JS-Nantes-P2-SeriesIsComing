@@ -1,18 +1,26 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import data from "../assets/data";
+import GOTdata from "../assets/data";
 import Card from "../components/Card";
-import type { Character } from "../components/Card";
+
+export interface GOTdataI {
+  id: number;
+  firstName: string;
+  lastName: string;
+  title: string;
+  family: string;
+  imageUrl: string;
+}
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function Series() {
   const { id } = useParams();
 
-  const [character, setCharacter] = useState<null | Character[]>(null);
+  const [character, setCharacter] = useState<null | GOTdataI[]>(null);
 
   useEffect(() => {
-    setCharacter(data);
-  });
+    setCharacter(GOTdata);
+  }, []);
 
   return (
     <>

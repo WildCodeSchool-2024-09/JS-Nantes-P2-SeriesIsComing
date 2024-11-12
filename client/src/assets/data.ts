@@ -1,4 +1,4 @@
-const data = [
+const GOTdata = [
   {
     id: 0,
     firstName: "Daenerys",
@@ -531,4 +531,4 @@ const data = [
   },
 ];
 
-export default data;
+export default GOTdata;

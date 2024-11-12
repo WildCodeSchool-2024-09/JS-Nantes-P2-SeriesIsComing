@@ -12,7 +12,7 @@
 
   /* Font size */
   --text-size: ;
-  --title-size: ;
+  --title-size: 16px;
 
   /* Font style */
   --all-font-style: "Montserrat", sans-serif;
@@ -35,8 +35,14 @@ h1,
 h2 {
   font-family: var(--all-font-style);
   text-decoration: none;
+  color: var(--main-font-color);
 }
 
 h1 {
   color: var(--main-font-color);
+  font-size: var(--title-size);
+}
+
+h3 {
+  font-size: 16px;
 }

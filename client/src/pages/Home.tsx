@@ -24,13 +24,12 @@ const Home: React.FC = () => {
     },
     {
       image:
-        "https://th.bing.com/th/id/OIP.KrsIyNANssJxIHjmS2r-mQHaKR?rs=1&pid=ImgDetMain",
+        "https://lasa9ni.shop/cdn/shop/files/7A0177BB-2FB1-4F00-BC18-19BDE0DC2350.jpg?v=1708208390",
       altText: "/series/3",
       link: "#",
     },
     {
-      image:
-        "https://m.media-amazon.com/images/M/MV5BMGU2NjZhMmUtNTYzYS00OTMyLTkzZDAtMTkzNDIwNWFkM2I0XkEyXkFqcGdeQXVyMTY3NTgwODk5._V1_.jpg",
+      image: "https://karoo.me/site/assets/files/19358/prison-break.jpg",
       altText: "/series/4",
       link: "#",
     },

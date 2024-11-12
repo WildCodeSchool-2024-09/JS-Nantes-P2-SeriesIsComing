@@ -1,23 +1,27 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
     <nav>
-      <Link to={"/"}>
+      <NavLink to={"/"} className="link-nav">
         <img
           src="https://th.bing.com/th/id/R.ca8a3618d313baa5d52322bc4b437dad?rik=4Xq0pWjDTNTuDA&pid=ImgRaw&r=0"
           alt="logo"
           id="logo"
         />
-      </Link>
+      </NavLink>
       <h1>Serie is Comming</h1>
 
       <ul>
         <li>
-          <Link to={"/about"}>A propos</Link>
+          <NavLink to={"/about"} className="link-nav">
+            A propos
+          </NavLink>
         </li>
         <li>
-          <Link to={"/contact"}>Nous contacter</Link>
+          <NavLink to={"/contact"} className="link-nav">
+            Nous contacter
+          </NavLink>
         </li>
         <li className="dropdown">
           <h3>
@@ -26,16 +30,24 @@ function NavBar() {
 
           <ul className="dropdown-content">
             <li>
-              <Link to={"/series/1"}>Game of Thrones</Link>
+              <NavLink to={"/series/1"} className="link-nav">
+                Game of Thrones
+              </NavLink>
             </li>
             <li>
-              <Link to={"/series/2"}>Série 2</Link>
+              <NavLink to={"/series/2"} className="link-nav">
+                Série 2
+              </NavLink>
             </li>
             <li>
-              <Link to={"/series/3"}>Série 3</Link>
+              <NavLink to={"/series/3"} className="link-nav">
+                Série 3
+              </NavLink>
             </li>
             <li>
-              <Link to={"/series/4"}>Série 4</Link>
+              <NavLink to={"/series/4"} className="link-nav">
+                Série 4
+              </NavLink>
             </li>
           </ul>
         </li>
