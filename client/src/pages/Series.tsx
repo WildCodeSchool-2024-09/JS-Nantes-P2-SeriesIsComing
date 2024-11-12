@@ -13,21 +13,6 @@ function Series() {
     setCharacter(data);
   });
 
-  // console.warn(character);
-
-  // useEffect(() => {
-  //   async function getApi() {
-  //     // if(id) {
-  //     //   const url = urls[id as keyof typeof urls]
-
-  //     // }
-  //     const response = await fetch("https://thronesapi..com/api/v2/Characters");
-  //     const data = await response.json();
-  //     setCharacter(data);
-  //   }
-  //   getApi();
-  // }, []);
-
   return (
     <>
       <h1>Hello from Series {id}</h1>
@@ -37,3 +22,18 @@ function Series() {
 }
 
 export default Series;
+
+// console.warn(character);
+
+// useEffect(() => {
+//   async function getApi() {
+//     // if(id) {
+//     //   const url = urls[id as keyof typeof urls]
+
+//     // }
+//     const response = await fetch("https://thronesapi..com/api/v2/Characters");
+//     const data = await response.json();
+//     setCharacter(data);
+//   }
+//   getApi();
+// }, []);
