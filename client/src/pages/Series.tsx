@@ -21,7 +21,7 @@ function Series() {
         setCharacter(GOTdata);
         break;
       // case "2":
-      //   setCharacter(GOTdata);
+      //   setCharacter();
       //   break;
       // case "3":
       //   setCharacter();
