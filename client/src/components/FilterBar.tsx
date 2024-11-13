@@ -33,7 +33,9 @@ function FilterBar() {
         onChange={handleChange}
         className={maximumReached ? "length-maximum-reached" : "length-ok"}
       />
-      <label htmlFor="filter-bar">Recherche :</label>
+      <label htmlFor="filter-bar" id="label-search">
+        Recherche :
+      </label>
     </>
   );
 }

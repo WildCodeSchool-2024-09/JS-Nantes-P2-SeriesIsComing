@@ -3,5 +3,9 @@
 }
 
 .length-ok {
-  background-color: rgb(151, 249, 151);
+  background-color: var(--button-content-color);
+}
+
+#filter-bar {
+  border: 2px solid var(--button-content-color);
 }
