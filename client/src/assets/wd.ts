@@ -1,4 +1,4 @@
-const walkingDay = [
+const walkingDead = [
   {
     id: 1,
     firstName: "Rick",
@@ -241,4 +241,4 @@ const walkingDay = [
   },
 ];
 
-export default walkingDay;
+export default walkingDead;
