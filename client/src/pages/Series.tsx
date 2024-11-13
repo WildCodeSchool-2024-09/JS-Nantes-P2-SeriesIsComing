@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import GOTdata from "../assets/data";
+import GOTdata from "../assets/GOTdata";
 import Card from "../components/Card";
+import "./Series.css";
 
 export interface GOTdataI {
   id: number;
@@ -11,6 +12,7 @@ export interface GOTdataI {
   family: string;
   imageUrl: string;
 }
+
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function Series() {
@@ -19,12 +21,28 @@ function Series() {
   const [character, setCharacter] = useState<null | GOTdataI[]>(null);
 
   useEffect(() => {
-    setCharacter(GOTdata);
-  }, []);
+    switch (id) {
+      case "1":
+        setCharacter(GOTdata);
+        break;
+      // case "2":
+      //   setCharacter();
+      //   break;
+      // case "3":
+      //   setCharacter();
+      //   break;
+      // case "4":
+      //   setCharacter();
+      // PBcharacter
+      // break;
+      default:
+        console.warn("No valid page");
+    }
+  }, [id]);
 
   return (
     <>
-      <h1>Hello from Series {id}</h1>
+      <h1 className="coucou">Hello from Series {id}</h1>
       {character ? <Card character={character} /> : <p>loading</p>}
       <ScrollToTopButton />
     </>
@@ -32,18 +50,3 @@ function Series() {
 }
 
 export default Series;
-
-// console.warn(character);
-
-// useEffect(() => {
-//   async function getApi() {
-//     // if(id) {
-//     //   const url = urls[id as keyof typeof urls]
-
-//     // }
-//     const response = await fetch("https://thronesapi..com/api/v2/Characters");
-//     const data = await response.json();
-//     setCharacter(data);
-//   }
-//   getApi();
-// }, []);
