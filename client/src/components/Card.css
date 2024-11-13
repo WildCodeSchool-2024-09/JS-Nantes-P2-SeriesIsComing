@@ -5,12 +5,12 @@
   gap: 8px;
 }
 
-.card {
+.card-1 {
   width: 300px;
   padding-bottom: 16px;
 }
 
-.card > figure {
+.card-1 > figure {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@
   box-shadow: white 0px 6px 12px -2px, white 0px 3px 7px -3px;
 }
 
-.card > figure > img {
+.card-1 > figure > img {
   height: 200px;
   width: 250px;
   object-fit: cover;

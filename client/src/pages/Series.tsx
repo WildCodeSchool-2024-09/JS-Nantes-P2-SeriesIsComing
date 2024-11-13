@@ -16,7 +16,7 @@ export interface GOTdataI {
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function Series() {
-  const { id } = useParams();
+  const { id } = useParams<string>();
 
   const [character, setCharacter] = useState<null | GOTdataI[]>(null);
 
@@ -43,7 +43,11 @@ function Series() {
   return (
     <>
       <h1 className="coucou">Hello from Series {id}</h1>
-      {character ? <Card character={character} /> : <p>loading</p>}
+      {character && id !== undefined ? (
+        <Card character={character} id={id} />
+      ) : (
+        <p>loading</p>
+      )}
       <ScrollToTopButton />
     </>
   );
