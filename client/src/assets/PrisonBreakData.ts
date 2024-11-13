@@ -1,4 +1,4 @@
-const PBcharactere = [
+const PBcharacter = [
   {
     id: 0,
     firstName: "Michael ",
@@ -236,4 +236,4 @@ const PBcharactere = [
   },
 ];
 
-export default PBcharactere;
+export default PBcharacter;
