@@ -13,6 +13,7 @@ export interface GOTdataI {
   imageUrl: string;
 }
 
+import FilterBar from "../components/FilterBar";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function Series() {
@@ -43,6 +44,7 @@ function Series() {
   return (
     <>
       <h1 className="coucou">Hello from Series {id}</h1>
+      <FilterBar />
       {character ? <Card character={character} /> : <p>loading</p>}
       <ScrollToTopButton />
     </>
