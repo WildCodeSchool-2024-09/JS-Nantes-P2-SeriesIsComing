@@ -1,24 +1,19 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import GOTdata from "../assets/GOTdata";
+import PBcharacter from "../assets/PrisonBreakData";
 import Card from "../components/Card";
 import "./Series.css";
-
-export interface GOTdataI {
-  id: number;
-  firstName: string;
-  lastName: string;
-  title: string;
-  family: string;
-  imageUrl: string;
-}
-
+import type { GOTdataI } from "../assets/interfaces/GOTdataI";
+import type { PBdataI } from "../assets/interfaces/PBdataI";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function Series() {
   const { id } = useParams<string>();
 
-  const [character, setCharacter] = useState<null | GOTdataI[]>(null);
+  const [character, setCharacter] = useState<null | GOTdataI[] | PBdataI[]>(
+    null,
+  );
 
   useEffect(() => {
     switch (id) {
@@ -26,15 +21,15 @@ function Series() {
         setCharacter(GOTdata);
         break;
       // case "2":
-      //   setCharacter();
+      //   setCharacter(GOTdata);
       //   break;
       // case "3":
       //   setCharacter();
       //   break;
-      // case "4":
-      //   setCharacter();
-      // PBcharacter
-      // break;
+      case "4":
+        setCharacter(PBcharacter);
+        PBcharacter;
+        break;
       default:
         console.warn("No valid page");
     }

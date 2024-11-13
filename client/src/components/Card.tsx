@@ -1,7 +1,11 @@
 import "./Card.css";
-import type { GOTdataI } from "../pages/Series";
+import type { GOTdataI } from "../assets/interfaces/GOTdataI";
+import type { PBdataI } from "../assets/interfaces/PBdataI";
 
-function Card({ character, id }: { character: GOTdataI[]; id: string }) {
+function Card({
+  character,
+  id,
+}: { character: GOTdataI[] | PBdataI[]; id: string }) {
   return (
     <div>
       <div className="card-container">
