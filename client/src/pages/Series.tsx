@@ -1,28 +1,39 @@
+// Import react modules
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
+// Import page components
+import Card from "../components/Card";
+import ScrollToTopButton from "../components/ScrollToTopButton";
+
+// Import page style sheet
+import "./Series.css";
+
+// Import data
 import GOTdata from "../assets/GOTdata";
 import PBcharacter from "../assets/PrisonBreakData";
-import Card from "../components/Card";
-import "./Series.css";
+import walkingDead from "../assets/wd";
+
+// Import data interfaces
 import type { GOTdataI } from "../assets/interfaces/GOTdataI";
 import type { PBdataI } from "../assets/interfaces/PBdataI";
-import ScrollToTopButton from "../components/ScrollToTopButton";
+import type { walkingDeadI } from "../assets/interfaces/walkingDeadI";
 
 function Series() {
   const { id } = useParams<string>();
 
-  const [character, setCharacter] = useState<null | GOTdataI[] | PBdataI[]>(
-    null,
-  );
+  const [character, setCharacter] = useState<
+    null | GOTdataI[] | PBdataI[] | walkingDeadI[]
+  >(null);
 
   useEffect(() => {
     switch (id) {
       case "1":
         setCharacter(GOTdata);
         break;
-      // case "2":
-      //   setCharacter();
-      //   break;
+      case "2":
+        setCharacter(walkingDead);
+        break;
       // case "3":
       //   setCharacter();
       //   break;
