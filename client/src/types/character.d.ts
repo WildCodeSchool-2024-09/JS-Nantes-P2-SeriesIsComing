@@ -3,7 +3,7 @@ export interface CharacterData {
   firstName: string;
   lastName: string;
   nickname: string;
-  occupation: string[];
+  occupation: string;
   status: string;
   imageUrl: string;
   description: string;
