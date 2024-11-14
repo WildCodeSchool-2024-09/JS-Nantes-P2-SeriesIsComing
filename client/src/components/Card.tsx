@@ -9,7 +9,7 @@ function Card({ character }: { character: GOTdataI[] }) {
           <div className="card" key={charac.id}>
             <figure>
               <img src={charac.imageUrl} alt="This is a representation" />
-              <figcaption>
+              <figcaption className="card-caption">
                 {charac.firstName}{" "}
                 {charac.lastName !== "Unkown" ? charac.lastName : ""}
               </figcaption>

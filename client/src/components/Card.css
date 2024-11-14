@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 40px;
 }
 
 .card {
-  width: 300px;
+  width: 280px;
   padding-bottom: 16px;
 }
 
@@ -16,12 +16,17 @@
   align-items: center;
   background-color: var(--button-content-color);
   border-radius: 10%;
-  box-shadow: white 0px 6px 12px -2px, white 0px 3px 7px -3px;
+  box-shadow: white 0px 6px 20px -2px, white 0px 3px 14px -3px;
 }
 
 .card > figure > img {
   height: 200px;
-  width: 250px;
+  width: 280px;
   object-fit: cover;
   object-position: top;
+  border-radius: 10%;
+}
+
+.card-caption {
+  display: none;
 }
