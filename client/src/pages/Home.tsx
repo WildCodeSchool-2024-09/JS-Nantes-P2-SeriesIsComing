@@ -1,5 +1,4 @@
 import "./Home.css";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface Article {
@@ -35,30 +34,15 @@ const Home: React.FC = () => {
     },
   ];
 
-  const [visibleCards, setVisibleCards] = useState<number[]>([]);
-
-  const showNextCard = () => {
-    if (visibleCards.length < articles.length) {
-      setVisibleCards((prev) => [...prev, prev.length]);
-    }
-  };
-
   return (
     <main>
       <section id="recent-articles">
-        {articles.map((article, index) => (
-          <Link
-            to={article.link}
-            key={article.link}
-            className={`clickable-card ${visibleCards.includes(index) ? "visible" : ""}`}
-          >
+        {articles.map((article) => (
+          <Link to={article.link} key={article.link} className="clickable-card">
             <img src={article.image} alt={article.altText} />
           </Link>
         ))}
       </section>
-      <button type="button" onClick={showNextCard}>
-        Afficher la carte suivante
-      </button>
     </main>
   );
 };
