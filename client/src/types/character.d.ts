@@ -1,8 +1,10 @@
 export interface CharacterData {
   id: number;
-  name: string;
+  firstName: string;
+  lastName: string;
   nickname: string;
   occupation: string[];
   status: string;
-  img: string;
+  imageUrl: string;
+  description: string;
 }
