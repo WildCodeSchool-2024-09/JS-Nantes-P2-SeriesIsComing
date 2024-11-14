@@ -3,9 +3,8 @@ const walkingDead = [
     id: 1,
     firstName: "Rick",
     lastName: "Grimes",
-    acteur: "Andrew Lincoln",
-    role: "Chef du groupe, shérif",
-    saisons: "Saison 1 à 9",
+    nickname: undefined,
+    about: "Chef du groupe, shérif",
     description:
       "Rick Grimes est un ancien shérif qui devient le leader du groupe de survivants après l'épidémie. Son sens du devoir et sa détermination sont ce qui le pousse à protéger son groupe à tout prix.",
     imageUrl:
@@ -15,9 +14,8 @@ const walkingDead = [
     id: 2,
     firstName: "Daryl",
     lastName: "Dixon",
-    acteur: "Norman Reedus",
-    role: "Rôdeur, chasseur",
-    saisons: "Saison 1 à 11",
+    nickname: undefined,
+    about: "Rôdeur, chasseur",
     description:
       "Daryl Dixon est un expert en survie, connu pour ses talents de chasseur et sa maîtrise de l'arbalète. Au début un solitaire, il devient progressivement l'un des membres les plus fiables du groupe.",
     imageUrl:
@@ -26,10 +24,9 @@ const walkingDead = [
   {
     id: 3,
     firstName: "Michonne",
-    lastName: "",
-    acteur: "Danai Gurira",
-    role: "Guerrière, membre du groupe",
-    saisons: "Saison 3 à 10",
+    lastName: undefined,
+    nickname: undefined,
+    about: "Guerrière, membre du groupe",
     description:
       "Michonne est une guerrière redoutable, connue pour ses compétences en combat à l'épée et son intelligence stratégique. Elle rejoint le groupe de survivants et devient l'une de ses plus grandes alliées.",
     imageUrl:
@@ -39,9 +36,8 @@ const walkingDead = [
     id: 4,
     firstName: "Glenn",
     lastName: "Rhee",
-    acteur: "Steven Yeun",
-    role: "Membre du groupe, ex-pizza",
-    saisons: "Saison 1 à 7",
+    nickname: undefined,
+    about: "Membre du groupe, ex-pizza",
     description:
       "Glenn est un ancien livreur de pizza qui devient l'un des plus courageux et intelligents membres du groupe. Son optimisme et sa capacité à faire face aux défis font de lui un personnage clé de la série.",
     imageUrl:
@@ -51,9 +47,8 @@ const walkingDead = [
     id: 5,
     firstName: "Carol",
     lastName: "Peletier",
-    acteur: "Melissa McBride",
-    role: "Mère, guerrière",
-    saisons: "Saison 1 à 11",
+    nickname: undefined,
+    about: "Mère, guerrière",
     description:
       "Carol commence la série en tant que femme soumise et mère de famille, mais évolue pour devenir une redoutable guerrière. Elle s'affirme au fur et à mesure de la série et joue un rôle essentiel dans la survie du groupe.",
     imageUrl:
@@ -62,10 +57,9 @@ const walkingDead = [
   {
     id: 6,
     firstName: "Negan",
-    lastName: "",
-    acteur: "Jeffrey Dean Morgan",
-    role: "Antagoniste, leader des Sauveurs",
-    saisons: "Saison 6 à 11",
+    lastName: undefined,
+    nickname: undefined,
+    about: "Antagoniste, leader des Sauveurs",
     description:
       "Négan est le leader sadique et charismatique des Sauveurs. Son arme de prédilection est une batte de baseball enroulée de fil barbelé, qu'il appelle Lucille. Bien qu'il soit l'antagoniste principal pendant plusieurs saisons, il connaît une certaine rédemption.",
     imageUrl:
@@ -75,9 +69,8 @@ const walkingDead = [
     id: 7,
     firstName: "Carl",
     lastName: "Grimes",
-    acteur: "Chandler Riggs",
-    role: "Fils de Rick Grimes",
-    saisons: "Saison 1 à 8",
+    nickname: undefined,
+    about: "Fils de Rick Grimes",
     description:
       "Carl est le fils de Rick Grimes. Il évolue énormément tout au long de la série, devenant plus mature et courageux, tout en portant le poids de l'apocalypse sur ses épaules.",
     imageUrl:
@@ -87,9 +80,8 @@ const walkingDead = [
     id: 8,
     firstName: "Maggie",
     lastName: "Greene",
-    acteur: "Lauren Cohan",
-    role: "Membre du groupe, ex-agricultrice",
-    saisons: "Saison 2 à 11",
+    nickname: undefined,
+    about: "Membre du groupe, ex-agricultrice",
     description:
       "Maggie Greene est l'épouse de Glenn et l'une des survivantes les plus fortes. Après la mort de son mari, elle devient un leader au sein du groupe, notamment en dirigeant la communauté d'Hilltop.",
     imageUrl:
@@ -99,9 +91,8 @@ const walkingDead = [
     id: 9,
     firstName: "Beth",
     lastName: "Greene",
-    acteur: "Emily Kinney",
-    role: "Membre du groupe, sœur de Maggie",
-    saisons: "Saison 2 à 5",
+    nickname: undefined,
+    about: "Membre du groupe, sœur de Maggie",
     description:
       "Beth Greene est la sœur de Maggie et une des membres les plus pacifiques du groupe. Elle traverse une grande évolution, passant d'une jeune fille naïve à une femme forte et indépendante.",
     imageUrl:
@@ -110,10 +101,9 @@ const walkingDead = [
   {
     id: 10,
     firstName: "The Governor",
-    lastName: "",
-    acteur: "David Morrissey",
-    role: "Antagoniste, leader de Woodbury",
-    saisons: "Saison 3 à 4",
+    lastName: undefined,
+    nickname: undefined,
+    about: "Antagoniste, leader de Woodbury",
     description:
       "Le Gouverneur est l'un des antagonistes les plus mémorables de la série. Charismatique mais totalement dénué de morale, il dirige la ville de Woodbury et se heurte à Rick et ses compagnons.",
     imageUrl:
@@ -123,9 +113,8 @@ const walkingDead = [
     id: 11,
     firstName: "Eugene",
     lastName: "Porter",
-    acteur: "Josh McDermitt",
-    role: "Scientifique, membre du groupe",
-    saisons: "Saison 4 à 11",
+    nickname: undefined,
+    about: "Scientifique, membre du groupe",
     description:
       "Eugene est un scientifique qui prétend avoir trouvé un remède contre l'épidémie. Bien qu'il ait initialement menti, il devient un membre précieux du groupe grâce à ses compétences et sa créativité.",
     imageUrl:
@@ -135,9 +124,8 @@ const walkingDead = [
     id: 12,
     firstName: "Rosita",
     lastName: "Espinosa",
-    acteur: "Christian Serratos",
-    role: "Membre du groupe, ex-militaire",
-    saisons: "Saison 4 à 11",
+    nickname: undefined,
+    about: "Membre du groupe, ex-militaire",
     description:
       "Rosita est une ancienne militaire. Elle est loyale et courageuse, participant activement à la protection du groupe et à la lutte contre les menaces extérieures.",
     imageUrl:
@@ -147,9 +135,8 @@ const walkingDead = [
     id: 13,
     firstName: "Abraham",
     lastName: "Ford",
-    acteur: "Michael Cudlitz",
-    role: "Ancien militaire, membre du groupe",
-    saisons: "Saison 4 à 7",
+    nickname: undefined,
+    about: "Ancien militaire, membre du groupe",
     description:
       "Abraham est un militaire brutal mais avec un sens de l'humour unique. Il devient un membre important du groupe, particulièrement en raison de ses compétences de combat et de survie.",
     imageUrl:
@@ -158,10 +145,9 @@ const walkingDead = [
   {
     id: 14,
     firstName: "T-Dog",
-    lastName: "",
-    acteur: "IronE Singleton",
-    role: "Membre du groupe",
-    saisons: "Saison 1 à 3",
+    lastName: undefined,
+    nickname: undefined,
+    about: "Membre du groupe",
     description:
       "T-Dog est un membre du groupe qui se distingue par sa loyauté et son calme. Bien qu'il ne soit pas l'un des personnages les plus centraux, il est apprécié des autres survivants.",
     imageUrl:
@@ -171,9 +157,8 @@ const walkingDead = [
     id: 15,
     firstName: "Sasha",
     lastName: "Williams",
-    acteur: "Sonequa Martin-Green",
-    role: "Membre du groupe, ancienne militaire",
-    saisons: "Saison 3 à 7",
+    nickname: undefined,
+    about: "Membre du groupe, ancienne militaire",
     description:
       "Sasha est une ancienne militaire avec un esprit fort et déterminé. Elle se distingue par sa capacité à faire face aux situations extrêmes.",
     imageUrl:
@@ -182,10 +167,9 @@ const walkingDead = [
   {
     id: 16,
     firstName: "Aaron",
-    lastName: "",
-    acteur: "Ross Marquand",
-    role: "Membre du groupe, recruteur",
-    saisons: "Saison 5 à 11",
+    lastName: undefined,
+    nickname: undefined,
+    about: "Membre du groupe, recruteur",
     description:
       "Aaron est un recruteur pour la communauté d'Alexandria. Il joue un rôle clé en aidant à accueillir les nouveaux survivants et en soutenant la sécurité du groupe.",
     imageUrl:
@@ -195,9 +179,8 @@ const walkingDead = [
     id: 17,
     firstName: "Tara",
     lastName: "Chambler",
-    acteur: "Alanna Masterson",
-    role: "Membre du groupe",
-    saisons: "Saison 4 à 8",
+    nickname: undefined,
+    about: "Membre du groupe",
     description:
       "Tara est une ancienne soldate qui se joint au groupe après avoir été sauvée. Elle se distingue par son côté optimiste et sa volonté de toujours protéger les autres.",
     imageUrl:
@@ -206,10 +189,9 @@ const walkingDead = [
   {
     id: 18,
     firstName: "Enid",
-    lastName: "",
-    acteur: "Katelyn Nacon",
-    role: "Membre du groupe, ancienne survivante solitaire",
-    saisons: "Saison 5 à 9",
+    lastName: undefined,
+    nickname: undefined,
+    about: "Membre du groupe, ancienne survivante solitaire",
     description:
       "Enid est une jeune survivante qui rejoint le groupe d'Alexandria. Son caractère introverti et ses talents de survie font d'elle un personnage intrigant et utile.",
     imageUrl:
@@ -218,9 +200,9 @@ const walkingDead = [
   {
     id: 19,
     firstName: "Dwight",
-    lastName: "",
-    acteur: "Austin Amelio",
-    role: "Membre du groupe, ancien Sauveur",
+    lastName: undefined,
+    nickname: undefined,
+    about: "Membre du groupe, ancien Sauveur",
     saisons: "Saison 6 à 10",
     description:
       "Dwight est un ancien membre des Sauveurs qui cherche à se racheter après avoir été une partie de la violence de Négan. Il joue un rôle clé dans les événements de la série.",
@@ -231,9 +213,8 @@ const walkingDead = [
     id: 20,
     firstName: "Shane",
     lastName: "Walsh",
-    acteur: "Jon Bernthal",
-    role: "Ancien partenaire de Rick, antagoniste",
-    saisons: "Saison 1 à 2",
+    nickname: undefined,
+    about: "Ancien partenaire de Rick, antagoniste",
     description:
       "Shane Walsh est un ancien partenaire de Rick, devenu un des premiers antagonistes de la série. Sa relation avec Lori, la femme de Rick, et son attitude violente l'amènent à se retrouver en conflit avec le groupe.",
     imageUrl:

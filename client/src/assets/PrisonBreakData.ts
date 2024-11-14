@@ -4,8 +4,7 @@ const PBcharacter = [
     firstName: "Michael ",
     lastName: "Scofield",
     nickname: "None",
-    occupation: ["Ingénieur", "Détenu à Fox River"],
-    status: "En vie",
+    about: "Ingénieur",
     description:
       "Ingénieur brillant et stratégique, Michael se fait emprisonner volontairement pour organiser l’évasion de son frère. Connu pour son altruisme et sa détermination.",
     imageUrl:
@@ -16,8 +15,7 @@ const PBcharacter = [
     firstName: "Lincoln ",
     lastName: "Burrows",
     nickname: "None",
-    occupation: ["Condamné à mort"],
-    status: "En vie",
+    about: "Condamné à mort",
     description:
       "Condamné à tort pour meurtre, Lincoln est prêt à tout pour prouver son innocence. Son lien avec Michael est au cœur de l’intrigue.",
     imageUrl: "https://live.staticflickr.com/3384/3511731116_531a29c12d.jpg",
@@ -27,8 +25,7 @@ const PBcharacter = [
     firstName: "Sara ",
     lastName: "Tancredi",
     nickname: "None",
-    occupation: ["Médecin de Fox River"],
-    status: "En vie",
+    about: "Médecin de Fox River",
     description:
       "Médecin de la prison et fille du gouverneur, Sara se lie à Michael et devient un allié clé dans son plan d’évasion.",
     imageUrl:
@@ -39,8 +36,7 @@ const PBcharacter = [
     firstName: "Theodore ",
     lastName: "Bagwell",
     nickname: "T-Bag",
-    occupation: ["Détenu", "Criminel"],
-    status: "En vie",
+    about: "Criminel",
     description:
       "Psychopathe manipulateur, T-Bag est un personnage imprévisible qui rejoint l'évasion pour ses propres intérêts. Cruel et redouté des autres détenus.",
     imageUrl: "https://pbs.twimg.com/media/FxH3eUVXgAAl9sB.jpg",
@@ -50,8 +46,7 @@ const PBcharacter = [
     firstName: "Fernando ",
     lastName: "Sucre",
     nickname: "None",
-    occupation: ["Détenu", "Compagnon de cellule de Michael"],
-    status: "En vie",
+    about: "Compagnon de cellule de Michael",
     description:
       "Compagnon de cellule de Michael et ami loyal, Sucre participe à l’évasion pour retrouver sa petite amie Maricruz.",
     imageUrl:
@@ -62,8 +57,7 @@ const PBcharacter = [
     firstName: "Alexander ",
     lastName: "Mahone",
     nickname: "None",
-    occupation: ["Agent du FBI"],
-    status: "En vie",
+    about: "Agent du FBI",
     description:
       "Agent du FBI perspicace et obsédé par la traque des évadés, Mahone est redoutable et cache un passé complexe.",
     imageUrl:
@@ -74,8 +68,7 @@ const PBcharacter = [
     firstName: "Benjamin Miles ",
     lastName: "Franklin",
     nickname: "C-Note",
-    occupation: ["Détenu", "Ancien militaire"],
-    status: "En vie",
+    about: "Ancien militaire",
     description:
       "Ancien militaire injustement incarcéré, C-Note rejoint l’évasion dans l’espoir de revoir sa famille.",
     imageUrl:
@@ -86,8 +79,7 @@ const PBcharacter = [
     firstName: "Paul ",
     lastName: "Kellerman",
     nickname: "None",
-    occupation: ["Agent de la Compagnie"],
-    status: "Décédé",
+    about: "Agent de la Compagnie",
     description:
       "Agent de la Compagnie, il exécute les ordres d’une organisation puissante et sans scrupules. Son allégeance devient ambiguë au fil de la série.",
     imageUrl:
@@ -98,8 +90,7 @@ const PBcharacter = [
     firstName: "Brad ",
     lastName: "Bellick",
     nickname: "None",
-    occupation: ["Gardien en chef de Fox River"],
-    status: "Décédé",
+    about: "Gardien en chef de Fox River",
     description:
       "Gardien de Fox River autoritaire et impitoyable, Bellick se retrouve impliqué dans la poursuite des évadés après leur évasion.",
     imageUrl:
@@ -110,8 +101,7 @@ const PBcharacter = [
     firstName: "John ",
     lastName: "Abruzzi",
     nickname: "None",
-    occupation: ["Chef mafieux", "Détenu à Fox River"],
-    status: "Décédé",
+    about: "Chef mafieux",
     description:
       "Chef mafieux redoutable et craint, Abruzzi est l’un des alliés stratégiques de Michael dans l’évasion, mais il reste dangereux et imprévisible.",
     imageUrl:
@@ -122,8 +112,7 @@ const PBcharacter = [
     firstName: "Charles ",
     lastName: "Patoshik",
     nickname: "Haywire",
-    occupation: ["Détenu", "Ancien étudiant"],
-    status: "Décédé",
+    about: "Ancien étudiant",
     description:
       "Surnommé Haywire, Charles est mentalement instable et obsédé par les tatouages de Michael, ajoutant de l’imprévu au plan d’évasion.",
     imageUrl: "https://storage.canalblog.com/80/89/265088/11078190_o.jpg",
@@ -133,8 +122,7 @@ const PBcharacter = [
     firstName: "David ",
     lastName: "Apolskis",
     nickname: "Tweener",
-    occupation: ["Détenu", "Petit voleur"],
-    status: "Décédé",
+    about: "Petit voleur",
     description:
       "Tweener, jeune voleur insouciant, est pris dans l’évasion malgré lui et se montre souvent méfiant vis-à-vis des autres.",
     imageUrl:
@@ -145,8 +133,7 @@ const PBcharacter = [
     firstName: "LJ ",
     lastName: "Burrows",
     nickname: "None",
-    occupation: ["Étudiant", "Fils de Lincoln"],
-    status: "En vie",
+    about: "Fils de Lincoln",
     description:
       "Fils de Lincoln, LJ est pris pour cible par la Compagnie et devient un enjeu émotionnel pour Lincoln et Michael.",
     imageUrl:
@@ -157,8 +144,7 @@ const PBcharacter = [
     firstName: "Sofia ",
     lastName: "Lugo",
     nickname: "None",
-    occupation: ["Compagne de Lincoln"],
-    status: "En vie",
+    about: "Compagne de Lincoln",
     description:
       "Elle devient la petite amie de Lincoln et son soutien inconditionnel dans ses luttes contre la Compagnie.",
     imageUrl: "https://vainkeurz.com/wp-content/uploads/2022/10/16-1.png",
@@ -168,8 +154,7 @@ const PBcharacter = [
     firstName: "Gretchen ",
     lastName: "Morgan",
     nickname: "None",
-    occupation: ["Agent de la Compagnie"],
-    status: "En vie",
+    about: "Agent de la Compagnie",
     description:
       "Implacable et sans remords, Gretchen est une agente de la Compagnie avec des méthodes brutales pour atteindre ses objectifs.",
     imageUrl:
@@ -180,8 +165,7 @@ const PBcharacter = [
     firstName: "James ",
     lastName: "Whistler",
     nickname: "None",
-    occupation: ["Détenu à Sona"],
-    status: "Décédé",
+    about: "Détenu à Sona",
     description:
       "Détenu mystérieux à Sona, Whistler possède des informations précieuses et devient essentiel pour la mission de Michael.",
     imageUrl:
@@ -192,8 +176,7 @@ const PBcharacter = [
     firstName: "Don ",
     lastName: "Self",
     nickname: "None",
-    occupation: ["Agent du gouvernement"],
-    status: "En vie",
+    about: "Agent du gouvernement",
     description:
       "Agent gouvernemental ambigu, Self collabore avec Michael mais son intégrité est mise en question par ses actions.",
     imageUrl: "https://static.tvtropes.org/pmwiki/pub/images/DonSelf_5319.jpg",
@@ -203,8 +186,7 @@ const PBcharacter = [
     firstName: "Christina ",
     lastName: "Scofield",
     nickname: "None",
-    occupation: ["Membre de la Compagnie"],
-    status: "Décédée",
+    about: "Membre de la Compagnie",
     description:
       "Mère de Michael et Lincoln, Christina se révèle être une figure de la Compagnie avec des motivations propres et dangereuses.",
     imageUrl:
@@ -215,8 +197,7 @@ const PBcharacter = [
     firstName: "Norman",
     lastName: "St. John",
     nickname: "Lechero",
-    occupation: ["Chef des détenus à Sona"],
-    status: "Décédé",
+    about: "Chef des détenus à Sona",
     description:
       "Chef des prisonniers à Sona, Lechero exerce son autorité au sein de la prison et s’allie temporairement à Michael pour une évasion.",
     imageUrl:
@@ -227,8 +208,7 @@ const PBcharacter = [
     firstName: "Henry ",
     lastName: "Pope",
     nickname: "None",
-    occupation: ["Directeur de la prison de Fox River"],
-    status: "En vie",
+    about: "Directeur de la prison de Fox River",
     description:
       "Directeur de Fox River, Pope est bienveillant et juste mais se retrouve tiraillé par sa loyauté envers Michael.",
     imageUrl:
