@@ -44,7 +44,9 @@ function Series() {
   return (
     <>
       <h1 className="coucou">Hello from Series {id}</h1>
-      <FilterBar />
+      <section id="filter-bar">
+        <FilterBar />
+      </section>
       {character ? <Card character={character} /> : <p>loading</p>}
       <ScrollToTopButton />
     </>
