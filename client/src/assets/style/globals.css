@@ -32,7 +32,8 @@ body {
 a,
 p,
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--all-font-style);
   text-decoration: none;
   color: var(--main-font-color);

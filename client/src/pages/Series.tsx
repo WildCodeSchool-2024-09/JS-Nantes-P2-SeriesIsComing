@@ -48,7 +48,6 @@ function Series() {
 
   return (
     <>
-      <h1 className="coucou">Hello from Series {id}</h1>
       {character && id !== undefined ? (
         <Card character={character} id={id} />
       ) : (
