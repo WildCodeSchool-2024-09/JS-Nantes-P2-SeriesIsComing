@@ -4,6 +4,18 @@ import { useParams } from "react-router-dom";
 
 // Import page components
 import Card from "../components/Card";
+import SideBar from "../components/SideBar";
+import "./Series.css";
+
+export interface GOTdataI {
+  id: number;
+  firstName: string;
+  lastName: string;
+  title: string;
+  family: string;
+  imageUrl: string;
+}
+
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 // Import page style sheet
@@ -44,6 +56,7 @@ function Series() {
 
   return (
     <>
+      <SideBar />
       {character && id !== undefined ? (
         <Card character={character} id={id} />
       ) : (

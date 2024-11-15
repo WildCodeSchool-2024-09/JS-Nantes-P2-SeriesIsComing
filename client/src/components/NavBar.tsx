@@ -15,12 +15,12 @@ function NavBar() {
       <ul>
         <li>
           <NavLink to={"/about"} className="link-nav">
-            A propos
+            <h3> A propos</h3>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/contact"} className="link-nav">
-            Nous contacter
+            <h3>Nous contacter</h3>
           </NavLink>
         </li>
         <li className="dropdown">
