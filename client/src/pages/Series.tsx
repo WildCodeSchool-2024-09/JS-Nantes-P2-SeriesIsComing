@@ -69,11 +69,6 @@ function Series() {
   return (
     <>
       <SideBar />
-      {character && id !== undefined ? (
-        <Card character={character} id={id} search={search} />
-      ) : (
-        <p>loading</p>
-      )}
       <section id="filter-bar">
         <input
           id="filter-bar"
@@ -88,6 +83,12 @@ function Series() {
           Recherche :
         </label>
       </section>
+      {character && id !== undefined ? (
+        <Card character={character} id={id} search={search} />
+      ) : (
+        <p>loading</p>
+      )}
+
       <ScrollToTopButton />
     </>
   );
