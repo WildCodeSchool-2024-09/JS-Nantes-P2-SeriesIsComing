@@ -1,6 +1,6 @@
 import "../components/SideBar.css";
 
-const Sidebar = () => {
+const SideBar = () => {
   return (
     <div className="sidebar">
       <h4>Menu</h4>
@@ -87,4 +87,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SideBar;
