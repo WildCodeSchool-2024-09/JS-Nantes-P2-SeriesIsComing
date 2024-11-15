@@ -1,4 +1,4 @@
-const breakinBadCharacters = [
+export const breakinBadCharacters = [
   {
     id: 1,
     firstName: "Walter",
@@ -24,7 +24,7 @@ const breakinBadCharacters = [
   },
   {
     id: 3,
-    firstname: "Skyler",
+    firstName: "Skyler",
     lastName: "White",
     nickname: "Sky",
     about: "Comptable",
@@ -35,7 +35,7 @@ const breakinBadCharacters = [
   },
   {
     id: 4,
-    firstname: "Hank",
+    firstName: "Hank",
     lastName: "Schrader",
     nickname: "ASAC Schrader",
     about: "Agent de la DEA",
@@ -46,7 +46,7 @@ const breakinBadCharacters = [
   },
   {
     id: 5,
-    firstname: "Saul",
+    firstName: "Saul",
     lastName: "Goodman",
     nickname: "Goodman",
     about: "Avocat",
@@ -57,7 +57,7 @@ const breakinBadCharacters = [
   },
   {
     id: 6,
-    firstname: "Gus",
+    firstName: "Gus",
     lastName: "Fring",
     nickname: "Le Patron du Poulet",
     about: "Propriétaire de Los Pollos Hermanos",
@@ -68,7 +68,7 @@ const breakinBadCharacters = [
   },
   {
     id: 7,
-    firstname: "Mike",
+    firstName: "Mike",
     lastName: "Ehrmantraut",
     nickname: "Mike",
     about: "Homme de main",
@@ -79,7 +79,7 @@ const breakinBadCharacters = [
   },
   {
     id: 8,
-    firstname: "Marie",
+    firstName: "Marie",
     lastName: "Schrader",
     nickname: "Marie",
     about: "Technologue en radiologie",
@@ -90,7 +90,7 @@ const breakinBadCharacters = [
   },
   {
     id: 9,
-    firstname: "Todd",
+    firstName: "Todd",
     lastName: "Alquist",
     nickname: "Ricky Hitler",
     about: "Assistant de laboratoire",
@@ -101,7 +101,7 @@ const breakinBadCharacters = [
   },
   {
     id: 10,
-    firstname: "Lydia",
+    firstName: "Lydia",
     lastName: "Rodarte-Quayle",
     nickname: "Lydia",
     about: "Coordinatrice logistique",
@@ -112,7 +112,7 @@ const breakinBadCharacters = [
   },
   {
     id: 11,
-    firstname: "Jane",
+    firstName: "Jane",
     lastName: "Margolis",
     nickname: "Jane",
     about: "Tatoueuse",
@@ -123,7 +123,7 @@ const breakinBadCharacters = [
   },
   {
     id: 12,
-    firstname: "Tuco",
+    firstName: "Tuco",
     lastName: "Salamanca",
     nickname: "Tuco",
     about: "Dealer de drogue",
@@ -134,7 +134,7 @@ const breakinBadCharacters = [
   },
   {
     id: 13,
-    firstname: "Hector",
+    firstName: "Hector",
     lastName: "Salamanca",
     nickname: "Tio",
     about: "Exécuteur",
@@ -145,8 +145,8 @@ const breakinBadCharacters = [
   },
   {
     id: 14,
-    firstname: "Victor",
-    lastName: "",
+    firstName: "Victor",
+    lastName: undefined,
     nickname: "Victor",
     about: "Exécuteur de Gus",
     imageUrl:
@@ -156,7 +156,7 @@ const breakinBadCharacters = [
   },
   {
     id: 15,
-    firstname: "Gale",
+    firstName: "Gale",
     lastName: "Boetticher",
     nickname: "Gale",
     about: "Chimiste",
@@ -167,7 +167,7 @@ const breakinBadCharacters = [
   },
   {
     id: 16,
-    firstname: "Steven",
+    firstName: "Steven",
     lastName: "Gomez",
     nickname: "Gomie",
     about: "Agent de la DEA",
@@ -178,18 +178,18 @@ const breakinBadCharacters = [
   },
   {
     id: 17,
-    firstname: "Combo",
+    firstName: "Combo",
     lastName: "Ortega",
     nickname: "Combo",
     about: "Dealer de drogue",
     imageUrl:
-      "https://static.wikia.nocookie.net/breakingbad/images/7/7c/2x11_-_Mandala_Combo.png/revision/latest?cb=20120724094730&path-prefix=es",
+      "https://static.wikia.nocookie.net/international-entertainment-project/images/4/4a/Christian_Ortega_(Breaking_Bad).png",
     description:
       "Ami de Jesse, Combo est impliqué dans le trafic de drogue avant de devenir victime de la violence du milieu.",
   },
   {
     id: 18,
-    firstname: "Skinny",
+    firstName: "Skinny",
     lastName: "Pete",
     nickname: "Skinny",
     about: "Dealer de drogue",
@@ -200,8 +200,8 @@ const breakinBadCharacters = [
   },
   {
     id: 19,
-    firstname: "Badger",
-    lastName: "",
+    firstName: "Badger",
+    lastName: undefined,
     nickname: "Badger",
     about: "Dealer de drogue",
     imageUrl:
@@ -211,8 +211,8 @@ const breakinBadCharacters = [
   },
   {
     id: 20,
-    firstname: "Krazy-8",
-    lastName: "",
+    firstName: "Krazy-8",
+    lastName: undefined,
     nickname: "Krazy-8",
     about: "Dealer de drogue",
     imageUrl:

@@ -24,6 +24,7 @@ import "./Series.css";
 // Import data
 import GOTdata from "../assets/GOTdata";
 import PBcharacter from "../assets/PrisonBreakData";
+import { breakinBadCharacters } from "../assets/breakinBadCharacters";
 import walkingDead from "../assets/wd";
 
 // Import data interfaces
@@ -42,9 +43,9 @@ function Series() {
       case "2":
         setCharacter(walkingDead);
         break;
-      // case "3":
-      //   setCharacter();
-      //   break;
+      case "3":
+        setCharacter(breakinBadCharacters);
+        break;
       case "4":
         setCharacter(PBcharacter);
         PBcharacter;
