@@ -1,0 +1,79 @@
+/* components/Sidebar.css */
+
+.sidebar {
+  width: 150px;
+  background-color: rgba(244, 244, 244, 0.7);
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: -170px;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+}
+
+.sidebar:hover {
+  left: 0;
+}
+
+.sidebar h4 {
+  margin: 0 0 0px;
+  font-size: 15px;
+  text-align: center;
+  background-color: rgb(204, 198, 196);
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar a:hover {
+  color: #000;
+}
+
+.sidebar figure {
+  margin: 0;
+}
+
+.sidebar img {
+  height: 50px;
+  width: auto;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform .1s;
+}
+
+.sidebar img:hover {
+  -ms-transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+}
+
+.sidebar figcaption {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+  color: red;
+  font-weight: bold;
+}
+
+.sidebar figure {
+  margin: 0;
+  display: flex; /* Ajouté pour le centrage */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Aligne les enfants en colonne (image et légende) */
+}

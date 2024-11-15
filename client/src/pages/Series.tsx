@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import GOTdata from "../assets/GOTdata";
 import Card from "../components/Card";
+import SideBar from "../components/SideBar";
 import "./Series.css";
 
 export interface GOTdataI {
@@ -42,6 +43,7 @@ function Series() {
 
   return (
     <>
+      <SideBar />
       <h1 className="coucou">Hello from Series {id}</h1>
       {character ? <Card character={character} /> : <p>loading</p>}
       <ScrollToTopButton />
