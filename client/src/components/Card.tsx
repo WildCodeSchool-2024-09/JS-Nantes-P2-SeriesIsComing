@@ -1,17 +1,20 @@
+// Import style sheet
 import "./Card.css";
-import type { GOTdataI } from "../pages/Series";
 
+// Import data interfaces
+import type dataI from "../assets/interfaces/dataI";
 function Card({
   character,
+  id,
   search,
-}: { character: GOTdataI[]; search: string }) {
+}: { character: dataI[]; id: string; search: string }) {
   return (
-    <div>
+    <section>
       <div className="card-container">
         {character
           .filter((el) => el.firstName.includes(search))
           .map((charac) => (
-            <div className="card" key={charac.id}>
+            <article className={`card-${id}`} key={charac.id}>
               <figure>
                 <img src={charac.imageUrl} alt="This is a representation" />
                 <figcaption className="card-caption">
@@ -19,10 +22,10 @@ function Card({
                   {charac.lastName !== "Unkown" ? charac.lastName : ""}
                 </figcaption>
               </figure>
-            </div>
+            </article>
           ))}
       </div>
-    </div>
+    </section>
   );
 }
 
