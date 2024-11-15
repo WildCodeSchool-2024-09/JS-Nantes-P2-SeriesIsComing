@@ -10,7 +10,7 @@ function NavBar() {
           id="logo"
         />
       </NavLink>
-      <h1>Serie is Comming</h1>
+      <h1>Serie is Coming</h1>
 
       <ul>
         <li>
@@ -36,17 +36,17 @@ function NavBar() {
             </li>
             <li>
               <NavLink to={"/series/2"} className="link-nav">
-                Série 2
+                The Walking Dead
               </NavLink>
             </li>
             <li>
               <NavLink to={"/series/3"} className="link-nav">
-                Série 3
+                Breaking Bad
               </NavLink>
             </li>
             <li>
               <NavLink to={"/series/4"} className="link-nav">
-                Série 4
+                Prison Break
               </NavLink>
             </li>
           </ul>

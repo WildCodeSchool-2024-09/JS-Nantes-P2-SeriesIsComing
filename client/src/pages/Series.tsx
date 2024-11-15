@@ -1,6 +1,8 @@
+// Import react modules
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import GOTdata from "../assets/GOTdata";
+
+// Import page components
 import Card from "../components/Card";
 import SideBar from "../components/SideBar";
 import "./Series.css";
@@ -16,26 +18,37 @@ export interface GOTdataI {
 
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
-function Series() {
-  const { id } = useParams();
+// Import page style sheet
+import "./Series.css";
 
-  const [character, setCharacter] = useState<null | GOTdataI[]>(null);
+// Import data
+import GOTdata from "../assets/GOTdata";
+import PBcharacter from "../assets/PrisonBreakData";
+import walkingDead from "../assets/wd";
+
+// Import data interfaces
+import type dataI from "../assets/interfaces/dataI";
+
+function Series() {
+  const { id } = useParams<string>();
+
+  const [character, setCharacter] = useState<null | dataI[]>(null);
 
   useEffect(() => {
     switch (id) {
       case "1":
         setCharacter(GOTdata);
         break;
-      // case "2":
-      //   setCharacter();
-      //   break;
+      case "2":
+        setCharacter(walkingDead);
+        break;
       // case "3":
       //   setCharacter();
       //   break;
-      // case "4":
-      //   setCharacter();
-      // PBcharacter
-      // break;
+      case "4":
+        setCharacter(PBcharacter);
+        PBcharacter;
+        break;
       default:
         console.warn("No valid page");
     }
@@ -44,8 +57,11 @@ function Series() {
   return (
     <>
       <SideBar />
-      <h1 className="coucou">Hello from Series {id}</h1>
-      {character ? <Card character={character} /> : <p>loading</p>}
+      {character && id !== undefined ? (
+        <Card character={character} id={id} />
+      ) : (
+        <p>loading</p>
+      )}
       <ScrollToTopButton />
     </>
   );
