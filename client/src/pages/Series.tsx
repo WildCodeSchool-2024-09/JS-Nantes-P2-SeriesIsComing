@@ -13,13 +13,13 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import "./Series.css";
 
 // Import data
-import GOTdata from "../assets/GOTdata";
-import PBcharacter from "../assets/PrisonBreakData";
-import { breakinBadCharacters } from "../assets/breakinBadCharacters";
-import walkingDead from "../assets/wd";
+import GOTdata from "../assets/data/GOTdata";
+import PBcharacter from "../assets/data/PrisonBreakData";
+import breakinBadCharacters from "../assets/data/breakinBadCharacters";
+import walkingDead from "../assets/data/wd";
 
 // Import data interfaces
-import type dataI from "../assets/interfaces/dataI";
+import type { DataI } from "../assets/interfaces/DataI";
 
 interface eventI {
   target: targetI;
@@ -32,7 +32,7 @@ interface targetI {
 function Series() {
   const { id } = useParams<string>();
 
-  const [character, setCharacter] = useState<null | dataI[]>(null);
+  const [character, setCharacter] = useState<null | DataI[]>(null);
 
   const [search, setSearch] = useState<string>("");
 

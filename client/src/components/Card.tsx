@@ -2,12 +2,13 @@
 import "./Card.css";
 
 // Import data interfaces
-import type dataI from "../assets/interfaces/dataI";
+import type { DataI } from "../assets/interfaces/DataI";
+
 function Card({
   character,
   id,
   search,
-}: { character: dataI[]; id: string; search: string }) {
+}: { character: DataI[]; id: string; search: string }) {
   return (
     <section>
       <div className="card-container">
