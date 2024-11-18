@@ -4,7 +4,7 @@ const breakinBadCharacters = [
     firstName: "Walter",
     lastName: "White",
     nickname: "Heisenberg",
-    about: "Professeur de chimie au lycée", 
+    about: "Professeur de chimie au lycée",
     imageUrl:
       "https://i.pinimg.com/564x/fc/db/84/fcdb8412f5f8f52c73a7d167bd3e3da4.jpg",
     description:
