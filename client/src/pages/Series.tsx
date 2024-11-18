@@ -45,7 +45,7 @@ function Series() {
   return (
     <>
       {character && id !== undefined ? (
-        <Card character={character}/>
+        <Card character={character} />
       ) : (
         <p>loading</p>
       )}
