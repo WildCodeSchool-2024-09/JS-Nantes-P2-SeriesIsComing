@@ -35,6 +35,8 @@ function Series() {
 
   const [character, setCharacter] = useState<null | dataI[]>(null);
 
+  const [familyFilter, setFamilyFilter] = useState<string>("");
+
   useEffect(() => {
     switch (id) {
       case "1":
@@ -57,9 +59,9 @@ function Series() {
 
   return (
     <>
-      <SideBar />
+      <SideBar familyFilter={familyFilter} setFamilyFilter={setFamilyFilter} />
       {character && id !== undefined ? (
-        <Card character={character} id={id} />
+        <Card character={character} id={id} familyFilter={familyFilter} />
       ) : (
         <p>loading</p>
       )}
