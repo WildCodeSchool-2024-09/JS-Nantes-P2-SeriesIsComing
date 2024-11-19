@@ -53,11 +53,12 @@ function SideBar({ familyFilter, setFamilyFilter }: FamilyI) {
 
   return (
     <div className="sidebar">
-      <h4>Menu</h4>
+      <h3>Filtre selon ta famille préférée !</h3>
       {families.map((family) => (
         <button type="button" key={family.name} onClick={handleClick}>
           <figure>
             <img
+              className="logo-button"
               src={family.image}
               alt={`This is the representation of House ${family.name}`}
             />
@@ -65,7 +66,6 @@ function SideBar({ familyFilter, setFamilyFilter }: FamilyI) {
           </figure>
         </button>
       ))}
-      ;
     </div>
   );
 }

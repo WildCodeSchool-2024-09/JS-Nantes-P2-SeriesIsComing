@@ -31,12 +31,18 @@ function ContactUs() {
           />
         </div>
         <div className="buttons-contain">
-          <button type="button">Abbone toi à notre newlester</button>
-          <button type="button">Valide ta demande</button>
+          <button className="contact-button" type="button">
+            Abbone toi à notre newlester
+          </button>
+          <button className="contact-button" type="button">
+            Valide ta demande
+          </button>
         </div>
       </section>
       <div className="mentions-contain">
-        <button type="button">Mentions légales</button>
+        <button className="contact-button" type="button">
+          Mentions légales
+        </button>
       </div>
     </div>
   );
