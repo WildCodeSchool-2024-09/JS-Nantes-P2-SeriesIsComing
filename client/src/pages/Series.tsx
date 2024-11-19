@@ -59,7 +59,7 @@ function Series() {
     <>
       <SideBar />
       {character && id !== undefined ? (
-        <Card character={character} id={id} />
+        <Card character={character} />
       ) : (
         <p>loading</p>
       )}
