@@ -1,12 +1,11 @@
 import type { MouseEvent } from "react";
 import { families } from "../assets/dataFamiliesGOT";
-import type { FamilyI } from "../assets/interfaces/familyI";
+import type { FamilyFiltersI } from "../assets/interfaces/FamilyFiltersI";
 import "../components/SideBar.css";
 
-function SideBar({ familyFilter, setFamilyFilter }: FamilyI) {
+function SideBar({ familyFilter, setFamilyFilter }: FamilyFiltersI) {
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     const familyValue = (event.target as HTMLElement).innerText;
-    console.warn("pouet", familyValue);
     setFamilyFilter(familyFilter === familyValue ? "" : familyValue);
   };
 

@@ -11,9 +11,9 @@
   height: 100%;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   transition: left 0.3s ease;
-  display: flex; /* Ajouté pour le centrage */
-  align-items: center; /* Centre verticalement */
-  flex-direction: column; /* Aligne les enfants en colonne (image et légende) */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .sidebar:hover {
