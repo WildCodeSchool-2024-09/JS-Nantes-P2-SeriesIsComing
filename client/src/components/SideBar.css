@@ -18,6 +18,7 @@
 
 .sidebar:hover {
   left: 0;
+  z-index: 1;
 }
 
 .sidebar button:hover {
