@@ -1,4 +1,4 @@
-export interface DataI {
+interface DataI {
   id: number;
   firstName: string;
   lastName: string | undefined;
@@ -7,3 +7,5 @@ export interface DataI {
   description: string;
   imageUrl: string;
 }
+
+export default DataI;

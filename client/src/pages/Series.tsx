@@ -19,7 +19,7 @@ import breakinBadCharacters from "../assets/data/breakinBadCharacters";
 import walkingDead from "../assets/data/wd";
 
 // Import data interfaces
-import type { DataI } from "../assets/interfaces/DataI";
+import type DataI from "../assets/interfaces/DataI";
 
 interface eventI {
   target: targetI;
