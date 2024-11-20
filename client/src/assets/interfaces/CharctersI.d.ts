@@ -1,4 +1,4 @@
-interface DataI {
+interface CharactersI {
   id: number;
   firstName: string;
   lastName: string | undefined;
@@ -8,4 +8,4 @@ interface DataI {
   imageUrl: string;
 }
 
-export default DataI;
+export default CharactersI;
