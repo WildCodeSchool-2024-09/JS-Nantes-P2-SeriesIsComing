@@ -1,4 +1,4 @@
-export const breakinBadCharacters = [
+const breakinBadCharacters = [
   {
     id: 1,
     firstName: "Walter",
@@ -221,3 +221,5 @@ export const breakinBadCharacters = [
       "Dealer de drogue avec un pied dans le cartel, Krazy-8 est l'un des premiers adversaires de Walter.",
   },
 ];
+
+export default breakinBadCharacters;

@@ -11,14 +11,26 @@ import SideBar from "../components/SideBar";
 import "./Series.css";
 
 // Import data
-import seriesData from "../assets/seriesData";
+import seriesData from "../assets/data/seriesData";
 
 // Import data interfaces
 import type CharactersI from "../assets/interfaces/CharctersI";
+import type EventI from "../assets/interfaces/EventI";
 
 function Series() {
   const { id } = useParams<string>();
 
+  const [search, setSearch] = useState<string>("");
+
+  const MAX_LENGTH = 20;
+
+  const handleChange = (event: EventI) => {
+    if (event.target.value.length <= MAX_LENGTH) {
+      setSearch(event.target.value);
+    }
+  };
+
+  const maximumReached = search.length >= MAX_LENGTH;
   const [characters, setCharacters] = useState<null | CharactersI[]>(null);
 
   const [familyFilter, setFamilyFilter] = useState<string>("");
@@ -33,11 +45,30 @@ function Series() {
   return (
     <>
       <SideBar familyFilter={familyFilter} setFamilyFilter={setFamilyFilter} />
+      <section id="filter-bar">
+        <input
+          id="filter-bar"
+          type="text"
+          name="filter-bar"
+          placeholder="Filtre les personnages"
+          value={search}
+          onChange={handleChange}
+          className={maximumReached ? "length-maximum-reached" : "length-ok"}
+        />
+        <label htmlFor="filter-bar" id="label-search">
+          Recherche :
+        </label>
+      </section>
       {characters && id !== undefined ? (
-        <Card characters={characters} familyFilter={familyFilter} />
+        <Card
+          characters={characters}
+          familyFilter={familyFilter}
+          search={search}
+        />
       ) : (
         <p>loading</p>
       )}
+
       <ScrollToTopButton />
     </>
   );

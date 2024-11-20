@@ -1,6 +1,6 @@
 import GOTdata from "./GOTdata";
 import PBcharacter from "./PrisonBreakData";
-import { breakinBadCharacters } from "./breakinBadCharacters";
+import breakinBadCharacters from "./breakinBadCharacters";
 import walkingDead from "./wd";
 
 const seriesData = [

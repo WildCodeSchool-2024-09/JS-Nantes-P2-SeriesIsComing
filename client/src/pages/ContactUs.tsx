@@ -17,7 +17,9 @@ function ContactUs() {
           />
         </div>
         <div className="right-part">
-          <p>Des series que tu souhaite voire sur le site ?</p>
+          <p>
+            <strong>Des series que tu souhaite voire sur le site ?</strong>
+          </p>
           <input type="text" placeholder="Nom d'une série" />
           <input type="text" />
         </div>

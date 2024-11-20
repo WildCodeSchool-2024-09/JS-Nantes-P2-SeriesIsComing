@@ -1,5 +1,5 @@
 import type { MouseEvent } from "react";
-import { families } from "../assets/dataFamiliesGOT";
+import { families } from "../assets/data/dataFamiliesGOT";
 import type { FamilyFiltersI } from "../assets/interfaces/FamilyFiltersI";
 import "../components/SideBar.css";
 
