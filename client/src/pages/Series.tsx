@@ -61,7 +61,7 @@ function Series() {
     <>
       <SideBar familyFilter={familyFilter} setFamilyFilter={setFamilyFilter} />
       {character && id !== undefined ? (
-        <Card character={character} id={id} familyFilter={familyFilter} />
+        <Card character={character} familyFilter={familyFilter} />
       ) : (
         <p>loading</p>
       )}
