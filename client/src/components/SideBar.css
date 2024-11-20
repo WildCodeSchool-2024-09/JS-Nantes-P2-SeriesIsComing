@@ -72,8 +72,8 @@
 
 .sidebar figure {
   margin: 0;
-  display: flex; /* Ajouté pour le centrage */
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  flex-direction: column; /* Aligne les enfants en colonne (image et légende) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
