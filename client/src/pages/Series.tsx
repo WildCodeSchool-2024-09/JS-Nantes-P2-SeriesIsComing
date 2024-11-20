@@ -22,15 +22,15 @@ function Series() {
 
   const [search, setSearch] = useState<string>("");
 
-  const MAX_LENGTH = 20;
+  const maxLength = 20;
 
   const handleChange = (event: EventI) => {
-    if (event.target.value.length <= MAX_LENGTH) {
+    if (event.target.value.length <= maxLength) {
       setSearch(event.target.value);
     }
   };
 
-  const maximumReached = search.length >= MAX_LENGTH;
+  const maximumReached = search.length >= maxLength;
   const [characters, setCharacters] = useState<null | CharactersI[]>(null);
 
   const [familyFilter, setFamilyFilter] = useState<string>("");
