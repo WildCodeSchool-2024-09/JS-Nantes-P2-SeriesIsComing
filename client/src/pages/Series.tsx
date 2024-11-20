@@ -20,14 +20,7 @@ import walkingDead from "../assets/data/wd";
 
 // Import data interfaces
 import type DataI from "../assets/interfaces/DataI";
-
-interface eventI {
-  target: targetI;
-}
-
-interface targetI {
-  value: string;
-}
+import type EventI from "../assets/interfaces/EventI";
 
 function Series() {
   const { id } = useParams<string>();
@@ -38,7 +31,7 @@ function Series() {
 
   const MAX_LENGTH = 20;
 
-  const handleChange = (event: eventI) => {
+  const handleChange = (event: EventI) => {
     if (event.target.value.length <= MAX_LENGTH) {
       setSearch(event.target.value);
     }
@@ -84,7 +77,7 @@ function Series() {
         </label>
       </section>
       {character && id !== undefined ? (
-        <Card character={character} id={id} search={search} />
+        <Card character={character} search={search} />
       ) : (
         <p>loading</p>
       )}

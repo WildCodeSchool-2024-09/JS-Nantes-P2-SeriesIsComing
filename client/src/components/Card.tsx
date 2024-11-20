@@ -2,12 +2,9 @@ import { useState } from "react";
 import "./Card.css";
 
 // Import data interfaces
-import type DataI from "../assets/interfaces/DataI";
+import type CardI from "../assets/interfaces/CardI";
 
-function Card({
-  character,
-  search,
-}: { character: DataI[]; id: string; search: string }) {
+function Card({ character, search }: CardI) {
   const [flippedStates, setFlippedStates] = useState<Record<number, boolean>>(
     {},
   );

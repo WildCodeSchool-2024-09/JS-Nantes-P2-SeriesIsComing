@@ -1,26 +1,18 @@
 import { useState } from "react";
 import "./FilterBar.css";
-
-interface eventI {
-  target: targetI;
-}
-
-interface targetI {
-  value: string;
-}
+import type EventI from "../assets/interfaces/EventI";
 
 function FilterBar() {
   const [search, setSearch] = useState<string>("");
   const MAX_LENGTH = 20;
 
-  const handleChange = (event: eventI) => {
+  const handleChange = (event: EventI) => {
     if (event.target.value.length <= MAX_LENGTH) {
       setSearch(event.target.value);
     }
   };
 
   const maximumReached = search.length >= MAX_LENGTH;
-  // const filterCard = search ? character.filter((el) => el.firstName.includes(search) : character);
 
   return (
     <>
