@@ -7,33 +7,37 @@ import Card from "../components/Card";
 import SideBar from "../components/SideBar";
 import "./Series.css";
 
-export interface GOTdataI {
-  id: number;
-  firstName: string;
-  lastName: string;
-  title: string;
-  family: string;
-  imageUrl: string;
-}
-
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 // Import page style sheet
 import "./Series.css";
 
 // Import data
-import GOTdata from "../assets/GOTdata";
-import PBcharacter from "../assets/PrisonBreakData";
-import { breakinBadCharacters } from "../assets/breakinBadCharacters";
-import walkingDead from "../assets/wd";
+import GOTdata from "../assets/data/GOTdata";
+import PBcharacter from "../assets/data/PrisonBreakData";
+import breakinBadCharacters from "../assets/data/breakinBadCharacters";
+import walkingDead from "../assets/data/wd";
 
 // Import data interfaces
-import type dataI from "../assets/interfaces/dataI";
+import type DataI from "../assets/interfaces/DataI";
+import type EventI from "../assets/interfaces/EventI";
 
 function Series() {
   const { id } = useParams<string>();
 
-  const [character, setCharacter] = useState<null | dataI[]>(null);
+  const [character, setCharacter] = useState<null | DataI[]>(null);
+
+  const [search, setSearch] = useState<string>("");
+
+  const MAX_LENGTH = 20;
+
+  const handleChange = (event: EventI) => {
+    if (event.target.value.length <= MAX_LENGTH) {
+      setSearch(event.target.value);
+    }
+  };
+
+  const maximumReached = search.length >= MAX_LENGTH;
 
   useEffect(() => {
     switch (id) {
@@ -58,11 +62,26 @@ function Series() {
   return (
     <>
       <SideBar />
+      <section id="filter-bar">
+        <input
+          id="filter-bar"
+          type="text"
+          name="filter-bar"
+          placeholder="Filtre les personnages"
+          value={search}
+          onChange={handleChange}
+          className={maximumReached ? "length-maximum-reached" : "length-ok"}
+        />
+        <label htmlFor="filter-bar" id="label-search">
+          Recherche :
+        </label>
+      </section>
       {character && id !== undefined ? (
-        <Card character={character} />
+        <Card character={character} search={search} />
       ) : (
         <p>loading</p>
       )}
+
       <ScrollToTopButton />
     </>
   );
