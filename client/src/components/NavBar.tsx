@@ -11,23 +11,37 @@ function NavBar() {
         />
       </NavLink>
       <h1>Serie is Coming</h1>
-
       <ul>
         <li>
           <NavLink to={"/about"} className="link-nav">
-            <h3> A propos</h3>
+            <span className="h3-text"> A propos</span>
+            <img
+              className="logo2"
+              src="https://cdn-icons-png.flaticon.com/512/6229/6229050.png"
+              alt="point d'interrogation"
+            />
           </NavLink>
         </li>
         <li>
           <NavLink to={"/contact"} className="link-nav">
-            <h3>Nous contacter</h3>
+            <span className="h3-text">Nous contacter</span>
+            <img
+              className="logo2"
+              src="https://th.bing.com/th/id/R.74fef23e2e02b874f883b8fbd3847cc8?rik=3Vaj6GaDSb4VoQ&riu=http%3a%2f%2ficon-library.com%2fimages%2ftelephone-icon-png%2ftelephone-icon-png-1.jpg&ehk=Af6dFLM25381YRPy0lGgLzwUdSpzy%2bdyrILCDHig6fg%3d&risl=&pid=ImgRaw&r=0"
+              alt="telephone portable"
+            />
           </NavLink>
         </li>
-        <li className="dropdown">
-          <h3>
-            Plus de Série <span className="arrow">▼</span>
-          </h3>
 
+        <li className="dropdown">
+          <span className="h3-text">
+            Plus de Série <span className="arrow">▼</span>
+          </span>
+          <img
+            className="logo2"
+            src="https://cdn-icons-png.flaticon.com/512/275/275201.png"
+            alt="telephone portable"
+          />
           <ul className="dropdown-content">
             <li>
               <NavLink to={"/series/1"} className="link-nav">

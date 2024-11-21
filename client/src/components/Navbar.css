@@ -1,3 +1,4 @@
+/* Styles par défaut */
 nav > ul {
   list-style: none;
 }
@@ -12,7 +13,6 @@ nav > h1 {
   margin: 0;
   font-size: 32px;
 }
-
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -21,22 +21,23 @@ nav {
   margin-bottom: 16px;
   background-color: var(--overlay-background-color);
 }
-
 #logo {
   height: auto;
   width: 200px;
 }
+.logo2 {
+  display: none;
+}
+
 nav > ul {
   display: flex;
   gap: 3rem;
   flex-grow: 1;
   justify-content: space-around;
 }
-
 nav ul li {
   flex: 1;
 }
-
 nav ul li {
   width: 200px;
   display: flex;
@@ -49,18 +50,16 @@ nav ul li {
   color: #000;
   transition: background-color 0.3s;
 }
-
 nav ul li:hover {
   background-color: rgb(231, 230, 230);
 }
-/* menu deroulant */
 
+/* menu deroulant */
 .dropdown {
   position: relative;
   display: block;
   text-align: center;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -69,11 +68,9 @@ nav ul li:hover {
   border-radius: 15px;
   padding: 0;
 }
-
 .dropdown-content a {
   text-align: center;
 }
-
 .dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
@@ -88,8 +85,46 @@ nav ul li:hover {
   padding: 8px 16px;
   transition: background-color 0.3s;
 }
-
 .dropdown:hover h1 {
   font-size: 2.5rem;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 500px) {
+  #logo {
+    width: 90px; /* Réduit la largeur du logo */
+  }
+  nav > h1 {
+    display: none; /* Cache le titre */
+  }
+
+  /* Afficher les images logo2 */
+  .logo2 {
+    display: inline-block;
+    width: 40px; /* Ajustez la taille des logos selon vos besoins */
+    height: 40px;
+  }
+
+  /* Cacher les textes des h3 */
+  .h3-text {
+    display: none;
+  }
+
+  /* Centrer et aligner les logos */
+  nav > ul {
+    justify-content: center;
+    gap: 1rem; /* Ajustez l'espacement entre les logos si nécessaire */
+  }
+  nav ul li {
+    width: auto; /* Enlever la largeur fixe pour un meilleur alignement */
+    padding: 0; /* Enlever le padding pour un meilleur centrage */
+    border: none; /* Enlever les bordures */
+    background-color: transparent; /* Enlever le fond */
+  }
+  .dropdown-content {
+    box-shadow: none; /* Supprimer l'ombre */
+  }
+
+  .arrow {
+    display: none;
+  }
 }
