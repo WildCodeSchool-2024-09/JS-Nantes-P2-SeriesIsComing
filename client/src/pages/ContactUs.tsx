@@ -45,20 +45,10 @@ function ContactUs() {
 
           <button type="submit">Valider</button>
         </form>
-
-        <div className="right-part">
-          <p>Des series que tu souhaite voire sur le site ?</p>
-
-          <input type="text" />
-        </div>
       </section>
       <section className="section-2">
         <div className="explain-contain">
-          <input
-            className="user-explain"
-            type="text"
-            placeholder="Exprime toi"
-          />
+          <textarea className="user-explain" placeholder="Exprime toi" />
         </div>
         <div className="buttons-contain">
           <button type="button">Abbone toi à notre newlester</button>
