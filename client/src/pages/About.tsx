@@ -1,6 +1,6 @@
 import "../pages/About.css";
 import "../components/ScrollToTopButton";
-import profil from "../assets/profil";
+import profil from "../assets/data/profil";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function About() {

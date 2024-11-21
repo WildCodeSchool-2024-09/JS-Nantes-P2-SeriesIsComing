@@ -1,0 +1,15 @@
+.length-maximum-reached {
+  background-color: rgb(250, 173, 173);
+}
+
+.length-ok {
+  background-color: var(--button-content-color);
+}
+
+#filter-bar {
+  border: 2px solid var(--button-content-color);
+}
+
+#label-search {
+  display: none;
+}

@@ -4,65 +4,71 @@ import { useParams } from "react-router-dom";
 
 // Import page components
 import Card from "../components/Card";
-import SideBar from "../components/SideBar";
-import "./Series.css";
-
-export interface GOTdataI {
-  id: number;
-  firstName: string;
-  lastName: string;
-  title: string;
-  family: string;
-  imageUrl: string;
-}
-
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import SideBar from "../components/SideBar";
 
 // Import page style sheet
 import "./Series.css";
 
 // Import data
-import GOTdata from "../assets/GOTdata";
-import PBcharacter from "../assets/PrisonBreakData";
-import { breakinBadCharacters } from "../assets/breakinBadCharacters";
-import walkingDead from "../assets/wd";
+import seriesData from "../assets/data/seriesData";
 
 // Import data interfaces
-import type dataI from "../assets/interfaces/dataI";
+import type CharactersI from "../assets/interfaces/CharctersI";
+import type EventI from "../assets/interfaces/EventI";
 
 function Series() {
   const { id } = useParams<string>();
 
-  const [character, setCharacter] = useState<null | dataI[]>(null);
+  const [search, setSearch] = useState<string>("");
+
+  const maxLength = 20;
+
+  const handleChange = (event: EventI) => {
+    if (event.target.value.length <= maxLength) {
+      setSearch(event.target.value);
+    }
+  };
+
+  const maximumReached = search.length >= maxLength;
+  const [characters, setCharacters] = useState<null | CharactersI[]>(null);
+
+  const [familyFilter, setFamilyFilter] = useState<string>("");
 
   useEffect(() => {
-    switch (id) {
-      case "1":
-        setCharacter(GOTdata);
-        break;
-      case "2":
-        setCharacter(walkingDead);
-        break;
-      case "3":
-        setCharacter(breakinBadCharacters);
-        break;
-      case "4":
-        setCharacter(PBcharacter);
-        PBcharacter;
-        break;
-      default:
-        console.warn("No valid page");
+    const findSeries = seriesData.find((serie) => serie.id === id);
+    if (findSeries) {
+      setCharacters(findSeries.dataName);
     }
   }, [id]);
 
   return (
     <>
-      <SideBar />
-      {character && id !== undefined ? (
-        <Card character={character} id={id} />
+      <SideBar familyFilter={familyFilter} setFamilyFilter={setFamilyFilter} />
+      <section id="filter-bar">
+        <input
+          id="filter-bar"
+          type="text"
+          name="filter-bar"
+          placeholder="Filtre les personnages"
+          value={search}
+          onChange={handleChange}
+          className={maximumReached ? "length-maximum-reached" : "length-ok"}
+        />
+        <label htmlFor="filter-bar" id="label-search">
+          Recherche :
+        </label>
+      </section>
+      {characters && id !== undefined ? (
+        <Card
+          characters={characters}
+          familyFilter={familyFilter}
+          search={search}
+        />
       ) : (
         <p>loading</p>
       )}
+
       <ScrollToTopButton />
     </>
   );

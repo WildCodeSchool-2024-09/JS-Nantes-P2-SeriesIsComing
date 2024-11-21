@@ -1,23 +1,49 @@
-// Import style sheet
+import { useState } from "react";
 import "./Card.css";
+import type CharactersI from "../assets/interfaces/CharctersI";
 
-// Import data interfaces
-import type dataI from "../assets/interfaces/dataI";
-function Card({ character, id }: { character: dataI[]; id: string }) {
+function Card({
+  characters,
+  familyFilter,
+  search,
+}: { characters: CharactersI[]; familyFilter: string; search: string }) {
+  const filteredFamily = characters.filter((family) =>
+    family.lastName?.includes(familyFilter),
+  );
+
+  const [flippedStates, setFlippedStates] = useState<Record<number, boolean>>(
+    {},
+  );
+
+  const handleFlip = (charId: number): void => {
+    setFlippedStates((prevStates) => ({
+      ...prevStates,
+      [charId]: !prevStates[charId],
+    }));
+  };
+
   return (
-    <section>
-      <div className="card-container">
-        {character.map((charac) => (
-          <article className={`card-${id}`} key={charac.id}>
-            <figure>
-              <img src={charac.imageUrl} alt="This is a representation" />
-              <figcaption>
-                {charac.firstName} {charac.lastName}
-              </figcaption>
-            </figure>
-          </article>
+    <section className="card-container">
+      {filteredFamily
+        .filter((el) => el.firstName.includes(search))
+        .map((charac: CharactersI) => (
+          <button
+            type="button"
+            onClick={() => handleFlip(charac.id)}
+            key={charac.id}
+            className={`card-inner ${flippedStates[charac.id] ? "flipped" : ""}`}
+          >
+            <div className="card-front">
+              <img
+                src={charac.imageUrl}
+                alt={`${charac.firstName} ${charac.lastName}`}
+              />
+            </div>
+            <div className="card-back">
+              <p>{charac.description || "Information indisponible"}</p>
+            </div>
+          </button>
         ))}
-      </div>
     </section>
   );
 }
