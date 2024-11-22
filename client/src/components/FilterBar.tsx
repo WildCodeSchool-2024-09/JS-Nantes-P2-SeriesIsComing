@@ -7,15 +7,15 @@ interface SearchI {
 }
 
 function FilterBar({ search, setSearch }: SearchI) {
-  const MAX_LENGTH = 20;
+  const maxLength = 20;
 
   const handleChange = (event: EventI) => {
-    if (event.target.value.length <= MAX_LENGTH) {
+    if (event.target.value.length <= maxLength) {
       setSearch(event.target.value);
     }
   };
 
-  const maximumReached = search.length >= MAX_LENGTH;
+  const maximumReached = search.length >= maxLength;
 
   return (
     <>
