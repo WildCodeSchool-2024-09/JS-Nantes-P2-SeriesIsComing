@@ -25,7 +25,7 @@ nav {
   height: auto;
   width: 200px;
 }
-.logo2 {
+#logo2 {
   display: none;
 }
 
@@ -92,35 +92,40 @@ nav ul li:hover {
 @media (max-width: 800px) {
   #logo {
     width: 90px;
-    nav > h1 {
-      display: none;
-    }
+  }
+  nav > h1 {
+    display: none;
+  }
 
-    .logo2 {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-    }
+  #logo2 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
 
-    .h3-text {
-      display: none;
-    }
+  .h3-text {
+    display: none;
+  }
 
-    nav > ul {
-      justify-content: center;
-      gap: 1rem;
-    }
-    nav ul li navlink {
-      padding: 0;
-      border: none;
-      background-color: transparent;
-    }
-    .dropdown-content {
-      box-shadow: none;
-    }
+  nav > ul {
+    justify-content: center;
+    gap: 1rem;
+  }
+  nav ul li {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: auto;
+  }
+  .dropdown-content {
+    box-shadow: none;
+  }
 
-    .arrow {
-      display: none;
-    }
+  .arrow {
+    display: none;
+  }
+
+  #title {
+    display: none;
   }
 }
