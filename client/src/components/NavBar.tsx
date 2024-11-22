@@ -14,10 +14,8 @@ function NavBar() {
       <ul>
         <li>
           <Link to={"/about"} className="link-nav">
-            <div className="h3-text">
-              {" "}
-              <h3>A propos</h3>
-            </div>
+            {" "}
+            <h3 className="h3-text">A propos</h3>
             <img
               id="logo2"
               src="https://cdn-icons-png.flaticon.com/512/6229/6229050.png"
@@ -27,10 +25,8 @@ function NavBar() {
         </li>
         <li>
           <Link to={"/contact"} className="link-nav">
-            <div className="h3-text">
-              {" "}
-              <h3>Nous contacter</h3>
-            </div>
+            {" "}
+            <h3 className="h3-text">Nous contacter</h3>
             <img
               id="logo2"
               src="https://th.bing.com/th/id/R.74fef23e2e02b874f883b8fbd3847cc8?rik=3Vaj6GaDSb4VoQ&riu=http%3a%2f%2ficon-library.com%2fimages%2ftelephone-icon-png%2ftelephone-icon-png-1.jpg&ehk=Af6dFLM25381YRPy0lGgLzwUdSpzy%2bdyrILCDHig6fg%3d&risl=&pid=ImgRaw&r=0"
@@ -40,11 +36,9 @@ function NavBar() {
         </li>
 
         <li className="dropdown">
-          <div className="h3-text">
-            {" "}
-            <h3> Plus de Série</h3>
-            <div className="arrow">▼</div>
-          </div>
+          {" "}
+          <h3 className="h3-text"> Plus de Série</h3>
+          <div className="arrow">▼</div>
           <img
             id="logo2"
             src="https://cdn-icons-png.flaticon.com/512/275/275201.png"
