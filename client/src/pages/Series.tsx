@@ -4,58 +4,48 @@ import { useParams } from "react-router-dom";
 
 // Import page components
 import Card from "../components/Card";
-import SideBar from "../components/SideBar";
 import "./Series.css";
 import FilterBar from "../components/FilterBar";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import SideBar from "../components/SideBar";
 
 // Import page style sheet
 import "./Series.css";
 
 // Import data
-import GOTdata from "../assets/data/GOTdata";
-import PBcharacter from "../assets/data/PrisonBreakData";
-import breakinBadCharacters from "../assets/data/breakinBadCharacters";
-import walkingDead from "../assets/data/wd";
+import seriesData from "../assets/data/seriesData";
 
 // Import data interfaces
-import type DataI from "../assets/interfaces/DataI";
+import type CharactersI from "../assets/interfaces/CharctersI";
 
 function Series() {
   const { id } = useParams<string>();
 
-  const [character, setCharacter] = useState<null | DataI[]>(null);
-
   const [search, setSearch] = useState<string>("");
 
+  const [characters, setCharacters] = useState<null | CharactersI[]>(null);
+
+  const [familyFilter, setFamilyFilter] = useState<string>("");
+
   useEffect(() => {
-    switch (id) {
-      case "1":
-        setCharacter(GOTdata);
-        break;
-      case "2":
-        setCharacter(walkingDead);
-        break;
-      case "3":
-        setCharacter(breakinBadCharacters);
-        break;
-      case "4":
-        setCharacter(PBcharacter);
-        PBcharacter;
-        break;
-      default:
-        console.warn("No valid page");
+    const findSeries = seriesData.find((serie) => serie.id === id);
+    if (findSeries) {
+      setCharacters(findSeries.dataName);
     }
   }, [id]);
 
   return (
     <>
-      <SideBar />
+      <SideBar familyFilter={familyFilter} setFamilyFilter={setFamilyFilter} />
       <section id="filter-bar">
         <FilterBar search={search} setSearch={setSearch} />
       </section>
-      {character && id !== undefined ? (
-        <Card character={character} search={search} />
+      {characters && id !== undefined ? (
+        <Card
+          characters={characters}
+          familyFilter={familyFilter}
+          search={search}
+        />
       ) : (
         <p>loading</p>
       )}

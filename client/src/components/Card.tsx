@@ -1,10 +1,16 @@
 import { useState } from "react";
 import "./Card.css";
+import type CharactersI from "../assets/interfaces/CharctersI";
 
-// Import data interfaces
-import type CardI from "../assets/interfaces/CardI";
+function Card({
+  characters,
+  familyFilter,
+  search,
+}: { characters: CharactersI[]; familyFilter: string; search: string }) {
+  const filteredFamily = characters.filter((family) =>
+    family.lastName?.includes(familyFilter),
+  );
 
-function Card({ character, search }: CardI) {
   const [flippedStates, setFlippedStates] = useState<Record<number, boolean>>(
     {},
   );
@@ -17,29 +23,27 @@ function Card({ character, search }: CardI) {
   };
 
   return (
-    <section>
-      <div className="card-container">
-        {character
-          .filter((el) => el.firstName.includes(search))
-          .map((charac) => (
-            <button
-              type="button"
-              onClick={() => handleFlip(charac.id)}
-              key={charac.id}
-              className={`card-inner ${flippedStates[charac.id] ? "flipped" : ""}`}
-            >
-              <div className="card-front">
-                <img
-                  src={charac.imageUrl}
-                  alt={`${charac.firstName} ${charac.lastName}`}
-                />
-              </div>
-              <div className="card-back">
-                <p>{charac.description || "Information indisponible"}</p>
-              </div>
-            </button>
-          ))}
-      </div>
+    <section className="card-container">
+      {filteredFamily
+        .filter((el) => el.firstName.includes(search))
+        .map((charac: CharactersI) => (
+          <button
+            type="button"
+            onClick={() => handleFlip(charac.id)}
+            key={charac.id}
+            className={`card-inner ${flippedStates[charac.id] ? "flipped" : ""}`}
+          >
+            <div className="card-front">
+              <img
+                src={charac.imageUrl}
+                alt={`${charac.firstName} ${charac.lastName}`}
+              />
+            </div>
+            <div className="card-back">
+              <p>{charac.description || "Information indisponible"}</p>
+            </div>
+          </button>
+        ))}
     </section>
   );
 }

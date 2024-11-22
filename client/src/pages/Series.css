@@ -19,6 +19,6 @@
 }
 
 .series-content {
-  margin-left: 220px; /* Décalage pour laisser place à la barre latérale */
-  padding: 20px; /* Espacement interne */
+  margin-left: 220px;
+  padding: 20px;
 }
