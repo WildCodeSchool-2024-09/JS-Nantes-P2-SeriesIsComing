@@ -1,19 +1,24 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import useUser from "../utils/useUser";
 
 function NavBar() {
+  const { user } = useUser();
+
   return (
     <nav>
-      <Link to={"/"} className="link-nav">
+      <NavLink to={"/"} className="NavLink-nav">
         <img
           src="https://th.bing.com/th/id/R.ca8a3618d313baa5d52322bc4b437dad?rik=4Xq0pWjDTNTuDA&pid=ImgRaw&r=0"
           alt="logo"
           id="logo"
         />
-      </Link>
-      <h1 id="title">Serie is Coming</h1>
+      </NavLink>
+      <h1 id="title">
+        {user ? `Hello ${user.userFirstName}` : "Series is Coming"}
+      </h1>
       <ul>
         <li>
-          <Link to={"/about"} className="link-nav">
+          <NavLink to={"/about"} className="NavLink-nav">
             {" "}
             <h3 className="h3-text">A propos</h3>
             <img
@@ -21,10 +26,10 @@ function NavBar() {
               src="https://cdn-icons-png.flaticon.com/512/6229/6229050.png"
               alt="point d'interrogation"
             />
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={"/contact"} className="link-nav">
+          <NavLink to={"/contact"} className="NavLink-nav">
             {" "}
             <h3 className="h3-text">Nous contacter</h3>
             <img
@@ -32,7 +37,7 @@ function NavBar() {
               src="https://th.bing.com/th/id/R.74fef23e2e02b874f883b8fbd3847cc8?rik=3Vaj6GaDSb4VoQ&riu=http%3a%2f%2ficon-library.com%2fimages%2ftelephone-icon-png%2ftelephone-icon-png-1.jpg&ehk=Af6dFLM25381YRPy0lGgLzwUdSpzy%2bdyrILCDHig6fg%3d&risl=&pid=ImgRaw&r=0"
               alt="telephone portable"
             />
-          </Link>
+          </NavLink>
         </li>
 
         <li className="dropdown">
@@ -46,24 +51,24 @@ function NavBar() {
           />
           <ul className="dropdown-content">
             <li>
-              <Link to={"/series/1"} className="link-nav">
+              <NavLink to={"/series/1"} className="NavLink-nav">
                 Game of Thrones
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/series/2"} className="link-nav">
+              <NavLink to={"/series/2"} className="NavLink-nav">
                 The Walking Dead
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/series/3"} className="link-nav">
+              <NavLink to={"/series/3"} className="NavLink-nav">
                 Breaking Bad
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/series/4"} className="link-nav">
+              <NavLink to={"/series/4"} className="NavLink-nav">
                 Prison Break
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </li>
