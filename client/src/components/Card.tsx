@@ -4,11 +4,11 @@ import type CharactersI from "../assets/interfaces/CharctersI";
 
 function Card({
   characters,
-  familyFilter,
+  seriesFilter,
   search,
-}: { characters: CharactersI[]; familyFilter: string; search: string }) {
+}: { characters: CharactersI[]; seriesFilter: string; search: string }) {
   const filteredFamily = characters.filter((family) =>
-    family.lastName?.includes(familyFilter),
+    family.lastName?.includes(seriesFilter),
   );
 
   const [flippedStates, setFlippedStates] = useState<Record<number, boolean>>(

@@ -33,7 +33,7 @@ function Series() {
   const maximumReached = search.length >= maxLength;
   const [characters, setCharacters] = useState<null | CharactersI[]>(null);
 
-  const [familyFilter, setFamilyFilter] = useState<string>("");
+  const [seriesFilter, setSeriesFilter] = useState<string>("");
 
   useEffect(() => {
     const findSeries = seriesData.find((serie) => serie.id === id);
@@ -44,7 +44,7 @@ function Series() {
 
   return (
     <>
-      <SideBar familyFilter={familyFilter} setFamilyFilter={setFamilyFilter} />
+      <SideBar seriesFilter={seriesFilter} setSeriesFilter={setSeriesFilter} />
       <section id="filter-bar">
         <input
           id="filter-bar"
@@ -62,7 +62,7 @@ function Series() {
       {characters && id !== undefined ? (
         <Card
           characters={characters}
-          familyFilter={familyFilter}
+          seriesFilter={seriesFilter}
           search={search}
         />
       ) : (
