@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
+import useUser from "../utils/useUser";
 
 function NavBar() {
+  const { user } = useUser();
+
   return (
     <nav>
       <NavLink to={"/"} className="link-nav">
@@ -10,7 +13,9 @@ function NavBar() {
           id="logo"
         />
       </NavLink>
-      <h1>Serie is Coming</h1>
+      <h1 className="header-title">
+        {user ? user.userFirstName : "Series is Coming"}
+      </h1>
 
       <ul>
         <li>

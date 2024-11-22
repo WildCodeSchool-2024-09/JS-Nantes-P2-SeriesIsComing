@@ -1,3 +1,13 @@
+/* Switch title with userContext*/
+
+.user-title {
+  display: none;
+}
+
+.header-title {
+  display: block;
+}
+
 nav > ul {
   list-style: none;
 }
