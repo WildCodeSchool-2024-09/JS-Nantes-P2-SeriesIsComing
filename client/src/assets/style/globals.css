@@ -34,7 +34,8 @@ p,
 h1,
 h2,
 h3,
-figcaption {
+figcaption,
+label {
   font-family: var(--all-font-style);
   text-decoration: none;
   color: var(--main-font-color);

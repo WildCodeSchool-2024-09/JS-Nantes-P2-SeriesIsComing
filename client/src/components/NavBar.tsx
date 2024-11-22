@@ -13,9 +13,7 @@ function NavBar() {
           id="logo"
         />
       </NavLink>
-      <h1 className="header-title">
-        {user ? user.userFirstName : "Series is Coming"}
-      </h1>
+      <h1>{user ? `Hello ${user.userFirstName}` : "Series is Coming"}</h1>
 
       <ul>
         <li>

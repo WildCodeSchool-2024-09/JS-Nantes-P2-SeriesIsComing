@@ -1,5 +1,6 @@
 import "../pages/ContactUs.css";
 import type { FormEvent } from "react";
+import { NavLink } from "react-router-dom";
 import type { UserI } from "../assets/interfaces/UserI";
 import useUser from "../utils/useUser";
 
@@ -17,53 +18,55 @@ function ContactUs() {
   };
 
   return (
-    <div className="div-contact-us">
-      <section className="section-1">
-        <form onSubmit={onSubmit} className="left-part">
-          <input
-            className="name_contact_user"
-            type="text"
-            placeholder="Nom"
-            name="userFirstName"
-          />
-          <input
-            name="userLastName"
-            className="first_name-contact_user"
-            type="text"
-            placeholder="Prenom"
-          />
-          <input
-            name="userMail"
-            className="mail_contact_user"
-            type="text"
-            placeholder="Adresse mail"
-          />
-          <label htmlFor="seriesName">
-            Des series que tu souhaite voire sur le site ?
-          </label>
-          <input
-            type="text"
-            placeholder="Nom d'une série"
-            name="seriesName"
-            id="seriesName"
-          />
+    <section className="section-contact-us">
+      <h2>Contact nous via le forumlaire ci-dessous</h2>
+      <form onSubmit={onSubmit} id="form-contact">
+        <input
+          className="user-input"
+          type="text"
+          placeholder="Nom"
+          name="userFirstName"
+        />
+        <input
+          name="userLastName"
+          className="user-input"
+          type="text"
+          placeholder="Prenom"
+        />
+        <input
+          name="userMail"
+          className="user-input"
+          type="text"
+          placeholder="Adresse mail"
+        />
+        <label htmlFor="seriesName">
+          Des series que tu souhaites voir sur le site ?
+        </label>
+        <input
+          type="text"
+          placeholder="Nom d'une série"
+          name="seriesName"
+          id="seriesName"
+          className="user-input"
+        />
+        <article className="user-comments">
+          <label htmlFor="userComment">Renseigne ta demande ici :</label>
+          <textarea name="userComment" />
+        </article>
 
-          <button type="submit">Valider</button>
-        </form>
-      </section>
-      <section className="section-2">
-        <div className="explain-contain">
-          <textarea className="user-explain" placeholder="Exprime toi" />
-        </div>
-        <div className="buttons-contain">
-          <button type="button">Abbone toi à notre newlester</button>
-          <button type="button">Valide ta demande</button>
-        </div>
-      </section>
-      <div className="mentions-contain">
-        <button type="button">Mentions légales</button>
-      </div>
-    </div>
+        <article id="newsletter">
+          <label htmlFor="newsletter">Abonne toi à notre newlester</label>
+          <input type="checkbox" name="newsletter" />
+        </article>
+
+        <button type="submit" id="validation-button">
+          Valide ta demande
+        </button>
+      </form>
+      <NavLink to={"/about"}>
+        <p id="legal-status">Mentions légales</p>
+      </NavLink>
+    </section>
   );
 }
 
