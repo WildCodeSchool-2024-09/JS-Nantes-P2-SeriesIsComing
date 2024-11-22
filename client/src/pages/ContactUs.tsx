@@ -1,13 +1,18 @@
 import "../pages/ContactUs.css";
 import type { FormEvent } from "react";
+import type { UserI } from "../assets/interfaces/UserI";
+import useUser from "../utils/useUser";
 
 function ContactUs() {
+  const { user, setUser } = useUser();
+
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (event.target) {
       const formData = new FormData(event.currentTarget);
-      const formattedData = Object.fromEntries(formData);
-      console.warn(formattedData);
+      const formattedData: unknown = Object.fromEntries(formData.entries());
+      setUser(formattedData as UserI);
+      console.warn(user);
     }
   };
 
