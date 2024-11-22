@@ -38,7 +38,7 @@ function Series() {
   useEffect(() => {
     const findSeries = seriesData.find((serie) => serie.id === id);
     if (findSeries) {
-      setCharacters(findSeries.dataName);
+      setCharacters(findSeries.dataSeries);
     }
   }, [id]);
 
