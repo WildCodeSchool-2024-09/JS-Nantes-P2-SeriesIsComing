@@ -50,5 +50,12 @@
   font-size: 14px;
   color: red;
   font-weight: bold;
-  padding: 0;
+}
+
+.sidebar figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
