@@ -89,42 +89,38 @@ nav ul li:hover {
   font-size: 2.5rem;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #logo {
-    width: 90px; /* Réduit la largeur du logo */
-  }
-  nav > h1 {
-    display: none; /* Cache le titre */
-  }
+    width: 90px;
+    nav > h1 {
+      display: none;
+    }
 
-  /* Afficher les images logo2 */
-  .logo2 {
-    display: inline-block;
-    width: 40px; /* Ajustez la taille des logos selon vos besoins */
-    height: 40px;
-  }
+    .logo2 {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+    }
 
-  /* Cacher les textes des h3 */
-  .h3-text {
-    display: none;
-  }
+    .h3-text {
+      display: none;
+    }
 
-  /* Centrer et aligner les logos */
-  nav > ul {
-    justify-content: center;
-    gap: 1rem; /* Ajustez l'espacement entre les logos si nécessaire */
-  }
-  nav ul li {
-    width: auto; /* Enlever la largeur fixe pour un meilleur alignement */
-    padding: 0; /* Enlever le padding pour un meilleur centrage */
-    border: none; /* Enlever les bordures */
-    background-color: transparent; /* Enlever le fond */
-  }
-  .dropdown-content {
-    box-shadow: none; /* Supprimer l'ombre */
-  }
+    nav > ul {
+      justify-content: center;
+      gap: 1rem;
+    }
+    nav ul li navlink {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+    }
+    .dropdown-content {
+      box-shadow: none;
+    }
 
-  .arrow {
-    display: none;
+    .arrow {
+      display: none;
+    }
   }
 }
