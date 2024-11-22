@@ -1,16 +1,7 @@
 import { createContext, useState } from "react";
-import type { ReactNode } from "react";
+import type { Children, UserProps } from "../types/context";
 
 export const UserContext = createContext<UserProps | null>(null);
-
-export type Children = {
-  children: ReactNode;
-};
-
-export type UserProps = {
-  user: [] | never[];
-  setUser: (value: []) => void;
-};
 
 export default function UserProvider({ children }: Children) {
   const [user, setUser] = useState([]);
