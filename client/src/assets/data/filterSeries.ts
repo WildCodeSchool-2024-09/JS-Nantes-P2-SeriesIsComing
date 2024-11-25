@@ -40,4 +40,49 @@ export const filterSeries = [
       },
     ],
   },
+  {
+    id: 2,
+    name: "The Walking Dead",
+    tableFilter: [
+      {
+        name: "Membre du groupe",
+        image:
+          "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-group-icon-png-image_1796653.jpg",
+      },
+      {
+        name: "Les autres",
+        image: "https://cdn-icons-png.flaticon.com/512/5746/5746685.png",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Breaking Bad",
+    tableFilter: [
+      {
+        name: "Targaryen",
+        image:
+          "https://th.bing.com/th/id/R.21cbab467bba4128f2affe32c71757be?rik=IOS%2bJma4fmbVVw&pid=ImgRaw&r=0",
+      },
+      {
+        name: "Stark",
+        image:
+          "https://www.pngitem.com/pimgs/m/115-1150419_stark-game-of-thrones-stark-logo-png-transparent.png",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Prison Bbreak",
+    tableFilter: [
+      {
+        name: "Prisonnier",
+        image: "https://cdn-icons-png.flaticon.com/512/5642/5642460.png",
+      },
+      {
+        name: "Autres",
+        image: "https://cdn-icons-png.flaticon.com/512/5300/5300098.png",
+      },
+    ],
+  },
 ];

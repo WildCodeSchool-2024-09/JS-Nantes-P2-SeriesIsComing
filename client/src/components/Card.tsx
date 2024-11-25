@@ -6,9 +6,13 @@ function Card({
   characters,
   seriesFilter,
   search,
-}: { characters: CharactersI[]; seriesFilter: string; search: string }) {
-  const filteredFamily = characters.filter((family) =>
-    family.lastName?.includes(seriesFilter),
+}: {
+  characters: CharactersI[];
+  seriesFilter: string;
+  search: string;
+}) {
+  const filterCharacters = characters.filter((character) =>
+    character.lastName?.includes(seriesFilter),
   );
 
   const [flippedStates, setFlippedStates] = useState<Record<number, boolean>>(
@@ -24,7 +28,7 @@ function Card({
 
   return (
     <section className="card-container">
-      {filteredFamily
+      {filterCharacters
         .filter((el) => el.firstName.includes(search))
         .map((charac: CharactersI) => (
           <button

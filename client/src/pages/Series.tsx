@@ -36,7 +36,13 @@ function Series() {
 
   return (
     <>
-      <SideBar seriesFilter={seriesFilter} setSeriesFilter={setSeriesFilter} />
+      {id && (
+        <SideBar
+          seriesFilter={seriesFilter}
+          setSeriesFilter={setSeriesFilter}
+          id={id}
+        />
+      )}
       <section id="filter-bar">
         <FilterBar search={search} setSearch={setSearch} />
       </section>
@@ -45,6 +51,7 @@ function Series() {
           characters={characters}
           seriesFilter={seriesFilter}
           search={search}
+          // id={id}
         />
       ) : (
         <p>loading</p>

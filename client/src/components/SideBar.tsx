@@ -3,18 +3,22 @@ import { filterSeries } from "../assets/data/filterSeries";
 import type { SeriesFiltersI } from "../assets/interfaces/SeriesFilterI";
 import "../components/SideBar.css";
 
-function SideBar({ seriesFilter, setSeriesFilter }: SeriesFiltersI) {
+function SideBar({ seriesFilter, setSeriesFilter, id }: SeriesFiltersI) {
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     const filterValue = (event.target as HTMLElement).innerText;
     setSeriesFilter(seriesFilter === filterValue ? "" : filterValue);
   };
 
-  const toFilter = filterSeries[0].tableFilter;
+  let toFilter: undefined | { name: string; image: string }[];
+  if (id !== undefined) {
+    const numId = Number(id) - 1;
+    toFilter = filterSeries[numId].tableFilter;
+  }
 
   return (
     <div className="sidebar">
       <h3>Filtre en choisissant ta famille préférée !</h3>
-      {toFilter.map((series) => (
+      {toFilter?.map((series) => (
         <button type="button" key={series.name} onClick={handleClick}>
           <figure>
             <img
