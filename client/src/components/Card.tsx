@@ -1,6 +1,6 @@
 import "./Card.css";
-import type CharactersI from "../assets/interfaces/CharctersI";
 import { Link } from "react-router-dom";
+import type CharactersI from "../assets/interfaces/CharctersI";
 
 function Card({
   characters,
@@ -11,7 +11,7 @@ function Card({
   const filteredFamily = characters.filter(
     (character) =>
       character.lastName?.includes(familyFilter) &&
-      character.firstName?.toLowerCase().includes(search.toLowerCase())
+      character.firstName?.toLowerCase().includes(search.toLowerCase()),
   );
 
   return (

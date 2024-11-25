@@ -1,9 +1,12 @@
-import { useState } from "react";
 import "./FilterBar.css";
 import type EventI from "../assets/interfaces/EventI";
 
-function FilterBar() {
-  const [search, setSearch] = useState<string>("");
+interface SearchI {
+  search: string;
+  setSearch: (index: string) => void;
+}
+
+function FilterBar({ search, setSearch }: SearchI) {
   const MAX_LENGTH = 20;
 
   const handleChange = (event: EventI) => {
