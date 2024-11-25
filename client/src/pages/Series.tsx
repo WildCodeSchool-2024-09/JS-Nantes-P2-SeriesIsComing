@@ -51,7 +51,7 @@ function Series() {
           characters={characters}
           seriesFilter={seriesFilter}
           search={search}
-          // id={id}
+          id={id}
         />
       ) : (
         <p>loading</p>
