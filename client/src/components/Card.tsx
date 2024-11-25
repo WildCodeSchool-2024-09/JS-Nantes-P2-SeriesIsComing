@@ -15,13 +15,10 @@ function Card({
   search: string;
   id: string;
 }) {
-  // const filterCharacters = characters.filter((character) =>
-  //   character.lastName?.includes(seriesFilter),
-  // );
   const filterCharacters = useFilter({
     id,
-    array: characters,
-    filterArgument: seriesFilter,
+    characters,
+    seriesFilter,
   });
 
   const [flippedStates, setFlippedStates] = useState<Record<number, boolean>>(
