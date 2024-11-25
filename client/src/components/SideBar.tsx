@@ -2,7 +2,7 @@ import type { MouseEvent } from "react";
 import { filterSeries } from "../assets/data/filterSeries";
 import type { SeriesFiltersI } from "../assets/interfaces/SeriesFilterI";
 import "../components/SideBar.css";
-import type { TableFIlterI } from "../assets/interfaces/TableInterfaceI";
+import type { TableFilterI } from "../assets/interfaces/TableInterfaceI";
 
 function SideBar({ seriesFilter, setSeriesFilter, id }: SeriesFiltersI) {
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
@@ -10,7 +10,7 @@ function SideBar({ seriesFilter, setSeriesFilter, id }: SeriesFiltersI) {
     setSeriesFilter(seriesFilter === filterValue ? "" : filterValue);
   };
 
-  let toFilter: TableFIlterI[] | undefined;
+  let toFilter: TableFilterI[] | undefined;
   if (id !== undefined) {
     const numId = Number(id) - 1;
     toFilter = filterSeries[numId].tableFilter;

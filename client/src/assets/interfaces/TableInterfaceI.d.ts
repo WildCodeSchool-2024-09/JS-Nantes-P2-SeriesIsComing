@@ -1,4 +1,4 @@
-export interface TableFIlterI {
+export interface TableFilterI {
   name: string;
   image: string;
 }
