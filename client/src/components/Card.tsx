@@ -1,49 +1,31 @@
-import { useState } from "react";
 import "./Card.css";
 import type CharactersI from "../assets/interfaces/CharctersI";
+import { Link } from "react-router-dom";
 
 function Card({
   characters,
   familyFilter,
   search,
 }: { characters: CharactersI[]; familyFilter: string; search: string }) {
-  const filteredFamily = characters.filter((family) =>
-    family.lastName?.includes(familyFilter),
+  // Filtrer les personnages par famille et par recherche
+  const filteredFamily = characters.filter(
+    (character) =>
+      character.lastName?.includes(familyFilter) &&
+      character.firstName?.toLowerCase().includes(search.toLowerCase())
   );
-
-  const [flippedStates, setFlippedStates] = useState<Record<number, boolean>>(
-    {},
-  );
-
-  const handleFlip = (charId: number): void => {
-    setFlippedStates((prevStates) => ({
-      ...prevStates,
-      [charId]: !prevStates[charId],
-    }));
-  };
 
   return (
     <section className="card-container">
-      {filteredFamily
-        .filter((el) => el.firstName.includes(search))
-        .map((charac: CharactersI) => (
-          <button
-            type="button"
-            onClick={() => handleFlip(charac.id)}
-            key={charac.id}
-            className={`card-inner ${flippedStates[charac.id] ? "flipped" : ""}`}
-          >
-            <div className="card-front">
-              <img
-                src={charac.imageUrl}
-                alt={`${charac.firstName} ${charac.lastName}`}
-              />
-            </div>
-            <div className="card-back">
-              <p>{charac.description || "Information indisponible"}</p>
-            </div>
-          </button>
-        ))}
+      {filteredFamily.map((charac: CharactersI) => (
+        <Link key={charac.id} to={`/detail/${charac.id}`}>
+          <div className="card-front">
+            <img
+              src={charac.imageUrl}
+              alt={`${charac.firstName} ${charac.lastName}`}
+            />
+          </div>
+        </Link>
+      ))}
     </section>
   );
 }
