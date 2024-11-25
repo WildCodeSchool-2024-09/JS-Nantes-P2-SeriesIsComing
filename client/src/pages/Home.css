@@ -24,14 +24,14 @@
   opacity: 1;
 }
 
-.clickable-card:hover {
-  transform: scale(1.05);
-}
-
 .clickable-card img {
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
+  transition: 1s;
+}
+.clickable-card img:hover {
+  opacity: 0.5;
 }
 
 /* animation */
