@@ -20,7 +20,7 @@ function NavBar() {
         <li>
           <NavLink to={"/about"} className="NavLink-nav">
             {" "}
-            <h3 className="h3-text">A propos</h3>
+            <h3 className="h3-text">À propos</h3>
             <img
               id="logo2"
               src="https://cdn-icons-png.flaticon.com/512/6229/6229050.png"
@@ -42,7 +42,7 @@ function NavBar() {
 
         <li className="dropdown">
           {" "}
-          <h3 className="h3-text"> Plus de Série</h3>
+          <h3 className="h3-text"> Plus de Séries</h3>
           <div className="arrow">▼</div>
           <img
             id="logo2"

@@ -19,18 +19,20 @@ function FilterBar({ search, setSearch }: SearchI) {
 
   return (
     <>
-      <input
-        id="filter-bar"
-        type="text"
-        name="filter-bar"
-        placeholder="Filtre les personnages"
-        value={search}
-        onChange={handleChange}
-        className={maximumReached ? "length-maximum-reached" : "length-ok"}
-      />
-      <label htmlFor="filter-bar" id="label-search">
-        Recherche :
-      </label>
+      <div id="pouet">
+        <input
+          id="recherche-perso"
+          type="text"
+          name="filter-bar"
+          placeholder="Filtre les personnages"
+          value={search}
+          onChange={handleChange}
+          className={maximumReached ? "length-maximum-reached" : "length-ok"}
+        />
+        <label htmlFor="filter-bar" id="label-search">
+          Recherche :
+        </label>
+      </div>
     </>
   );
 }
