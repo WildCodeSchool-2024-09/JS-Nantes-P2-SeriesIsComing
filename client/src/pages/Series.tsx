@@ -30,14 +30,9 @@ function Series() {
       .then((data) => setSeries(data));
   }, []);
 
-  console.warn(series);
-  // console.warn(series[0].dataSeries);
-
   const charactersSeries = series.find((serie) => serie.id === id);
-  console.warn(charactersSeries);
 
   const characters = charactersSeries?.dataSeries;
-  console.warn(characters);
 
   return (
     <>

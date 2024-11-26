@@ -25,7 +25,10 @@ function Card({
   return (
     <section className="card-container">
       {filteredFamily
-        .filter((el) => el.firstName.includes(search))
+        .filter(
+          (el) =>
+            el.firstName.includes(search) || el.lastName?.includes(search),
+        )
         .map((charac: CharactersI) => (
           <button
             type="button"
