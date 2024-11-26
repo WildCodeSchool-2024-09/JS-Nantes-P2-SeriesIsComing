@@ -6,6 +6,7 @@ interface CharactersI {
   about: string;
   description: string;
   imageUrl: string;
+  saison?: string | undefined;
 }
 
 export default CharactersI;

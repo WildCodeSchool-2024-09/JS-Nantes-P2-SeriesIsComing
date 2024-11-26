@@ -1,33 +1,24 @@
-import type { UseFilterI } from "../assets/interfaces/UseFilterI";
+import seriesData from "../assets/data/seriesData";
 
-function useFilter({ id, characters, seriesFilter }: UseFilterI) {
-  let filterCharacters = [];
-  switch (id) {
-    case "1":
-      filterCharacters = characters.filter((el) =>
-        el.lastName?.includes(seriesFilter),
-      );
-      break;
-    case "2":
-      filterCharacters = characters.filter((el) =>
-        el.about?.includes(seriesFilter),
-      );
-      break;
-    case "3":
-      filterCharacters = characters.filter((el) =>
-        el.description?.includes(seriesFilter),
-      );
-      break;
-    case "4":
-      filterCharacters = characters.filter((el) =>
-        el.description?.includes(seriesFilter),
-      );
-      break;
-    default:
-      throw new Error("Nope");
-  }
-
+export function useFilter({
+  id,
+  seriesFilter,
+}: { id: string; seriesFilter: string }) {
+  const findSeries = seriesData.find((serie) => serie.id === id);
+  console.warn("Ou est ma série ?", findSeries);
+  console.warn("Coucou", findSeries?.dataSeries);
+  const filterCharacters = findSeries?.dataSeries?.filter((el) => {
+    let result = null;
+    if (id === "1") {
+      result = el.lastName?.includes(seriesFilter);
+    } else if (id === "2") {
+      result = el.about?.includes(seriesFilter);
+    } else if (id === "3" || id === "4") {
+      result = el.description?.includes(seriesFilter);
+    } else {
+      throw new Error("No valid page");
+    }
+    return result;
+  });
   return filterCharacters;
 }
-
-export default useFilter;

@@ -47,12 +47,7 @@ function Series() {
         <FilterBar search={search} setSearch={setSearch} />
       </section>
       {characters && id !== undefined ? (
-        <Card
-          characters={characters}
-          seriesFilter={seriesFilter}
-          search={search}
-          id={id}
-        />
+        <Card seriesFilter={seriesFilter} search={search} id={id} />
       ) : (
         <p>loading</p>
       )}
