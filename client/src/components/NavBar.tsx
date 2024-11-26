@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import LogoHome from "../assets/images/LogoHome.png";
+
 import useUser from "../utils/useUser";
 
 function NavBar() {
@@ -28,14 +30,13 @@ function NavBar() {
     },
   ];
   const logoSeries = logos.find((logo) => logo.id === Number(id));
-  const defaultLogo =
-    "https://www.pngplay.com/wp-content/uploads/7/Home-Logo-Background-PNG-Image.png";
+  // const defaultLogo = { LogoHome };
   return (
     <nav>
       <div className="logofit">
         <NavLink to={"/"} className="NavLink-nav">
           <img
-            src={logoSeries?.image ? logoSeries?.image : defaultLogo}
+            src={logoSeries?.image ? logoSeries?.image : LogoHome}
             alt="logo"
             className="logo"
           />

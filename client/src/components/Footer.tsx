@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer>
         <a href="/">&copy;CopyRight</a>
-        <section className="logo">
+        <section className="logobot">
           <a id="logo-insta" href="/">
             <img
               src="https://cdn-icons-png.flaticon.com/512/87/87390.png"
