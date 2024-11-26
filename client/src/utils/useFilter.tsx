@@ -5,8 +5,6 @@ export function useFilter({
   seriesFilter,
 }: { id: string; seriesFilter: string }) {
   const findSeries = seriesData.find((serie) => serie.id === id);
-  console.warn("Ou est ma série ?", findSeries);
-  console.warn("Coucou", findSeries?.dataSeries);
   const filterCharacters = findSeries?.dataSeries?.filter((el) => {
     let result = null;
     if (id === "1") {
