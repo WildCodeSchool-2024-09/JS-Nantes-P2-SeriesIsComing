@@ -1,45 +1,13 @@
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useUser from "../utils/useUser";
 
 function NavBar() {
   const { user } = useUser();
 
-  const { id } = useParams<string>();
-  const logos = [
-    {
-      id: 1,
-      image:
-        "https://th.bing.com/th/id/R.ca8a3618d313baa5d52322bc4b437dad?rik=4Xq0pWjDTNTuDA&pid=ImgRaw&r=0",
-    },
-    {
-      id: 2,
-      image: "https://w7.pngwing.com/pngs/90/16/png",
-    },
-    {
-      id: 3,
-      image:
-        "https://w7.pngwing.com/pngs/233/12/png-transparent-breaking-bad-hd-logo.png",
-    },
-    {
-      id: 4,
-      image:
-        "https://img.favpng.com/25/15/22/logo-television-prison-break-race-font-image-png-favpng-gDAJHaVEnZ7yRdthJfgvzfmLn.jpg",
-    },
-  ];
-
-  const imgpouet =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBTc3D2DYtISOeLapFWUzqZKAOGAGQio5z684MKep5oZiu-Ck8_9tBUK09zmk1-PFFRAc&usqp=CAU";
-
-  const logoSeries = logos.find((logo) => logo.id === Number(id));
-
   return (
     <nav>
       <NavLink to={"/"} className="NavLink-nav">
-        <img
-          src={logoSeries?.image ? logoSeries?.image : imgpouet}
-          alt="logo"
-          className="logo"
-        />
+        <img src={"/"} alt="logo" className="logo" />
       </NavLink>
       <h1 className="title">
         {user ? `Hello ${user.userFirstName}` : "Series is Coming"}
