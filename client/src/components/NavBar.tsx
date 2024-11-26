@@ -13,9 +13,22 @@ function NavBar() {
       <h1 id="title">Serie is Coming</h1>
       <ul>
         <li>
+          <Link to={"/Favorite"} className="link-nav">
+            {" "}
+            <h3 id="favorite">Favorite</h3>
+            <img
+              id="logo2"
+              src="https://th.bing.com/th/id/R.16c5c695e3d4bbde7862ceb91e21770e?rik=zaHaF1R4zBlxGQ&pid=ImgRaw&r=0"
+              alt="page favorit
+              "
+            />
+          </Link>
+        </li>
+
+        <li>
           <Link to={"/about"} className="link-nav">
             {" "}
-            <h3 className="h3-text">A propos</h3>
+            <h3 id="propos">A propos</h3>
             <img
               id="logo2"
               src="https://cdn-icons-png.flaticon.com/512/6229/6229050.png"
@@ -26,7 +39,7 @@ function NavBar() {
         <li>
           <Link to={"/contact"} className="link-nav">
             {" "}
-            <h3 className="h3-text">Nous contacter</h3>
+            <h3 id="contacter">Nous Contacter</h3>
             <img
               id="logo2"
               src="https://th.bing.com/th/id/R.74fef23e2e02b874f883b8fbd3847cc8?rik=3Vaj6GaDSb4VoQ&riu=http%3a%2f%2ficon-library.com%2fimages%2ftelephone-icon-png%2ftelephone-icon-png-1.jpg&ehk=Af6dFLM25381YRPy0lGgLzwUdSpzy%2bdyrILCDHig6fg%3d&risl=&pid=ImgRaw&r=0"
@@ -37,7 +50,7 @@ function NavBar() {
 
         <li className="dropdown">
           {" "}
-          <h3 className="h3-text"> Plus de Série</h3>
+          <h3 id="serie"> Plus de Série</h3>
           <div className="arrow">▼</div>
           <img
             id="logo2"

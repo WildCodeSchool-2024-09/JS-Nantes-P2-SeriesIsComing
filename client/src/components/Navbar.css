@@ -11,19 +11,80 @@ nav > ul > li > ul {
 nav > h1 {
   text-align: center;
   margin: 0;
-  font-size: 32px;
+  font-size: 25px;
 }
+/* changement de couleur écriture*/
+
+@keyframes wheelHueColor {
+  from,
+  to {
+    color: hsl(324, 70%, 45%);
+  }
+  10% {
+    color: hsl(360, 65%, 45%);
+  }
+  20% {
+    color: hsl(36, 80%, 45%);
+  }
+  30% {
+    color: hsl(72, 75%, 35%);
+  }
+  40% {
+    color: hsl(108, 65%, 35%);
+  }
+  50% {
+    color: hsl(144, 75%, 35%);
+  }
+  60% {
+    color: hsl(180, 75%, 35%);
+  }
+  70% {
+    color: hsl(216, 60%, 45%);
+  }
+  80% {
+    color: hsl(252, 65%, 50%);
+  }
+  90% {
+    color: hsl(288, 60%, 40%);
+  }
+}
+
+#favorite {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 4s infinite;
+}
+#propos {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 5s infinite;
+}
+#contacter {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 6s infinite;
+}
+#serie {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 7s infinite;
+}
+
+#title {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 3s infinite;
+}
+
 nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   background-color: var(--overlay-background-color);
 }
+
+/* styles encadrement et logos */
+
 #logo {
   height: auto;
-  width: 200px;
+  width: 150px;
 }
 #logo2 {
   display: none;
@@ -31,7 +92,7 @@ nav {
 
 nav > ul {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   flex-grow: 1;
   justify-content: space-around;
 }
@@ -39,7 +100,7 @@ nav ul li {
   flex: 1;
 }
 nav ul li {
-  width: 200px;
+  width: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +116,7 @@ nav ul li:hover {
 }
 
 /* menu deroulant */
+
 .dropdown {
   position: relative;
   display: block;
@@ -80,7 +142,7 @@ nav ul li:hover {
 .dropdown-content li {
   text-decoration: none;
   background-color: white;
-  width: 88%;
+  width: 75%;
   display: block;
   padding: 8px 16px;
   transition: background-color 0.3s;
@@ -89,6 +151,9 @@ nav ul li:hover {
   font-size: 2.5rem;
   transition: all 0.3s ease-in-out;
 }
+
+/* etat responsive */
+
 @media (max-width: 800px) {
   #logo {
     width: 100px;
@@ -102,10 +167,6 @@ nav ul li:hover {
     display: inline-block;
     width: 40px;
     height: 40px;
-  }
-
-  .h3-text {
-    display: none;
   }
 
   nav > ul {
@@ -127,6 +188,18 @@ nav ul li:hover {
   }
 
   #title {
+    display: none;
+  }
+  #favorite {
+    display: none;
+  }
+  #contacter {
+    display: none;
+  }
+  #propos {
+    display: none;
+  }
+  #serie {
     display: none;
   }
 }

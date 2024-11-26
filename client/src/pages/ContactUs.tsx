@@ -34,7 +34,7 @@ function ContactUs() {
         </div>
         <div className="buttons-contain">
           <button className="contact-button" type="button">
-            Abbone toi à notre newlester
+            Abonne toi à notre newlester
           </button>
           <button className="contact-button" type="button">
             Valide ta demande
