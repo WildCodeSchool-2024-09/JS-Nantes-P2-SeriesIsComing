@@ -1,36 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { logos } from "../assets/data/dataLogo";
 import LogoHome from "../assets/images/LogoHome.png";
-
 import useUser from "../utils/useUser";
 
 function NavBar() {
   const { user } = useUser();
   const { id } = useParams<string>();
-  const logos = [
-    {
-      id: 1,
-      image:
-        "https://www.pngplay.com/wp-content/uploads/13/Game-Of-Thrones-PNG-Pic-Background.png",
-    },
-    {
-      id: 2,
-      image:
-        "https://logowik.com/content/uploads/images/the-walking-dead3382.jpg",
-    },
-    {
-      id: 3,
-      image:
-        "https://seeklogo.com/images/B/breaking-bad-logo-7466E7CD42-seeklogo.com.png",
-    },
-    {
-      id: 4,
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/9/9c/Prisonbreak.png",
-    },
-  ];
+
   const logoSeries = logos.find((logo) => logo.id === Number(id));
-  // const defaultLogo = { LogoHome };
   return (
     <nav>
       <div className="logofit">
