@@ -7,7 +7,7 @@
   width: 20%;
 }
 
-#label-search {
+.label-search {
   display: none;
 }
 
@@ -15,7 +15,7 @@
   font-size: 20px;
 }
 
-#size-filter {
+.size-filter {
   width: 100%;
   height: 100%;
   display: flex;

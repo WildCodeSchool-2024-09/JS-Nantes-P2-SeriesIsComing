@@ -19,7 +19,7 @@ function FilterBar({ search, setSearch }: SearchI) {
 
   return (
     <>
-      <div id="size-filter">
+      <div className="size-filter">
         <input
           type="text"
           name="filter-bar"
@@ -32,7 +32,7 @@ function FilterBar({ search, setSearch }: SearchI) {
               : "length-ok research-card"
           }
         />
-        <label htmlFor="filter-bar" id="label-search">
+        <label htmlFor="filter-bar" className="label-search">
           Recherche :
         </label>
       </div>
