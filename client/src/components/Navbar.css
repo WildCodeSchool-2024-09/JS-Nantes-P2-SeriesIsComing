@@ -1,5 +1,11 @@
 /* Switch title with userContext*/
 
+.logofit {
+  padding-left: 20px;
+  padding-top: 20px;
+  object-fit: cover;
+}
+
 nav > ul {
   list-style: none;
 }
@@ -22,11 +28,13 @@ nav {
   margin-bottom: 16px;
   background-color: var(--overlay-background-color);
 }
-#logo {
-  height: auto;
-  width: 200px;
+
+.logo {
+  height: 100px;
+  width: auto;
 }
-#logo2 {
+
+.logo2 {
   display: none;
 }
 
@@ -91,7 +99,7 @@ nav ul li:hover {
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 800px) {
-  #logo {
+  .logo {
     width: 100px;
     height: auto;
   }
@@ -99,7 +107,7 @@ nav ul li:hover {
     display: none;
   }
 
-  #logo2 {
+  .logo2 {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -127,7 +135,7 @@ nav ul li:hover {
     display: none;
   }
 
-  #title {
+  .title {
     display: none;
   }
 }

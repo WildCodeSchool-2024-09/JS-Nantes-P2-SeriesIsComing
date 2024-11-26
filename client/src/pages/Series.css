@@ -1,23 +1,5 @@
 /* Filter bar */
 
-#filter-bar {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.length-maximum-reached {
-  background-color: rgb(250, 173, 173);
-}
-
-.length-ok {
-  background-color: var(--button-content-color);
-}
-
-#label-search {
-  display: none;
-}
-
 .series-content {
   margin-left: 220px;
   padding: 20px;
