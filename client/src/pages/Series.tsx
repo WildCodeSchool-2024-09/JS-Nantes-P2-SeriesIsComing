@@ -12,27 +12,32 @@ import SideBar from "../components/SideBar";
 // Import page style sheet
 import "./Series.css";
 
-// Import data
-import seriesData from "../assets/data/seriesData";
-
 // Import data interfaces
-import type CharactersI from "../assets/interfaces/CharctersI";
+import type { SeriesI } from "../assets/interfaces/SeriesI";
 
 function Series() {
   const { id } = useParams<string>();
 
   const [search, setSearch] = useState<string>("");
 
-  const [characters, setCharacters] = useState<null | CharactersI[]>(null);
+  const [series, setSeries] = useState<SeriesI[] | []>([]);
 
   const [familyFilter, setFamilyFilter] = useState<string>("");
 
   useEffect(() => {
-    const findSeries = seriesData.find((serie) => serie.id === id);
-    if (findSeries) {
-      setCharacters(findSeries.dataSeries);
-    }
-  }, [id]);
+    fetch("http://localhost:4000/api/series")
+      .then((response) => response.json())
+      .then((data) => setSeries(data));
+  }, []);
+
+  console.warn(series);
+  // console.warn(series[0].dataSeries);
+
+  const charactersSeries = series.find((serie) => serie.id === id);
+  console.warn(charactersSeries);
+
+  const characters = charactersSeries?.dataSeries;
+  console.warn(characters);
 
   return (
     <>

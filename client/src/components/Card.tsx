@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Card.css";
-import type CharactersI from "../assets/interfaces/CharctersI";
+import type CharactersI from "../assets/interfaces/CharactersI";
 
 function Card({
   characters,
