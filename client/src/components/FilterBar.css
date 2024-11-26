@@ -6,10 +6,6 @@
   background-color: var(--button-content-color);
 }
 
-#filter-bar {
-  border: 2px solid var(--button-content-color);
-}
-
 #label-search {
   display: none;
 }
