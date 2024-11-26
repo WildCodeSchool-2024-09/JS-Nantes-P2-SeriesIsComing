@@ -11,20 +11,15 @@
   display: none;
 }
 
-#filter-bar {
-  padding-top: 25px;
-  padding-bottom: 20px;
+.research-card {
+  font-size: 20px;
 }
 
-#pouet {
+#size-filter {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-}
-
-#recherche-perso {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }

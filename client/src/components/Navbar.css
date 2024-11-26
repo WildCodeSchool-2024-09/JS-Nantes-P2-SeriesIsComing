@@ -1,14 +1,3 @@
-/* Switch title with userContext*/
-
-/* nav > ul {
- list-style: none; 
-}  */
-
-/* nav > ul,
-nav > ul > li > ul {
-  list-style: none;
-} */
-
 nav > h1 {
   text-align: center;
   margin: 0;
@@ -36,9 +25,7 @@ nav > ul {
   flex-grow: 1;
   justify-content: space-around;
 }
-/* nav ul li {
-  flex: 1;
-} */
+
 nav ul li {
   width: 350px;
   display: flex;
