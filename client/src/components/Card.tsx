@@ -6,7 +6,13 @@ function Card({
   characters,
   familyFilter,
   search,
-}: { characters: CharactersI[]; familyFilter: string; search: string }) {
+  serieId,
+}: {
+  characters: CharactersI[];
+  familyFilter: string;
+  search: string;
+  serieId: string;
+}) {
   // Filtrer les personnages par famille et par recherche
   const filteredFamily = characters.filter(
     (character) =>
@@ -17,7 +23,7 @@ function Card({
   return (
     <section className="card-container">
       {filteredFamily.map((charac: CharactersI) => (
-        <Link key={charac.id} to={`/detail/${charac.id}`}>
+        <Link key={charac.id} to={`/series/${serieId}/detail/${charac.id}`}>
           <div className="card-front">
             <img
               src={charac.imageUrl}

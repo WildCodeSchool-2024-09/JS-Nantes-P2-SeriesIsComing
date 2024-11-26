@@ -42,6 +42,7 @@ function Series() {
       </section>
       {characters && id !== undefined ? (
         <Card
+          serieId={id}
           characters={characters}
           familyFilter={familyFilter}
           search={search}

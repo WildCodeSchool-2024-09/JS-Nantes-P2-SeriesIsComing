@@ -4,4 +4,5 @@
   align-items: center;
   background-color: white;
   flex-direction: column;
+  padding: 60px;
 }
