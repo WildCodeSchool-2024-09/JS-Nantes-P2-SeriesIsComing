@@ -1,9 +1,8 @@
 /* Switch title with userContext*/
 
 .logofit {
-  padding-left: 20px;
+  padding-left: 15px;
   padding-top: 20px;
-  object-fit: cover;
 }
 
 nav > ul {
@@ -30,8 +29,9 @@ nav {
 }
 
 .logo {
-  height: 100px;
+  height: 80px;
   width: auto;
+  border: #000 solid;
 }
 
 .logo2 {
