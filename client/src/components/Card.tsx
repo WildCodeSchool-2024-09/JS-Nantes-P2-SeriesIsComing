@@ -1,54 +1,44 @@
-import { useState } from "react";
 import "./Card.css";
+import { Link } from "react-router-dom";
 import type CharactersI from "../assets/interfaces/CharactersI";
+import { useFilter } from "../utils/useFilter";
 
 function Card({
-  characters,
-  familyFilter,
+  seriesFilter,
   search,
-}: { characters: CharactersI[]; familyFilter: string; search: string }) {
-  const filteredFamily = characters.filter((family) =>
-    family.lastName?.includes(familyFilter),
-  );
-
-  const [flippedStates, setFlippedStates] = useState<Record<number, boolean>>(
-    {},
-  );
-
-  const handleFlip = (charId: number): void => {
-    setFlippedStates((prevStates) => ({
-      ...prevStates,
-      [charId]: !prevStates[charId],
-    }));
-  };
+  id,
+}: {
+  seriesFilter: string;
+  search: string;
+  id: string;
+}) {
+  const filterCharacters = useFilter({
+    id,
+    seriesFilter,
+  });
 
   return (
     <section className="card-container">
-      {filteredFamily
-        .filter(
-          (el) =>
-            el.firstName.includes(search) || el.lastName?.includes(search),
-        )
-        .map((charac: CharactersI) => (
-          <button
-            type="button"
-            onClick={() => handleFlip(charac.id)}
-            key={charac.id}
-            className={`card-inner ${flippedStates[charac.id] ? "flipped" : ""}`}
-          >
-            <div className="card-front">
-              <img
-                src={charac.imageUrl}
-                alt={`${charac.firstName} ${charac.lastName}`}
-              />
-            </div>
-            <div className="card-back">
-              <p>{charac.description || "Information indisponible"}</p>
-            </div>
-          </button>
-        ))}
+      {filterCharacters !== undefined ? (
+        filterCharacters
+          .filter(
+            (el) =>
+              el.firstName.includes(search) || el.lastName?.includes(search),
+          )
+          .map((charac: CharactersI) => (
+            <Link key={charac.id} to={`/series/${id}/detail/${charac.id}`}>
+              <div className="card-front">
+                <img
+                  src={charac.imageUrl}
+                  alt={`${charac.firstName} ${charac.lastName}`}
+                />
+              </div>
+            </Link>
+          ))
+      ) : (
+        <p>No characters found</p>
+      )}
     </section>
   );
 }
-
 export default Card;

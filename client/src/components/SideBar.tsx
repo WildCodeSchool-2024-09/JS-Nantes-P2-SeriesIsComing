@@ -1,26 +1,33 @@
 import type { MouseEvent } from "react";
-import { families } from "../assets/data/dataFamiliesGOT";
-import type { FamilyFiltersI } from "../assets/interfaces/FamilyFiltersI";
+import { filterSeries } from "../assets/data/filterSeries";
+import type { SeriesFiltersI } from "../assets/interfaces/SeriesFilterI";
 import "../components/SideBar.css";
+import type { TableFilterI } from "../assets/interfaces/TableInterfaceI";
 
-function SideBar({ familyFilter, setFamilyFilter }: FamilyFiltersI) {
+function SideBar({ seriesFilter, setSeriesFilter, id }: SeriesFiltersI) {
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
-    const familyValue = (event.target as HTMLElement).innerText;
-    setFamilyFilter(familyFilter === familyValue ? "" : familyValue);
+    const filterValue = (event.target as HTMLElement).innerText;
+    setSeriesFilter(seriesFilter === filterValue ? "" : filterValue);
   };
+
+  let toFilter: TableFilterI[] | undefined;
+  if (id !== undefined) {
+    const numId = Number(id) - 1;
+    toFilter = filterSeries[numId].tableFilter;
+  }
 
   return (
     <div className="sidebar">
       <h3>Filtre en choisissant ta famille préférée !</h3>
-      {families.map((family) => (
-        <button type="button" key={family.name} onClick={handleClick}>
+      {toFilter?.map((series) => (
+        <button type="button" key={series.name} onClick={handleClick}>
           <figure>
             <img
               className="logo-button"
-              src={family.image}
-              alt={`This is the representation of House ${family.name}`}
+              src={series.image}
+              alt={`This is the representation of House ${series.name}`}
             />
-            <figcaption>{family.name}</figcaption>
+            <figcaption>{series.name}</figcaption>
           </figure>
         </button>
       ))}
