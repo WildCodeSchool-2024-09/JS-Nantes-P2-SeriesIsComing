@@ -1,27 +1,29 @@
 nav > h1 {
   text-align: center;
   margin: 0;
-  font-size: 32px;
+  font-size: 25px;
 }
+
 nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   background-color: var(--overlay-background-color);
 }
+
 .logo {
   height: auto;
-  width: 200px;
+  width: 150px;
 }
-.logo2 {
+#logo2 {
   display: none;
 }
 
 nav > ul {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   flex-grow: 1;
   justify-content: space-around;
 }
@@ -43,6 +45,7 @@ nav ul li:hover {
 }
 
 /* menu deroulant */
+
 .dropdown {
   position: relative;
   display: block;
@@ -68,7 +71,7 @@ nav ul li:hover {
 .dropdown-content li {
   text-decoration: none;
   background-color: white;
-  width: 88%;
+  width: 75%;
   display: block;
   padding: 8px 16px;
   transition: background-color 0.3s;
@@ -77,6 +80,30 @@ nav ul li:hover {
   font-size: 2.5rem;
   transition: all 0.3s ease-in-out;
 }
+
+#favorit-title {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 4s infinite;
+}
+#about-title {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 5s infinite;
+}
+#contact-title {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 6s infinite;
+}
+#series-title {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 7s infinite;
+}
+
+.title {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 3s infinite;
+}
+
+/* etat responsive */
 
 @media (max-width: 800px) {
   .logo {
@@ -87,14 +114,10 @@ nav ul li:hover {
     display: none;
   }
 
-  .logo2 {
+  #logo2 {
     display: inline-block;
     width: 40px;
     height: 40px;
-  }
-
-  .h3-text {
-    display: none;
   }
 
   nav > ul {
@@ -116,6 +139,22 @@ nav ul li:hover {
   }
 
   .title {
+    display: none;
+  }
+  nav > ul > img {
+    display: none;
+  }
+
+  #favorite {
+    display: none;
+  }
+  #contacter {
+    display: none;
+  }
+  #propos {
+    display: none;
+  }
+  #serie {
     display: none;
   }
 }
