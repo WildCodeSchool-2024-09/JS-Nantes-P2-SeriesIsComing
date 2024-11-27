@@ -48,7 +48,7 @@
 .sidebar figcaption {
   text-align: center;
   font-size: 14px;
-  color: red;
+
   font-weight: bold;
 }
 
@@ -58,4 +58,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.sidebar figcaption {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 4s infinite;
 }
