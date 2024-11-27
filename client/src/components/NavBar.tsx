@@ -42,7 +42,7 @@ function NavBar() {
 
         <li className="dropdown">
           {" "}
-          <h3 className="h3-text"> Plus de Séries</h3>
+          <h3 className="serie-btn"> Plus de Séries</h3>
           <div className="arrow">▼</div>
           <img
             className="logo2"

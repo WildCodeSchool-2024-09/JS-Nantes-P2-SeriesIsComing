@@ -15,6 +15,28 @@ nav {
   height: auto;
   width: 200px;
 }
+
+.h3-text {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.h3-text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: 0.4s width;
+}
+
+.h3-text:hover::after {
+  width: 100%;
+  left: 0;
+}
 .logo2 {
   display: none;
 }
@@ -91,6 +113,10 @@ nav ul li:hover {
     display: inline-block;
     width: 40px;
     height: 40px;
+  }
+
+  .serie-btn {
+    display: none;
   }
 
   .h3-text {

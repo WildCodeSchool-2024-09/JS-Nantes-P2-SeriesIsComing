@@ -22,13 +22,14 @@
 }
 
 .sidebar button:hover {
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1);
   transform: scale(1.2);
+  border: #000 solid;
+  border-radius: 10px;
 }
 
 .sidebar button {
   width: 90px;
+  transition: 1s;
 }
 
 .sidebar > h3 {

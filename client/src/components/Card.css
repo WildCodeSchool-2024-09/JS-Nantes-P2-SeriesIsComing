@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   gap: 50px;
   padding: 20px;
+  animation: slideInCard 3s ease;
 }
 
 .card-inner {
@@ -68,4 +69,14 @@
 
 .card-caption {
   display: none;
+}
+
+@keyframes slideInCard {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
