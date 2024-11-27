@@ -19,14 +19,18 @@ footer > section > a > img {
   padding: 0.5vw;
 }
 
-img:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-}
-
 footer > a,
 footer > section > a {
   padding: 1vw;
   color: black;
+}
+
+.logo-insta:hover,
+.logo-fb:hover,
+.logo-X:hover,
+.logo-gh:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: 1s;
 }

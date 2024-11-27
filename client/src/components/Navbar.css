@@ -1,3 +1,24 @@
+/* Switch title with userContext*/
+
+.logofit {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+nav > ul,
+nav > ul > li > ul {
+  list-style: none;
+  padding-right: 25px;
+}
+
 nav > h1 {
   text-align: center;
   margin: 0;
@@ -14,22 +35,17 @@ nav {
 }
 
 .logo {
-  height: auto;
-  width: 150px;
+  height: 80px;
+  width: auto;
+  border: #000 solid;
 }
-#logo2 {
+
+.logo2 {
   display: none;
 }
 
-nav > ul {
-  display: flex;
-  gap: 4rem;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-
 nav ul li {
-  width: 350px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +55,7 @@ nav ul li {
   text-decoration: none;
   color: #000;
   transition: background-color 0.3s;
+  flex: 1;
 }
 nav ul li:hover {
   background-color: rgb(231, 230, 230);
@@ -92,7 +109,6 @@ nav ul li:hover {
 }
 
 /* etat responsive */
-
 @media (max-width: 800px) {
   .logo {
     width: 100px;

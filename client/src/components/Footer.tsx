@@ -4,10 +4,9 @@ function Footer() {
   return (
     <>
       <footer>
-        <p id="logo1">&copy;CopyRight</p>
-        <section className="logo">
+        <p className="logo1">&copy;CopyRight</p>
+        <section className="logo-insta">
           <a
-            id="logo-insta"
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -17,8 +16,9 @@ function Footer() {
               alt="logo-instagram"
             />
           </a>
+        </section>
+        <section className="logo-fb">
           <a
-            id="logo-fb"
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -28,8 +28,9 @@ function Footer() {
               alt="logo-facebook"
             />
           </a>
+        </section>
+        <section className="logo-X">
           <a
-            id="logo-X"
             href="https://x.com/Accueil"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,8 +40,9 @@ function Footer() {
               alt="logo-twitter"
             />
           </a>
+        </section>
+        <section className="logo-gh">
           <a
-            id="logo-gh"
             href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -51,6 +53,7 @@ function Footer() {
             />
           </a>
         </section>
+
         <p id="logo1">CGU</p>
       </footer>
     </>
