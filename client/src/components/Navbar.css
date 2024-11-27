@@ -98,21 +98,9 @@ nav ul li:hover {
   transition: all 0.3s ease-in-out;
 }
 
-#favorit-title {
+.navbar-title {
   color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 4s infinite;
-}
-#about-title {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 5s infinite;
-}
-#contact-title {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 6s infinite;
-}
-#series-title {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 7s infinite;
+  animation: wheelHueColor 20s infinite;
 }
 
 .title {
@@ -121,7 +109,7 @@ nav ul li:hover {
 }
 
 /* etat responsive */
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
   .logo {
     width: 100px;
     height: auto;
@@ -161,16 +149,7 @@ nav ul li:hover {
     display: none;
   }
 
-  #favorite {
+  .navbar-title {
     display: none;
   }
-  #contacter {
-    display: none;
-  }
-  #propos {
-    display: none;
-  }
-  #serie {
-    display: none;
-  }
-} */
+}
