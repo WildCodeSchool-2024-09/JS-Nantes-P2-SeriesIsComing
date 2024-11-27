@@ -6,13 +6,12 @@ function NavBar() {
 
   return (
     <nav>
-      <NavLink to={"/"} className="NavLink-nav">
-        <img
-          src="https://th.bing.com/th/id/R.ca8a3618d313baa5d52322bc4b437dad?rik=4Xq0pWjDTNTuDA&pid=ImgRaw&r=0"
-          alt="logo"
-          className="logo"
-        />
-      </NavLink>
+      <div className="logofit">
+        <NavLink to={"/"} className="NavLink-nav">
+          <img src={"/"} alt="logo" className="logo" />
+        </NavLink>
+      </div>
+
       <h1 className="title">
         {user ? `Hello ${user.userFirstName}` : "Series is Coming"}
       </h1>
@@ -42,7 +41,7 @@ function NavBar() {
 
         <li className="dropdown">
           {" "}
-          <h3 className="serie-btn"> Plus de Séries</h3>
+          <h3 className="h3-text"> Plus de Séries</h3>
           <div className="arrow">▼</div>
           <img
             className="logo2"

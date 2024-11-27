@@ -1,3 +1,24 @@
+/* Switch title with userContext*/
+
+.logofit {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+nav > ul,
+nav > ul > li > ul {
+  list-style: none;
+  padding-right: 25px;
+}
+
 nav > h1 {
   text-align: center;
   margin: 0;
@@ -11,45 +32,19 @@ nav {
   margin-bottom: 16px;
   background-color: var(--overlay-background-color);
 }
+
 .logo {
-  height: auto;
-  width: 200px;
+  height: 80px;
+  width: auto;
+  border: #000 solid;
 }
 
-.h3-text {
-  text-decoration: none;
-  color: #000;
-  position: relative;
-}
-
-.h3-text::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-  width: 0;
-  height: 2px;
-  background-color: #000;
-  transition: 0.4s width;
-}
-
-.h3-text:hover::after {
-  width: 100%;
-  left: 0;
-}
 .logo2 {
   display: none;
 }
 
-nav > ul {
-  display: flex;
-  gap: 3rem;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-
 nav ul li {
-  width: 350px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +54,7 @@ nav ul li {
   text-decoration: none;
   color: #000;
   transition: background-color 0.3s;
+  flex: 1;
 }
 nav ul li:hover {
   background-color: rgb(231, 230, 230);
@@ -99,7 +95,6 @@ nav ul li:hover {
   font-size: 2.5rem;
   transition: all 0.3s ease-in-out;
 }
-
 @media (max-width: 800px) {
   .logo {
     width: 100px;
@@ -113,10 +108,6 @@ nav ul li:hover {
     display: inline-block;
     width: 40px;
     height: 40px;
-  }
-
-  .serie-btn {
-    display: none;
   }
 
   .h3-text {
