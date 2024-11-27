@@ -1,4 +1,7 @@
+// Import React Modules
 import { NavLink } from "react-router-dom";
+
+// Import Custom Hook to consume Context
 import useUser from "../utils/useUser";
 
 function NavBar() {
