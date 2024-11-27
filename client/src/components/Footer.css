@@ -25,24 +25,9 @@ footer > section > a {
   color: black;
 }
 
-.logo-insta:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  transition: 1s;
-}
-.logo-fb:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  transition: 1s;
-}
-.logo-X:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  transition: 1s;
-}
+.logo-insta:hover,
+.logo-fb:hover,
+.logo-X:hover,
 .logo-gh:hover {
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
