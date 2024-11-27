@@ -1,10 +1,9 @@
-import "./FilterBar.css";
+// Import Interfaces
 import type EventI from "../assets/interfaces/EventI";
+import type { SearchI } from "../assets/interfaces/SearchI";
 
-interface SearchI {
-  search: string;
-  setSearch: (index: string) => void;
-}
+// Import Style Sheets
+import "./FilterBar.css";
 
 function FilterBar({ search, setSearch }: SearchI) {
   const maxLength = 20;
