@@ -1,17 +1,17 @@
-import "./Card.css";
+// Import React Modules
 import { Link } from "react-router-dom";
-import type CharactersI from "../assets/interfaces/CharactersI";
+
+// Import Custom Hook
 import { useFilter } from "../utils/useFilter";
 
-function Card({
-  seriesFilter,
-  search,
-  id,
-}: {
-  seriesFilter: string;
-  search: string;
-  id: string;
-}) {
+// Import React Interfaces
+import type { CardI } from "../assets/interfaces/CardI";
+import type CharactersI from "../assets/interfaces/CharactersI";
+
+// Import Style
+import "./Card.css";
+
+function Card({ seriesFilter, search, id }: CardI) {
   const filterCharacters = useFilter({
     id,
     seriesFilter,
@@ -37,7 +37,7 @@ function Card({
             </Link>
           ))
       ) : (
-        <p>No characters found</p>
+        <p>No character found</p>
       )}
     </section>
   );
