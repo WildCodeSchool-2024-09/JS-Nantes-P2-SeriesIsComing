@@ -1,8 +1,13 @@
-import type { MouseEvent } from "react";
+// Import Data
 import { filterSeries } from "../assets/data/filterSeries";
+
+// Import Types and Interfaces
+import type { MouseEvent } from "react";
 import type { SeriesFiltersI } from "../assets/interfaces/SeriesFilterI";
-import "../components/SideBar.css";
 import type { TableFilterI } from "../assets/interfaces/TableInterfaceI";
+
+// Import Style Sheets
+import "../components/SideBar.css";
 
 function SideBar({ seriesFilter, setSeriesFilter, id }: SeriesFiltersI) {
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
@@ -18,7 +23,7 @@ function SideBar({ seriesFilter, setSeriesFilter, id }: SeriesFiltersI) {
 
   return (
     <div className="sidebar">
-      <h3>Filtre en choisissant ta famille préférée !</h3>
+      <h3>Choisi ton filtre !</h3>
       {toFilter?.map((series) => (
         <button type="button" key={series.name} onClick={handleClick}>
           <figure>

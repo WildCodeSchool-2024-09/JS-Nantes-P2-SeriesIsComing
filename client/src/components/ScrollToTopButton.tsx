@@ -1,4 +1,7 @@
+// Import React Modules
 import { useEffect, useState } from "react";
+
+// Import Style Sheet
 import "../components/ScrollToTop.scss";
 
 const ScrollToTopButton = () => {
