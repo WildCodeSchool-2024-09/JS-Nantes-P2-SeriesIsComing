@@ -29,7 +29,7 @@ function NavBar() {
           <NavLink to={"/Favorite"} className="link-nav">
             <h3 id="favorit-title">Favorite</h3>
             <img
-              id="logo2"
+              className="logo2"
               src="https://th.bing.com/th/id/R.16c5c695e3d4bbde7862ceb91e21770e?rik=zaHaF1R4zBlxGQ&pid=ImgRaw&r=0"
               alt="coeur qui represente les favorits"
             />
@@ -39,7 +39,7 @@ function NavBar() {
           <NavLink to={"/about"} className="NavLink-nav">
             <h3 id="about-title">À propos</h3>
             <img
-              id="logo2"
+              className="logo2"
               src="https://cdn-icons-png.flaticon.com/512/6229/6229050.png"
               alt="point d'interrogation"
             />
@@ -49,7 +49,7 @@ function NavBar() {
           <NavLink to={"/contact"} className="NavLink-nav">
             <h3 id="contact-title">Nous Contacter</h3>
             <img
-              id="logo2"
+              className="logo2"
               src="https://th.bing.com/th/id/R.74fef23e2e02b874f883b8fbd3847cc8?rik=3Vaj6GaDSb4VoQ&riu=http%3a%2f%2ficon-library.com%2fimages%2ftelephone-icon-png%2ftelephone-icon-png-1.jpg&ehk=Af6dFLM25381YRPy0lGgLzwUdSpzy%2bdyrILCDHig6fg%3d&risl=&pid=ImgRaw&r=0"
               alt="telephone portable"
             />
@@ -60,7 +60,7 @@ function NavBar() {
           <h3 id="series-title"> Plus de Séries</h3>
           <div className="arrow">▼</div>
           <img
-            id="logo2"
+            className="logo2"
             src="https://cdn-icons-png.flaticon.com/512/275/275201.png"
             alt="telephone portable"
           />

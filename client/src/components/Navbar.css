@@ -121,7 +121,7 @@ nav ul li:hover {
 }
 
 /* etat responsive */
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .logo {
     width: 100px;
     height: auto;
@@ -173,4 +173,4 @@ nav ul li:hover {
   #serie {
     display: none;
   }
-}
+} */
