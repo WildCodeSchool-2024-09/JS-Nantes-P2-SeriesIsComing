@@ -7,6 +7,10 @@
 
 nav > ul {
   list-style: none;
+  display: flex;
+  gap: 3rem;
+  flex-grow: 1;
+  justify-content: space-around;
 }
 
 nav > ul,
@@ -39,15 +43,6 @@ nav {
   display: none;
 }
 
-nav > ul {
-  display: flex;
-  gap: 3rem;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-nav ul li {
-  flex: 1;
-}
 nav ul li {
   width: 200px;
   display: flex;
@@ -59,6 +54,7 @@ nav ul li {
   text-decoration: none;
   color: #000;
   transition: background-color 0.3s;
+  flex: 1;
 }
 nav ul li:hover {
   background-color: rgb(231, 230, 230);
