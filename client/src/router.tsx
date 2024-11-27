@@ -3,6 +3,7 @@ import App from "./App";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import Detail from "./pages/Detail";
+import Favorite from "./pages/Favorite";
 import Home from "./pages/Home";
 import Series from "./pages/Series";
 
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />,
+      },
+
+      {
+        path: "/favorite",
+        element: <Favorite />,
       },
       {
         path: "series/:id/detail/:charId",
