@@ -1,4 +1,4 @@
-import type CharactersI from "../assets/interfaces/CharctersI";
+import type CharactersI from "../assets/interfaces/CharactersI";
 import "./Detail.css";
 import { useLoaderData } from "react-router-dom";
 

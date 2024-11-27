@@ -3,7 +3,7 @@ import { RouterProvider } from "react-router-dom";
 import "./assets/style/globals.css";
 import UserProvider from "./contexts/UserProvider";
 import router from "./router";
-
+import "./assets/style/animation.css";
 const rootElement = document.getElementById("root");
 if (rootElement == null) {
   throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
