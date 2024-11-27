@@ -22,16 +22,17 @@ function Card({
     <section className="card-container">
       {filterCharacters !== undefined ? (
         filterCharacters
-          .filter((el) => el.firstName.includes(search)).map((charac: CharactersI) => (
-        <Link key={charac.id} to={`/series/${id}/detail/${charac.id}`}>
-          <div className="card-front">
-            <img
-              src={charac.imageUrl}
-              alt={`${charac.firstName} ${charac.lastName}`}
-            />
-          </div>
-        </Link>  
-       ))
+          .filter((el) => el.firstName.includes(search))
+          .map((charac: CharactersI) => (
+            <Link key={charac.id} to={`/series/${id}/detail/${charac.id}`}>
+              <div className="card-front">
+                <img
+                  src={charac.imageUrl}
+                  alt={`${charac.firstName} ${charac.lastName}`}
+                />
+              </div>
+            </Link>
+          ))
       ) : (
         <p>No characters found</p>
       )}
