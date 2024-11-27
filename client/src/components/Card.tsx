@@ -1,6 +1,6 @@
 import "./Card.css";
 import { Link } from "react-router-dom";
-import type CharactersI from "../assets/interfaces/CharctersI";
+import type CharactersI from "../assets/interfaces/CharactersI";
 import { useFilter } from "../utils/useFilter";
 
 function Card({
@@ -12,7 +12,6 @@ function Card({
   search: string;
   id: string;
 }) {
-  // Filtrer les personnages par famille et par recherche
   const filterCharacters = useFilter({
     id,
     seriesFilter,
@@ -22,7 +21,10 @@ function Card({
     <section className="card-container">
       {filterCharacters !== undefined ? (
         filterCharacters
-          .filter((el) => el.firstName.includes(search))
+          .filter(
+            (el) =>
+              el.firstName.includes(search) || el.lastName?.includes(search),
+          )
           .map((charac: CharactersI) => (
             <Link key={charac.id} to={`/series/${id}/detail/${charac.id}`}>
               <div className="card-front">

@@ -7,11 +7,7 @@ function NavBar() {
   return (
     <nav>
       <NavLink to={"/"} className="NavLink-nav">
-        <img
-          src="https://th.bing.com/th/id/R.ca8a3618d313baa5d52322bc4b437dad?rik=4Xq0pWjDTNTuDA&pid=ImgRaw&r=0"
-          alt="logo"
-          className="logo"
-        />
+        <img src={"/"} alt="logo" className="logo" />
       </NavLink>
       <h1 className="title">
         {user ? `Hello ${user.userFirstName}` : "Series is Coming"}
