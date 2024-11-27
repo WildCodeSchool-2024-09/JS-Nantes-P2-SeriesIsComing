@@ -1,9 +1,17 @@
 footer {
-  margin-top: 20px;
+  margin-top: 10 px;
   display: flex;
   text-align: center;
   justify-content: space-between;
   background-color: var(--overlay-background-color);
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+footer > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer > section > a > img {
@@ -15,4 +23,14 @@ footer > a,
 footer > section > a {
   padding: 1vw;
   color: black;
+}
+
+.logo-insta:hover,
+.logo-fb:hover,
+.logo-X:hover,
+.logo-gh:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: 1s;
 }
