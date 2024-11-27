@@ -145,16 +145,16 @@ nav ul li:hover {
     display: none;
   }
 
-  #favorite {
+  #favorit-title {
     display: none;
   }
-  #contacter {
+  #contact-title {
     display: none;
   }
-  #propos {
+  #about-title {
     display: none;
   }
-  #serie {
+  #series-title {
     display: none;
   }
 }
