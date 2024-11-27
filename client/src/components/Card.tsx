@@ -23,7 +23,8 @@ function Card({
         filterCharacters
           .filter(
             (el) =>
-              el.firstName.includes(search) || el.lastName?.includes(search),
+              el.firstName.toLowerCase().includes(search.toLowerCase()) ||
+              el.lastName?.toLowerCase().includes(search.toLowerCase()),
           )
           .map((charac: CharactersI) => (
             <Link key={charac.id} to={`/series/${id}/detail/${charac.id}`}>
