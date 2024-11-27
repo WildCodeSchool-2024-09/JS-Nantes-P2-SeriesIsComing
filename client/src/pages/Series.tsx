@@ -25,7 +25,7 @@ function Series() {
 
   const [characters, setCharacters] = useState<null | CharactersI[]>(null);
 
-  const [familyFilter, setFamilyFilter] = useState<string>("");
+  const [seriesFilter, setSeriesFilter] = useState<string>("");
 
   useEffect(() => {
     const findSeries = seriesData.find((serie) => serie.id === id);
@@ -36,17 +36,18 @@ function Series() {
 
   return (
     <>
-      <SideBar familyFilter={familyFilter} setFamilyFilter={setFamilyFilter} />
+      {id && (
+        <SideBar
+          seriesFilter={seriesFilter}
+          setSeriesFilter={setSeriesFilter}
+          id={id}
+        />
+      )}
       <section id="filter-bar">
         <FilterBar search={search} setSearch={setSearch} />
       </section>
       {characters && id !== undefined ? (
-        <Card
-          serieId={id}
-          characters={characters}
-          familyFilter={familyFilter}
-          search={search}
-        />
+        <Card seriesFilter={seriesFilter} search={search} id={id} />
       ) : (
         <p>loading</p>
       )}

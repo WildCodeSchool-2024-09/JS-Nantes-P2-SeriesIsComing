@@ -1,39 +1,41 @@
 import "./Card.css";
 import { Link } from "react-router-dom";
 import type CharactersI from "../assets/interfaces/CharctersI";
+import { useFilter } from "../utils/useFilter";
 
 function Card({
-  characters,
-  familyFilter,
+  seriesFilter,
   search,
-  serieId,
+  id,
 }: {
-  characters: CharactersI[];
-  familyFilter: string;
+  seriesFilter: string;
   search: string;
-  serieId: string;
+  id: string;
 }) {
   // Filtrer les personnages par famille et par recherche
-  const filteredFamily = characters.filter(
-    (character) =>
-      character.lastName?.includes(familyFilter) &&
-      character.firstName?.toLowerCase().includes(search.toLowerCase()),
-  );
+  const filterCharacters = useFilter({
+    id,
+    seriesFilter,
+  });
 
   return (
     <section className="card-container">
-      {filteredFamily.map((charac: CharactersI) => (
-        <Link key={charac.id} to={`/series/${serieId}/detail/${charac.id}`}>
+      {filterCharacters !== undefined ? (
+        filterCharacters
+          .filter((el) => el.firstName.includes(search)).map((charac: CharactersI) => (
+        <Link key={charac.id} to={`/series/${id}/detail/${charac.id}`}>
           <div className="card-front">
             <img
               src={charac.imageUrl}
               alt={`${charac.firstName} ${charac.lastName}`}
             />
           </div>
-        </Link>
-      ))}
+        </Link>  
+       ))
+      ) : (
+        <p>No characters found</p>
+      )}
     </section>
   );
 }
-
 export default Card;

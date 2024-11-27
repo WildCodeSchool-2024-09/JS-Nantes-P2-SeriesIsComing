@@ -27,15 +27,12 @@ const router = createBrowserRouter([
         element: <ContactUs />,
       },
       {
-        path: "series/:serieId/detail/:charId",
+        path: "series/:id/detail/:charId",
         element: <Detail />,
-        loader: async ({ params }) => {
-          const response = await fetch(
-            `http://localhost:4000/api/series/${params.serieId}/character/${params.charId}`,
-          );
-          const jsonReponse = await response.json();
-          return jsonReponse;
-        },
+        loader: ({ params }) =>
+          fetch(
+            `http://localhost:4000/api/series/${params.id}/character/${params.charId}`,
+          ),
       },
     ],
   },
