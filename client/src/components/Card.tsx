@@ -33,7 +33,11 @@ function Card({
     <section className="card-container">
       {filterCharacters !== undefined ? (
         filterCharacters
-          .filter((el) => el.firstName.includes(search))
+          .filter(
+            (el) =>
+              el.firstName.toLowerCase().includes(search.toLowerCase()) ||
+              el.lastName?.toLowerCase().includes(search.toLowerCase()),
+          )
           .map((charac: CharactersI) => (
             <button
               type="button"
