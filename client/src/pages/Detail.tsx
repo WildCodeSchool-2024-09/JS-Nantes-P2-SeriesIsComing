@@ -1,6 +1,7 @@
-import type CharactersI from "../assets/interfaces/CharactersI";
 import "./Detail.css";
 import { useLoaderData } from "react-router-dom";
+import type CharactersI from "../assets/interfaces/CharactersI";
+import FavoriteButton from "../components/ButtonFavorite";
 
 import type { FavoriteCharI } from "../assets/interfaces/FavoriteCharI";
 
@@ -33,10 +34,13 @@ function Detail() {
 
   return (
     <main className="detail">
-      <section>
+      <section className="section-detail">
         <hgroup>
-          <h2> Image </h2>
-          <img src={data.imageUrl} alt={data.firstName} />
+          <img
+            className="img-detail"
+            src={data.imageUrl}
+            alt={data.firstName}
+          />
         </hgroup>
         <hgroup>
           <h2> Prenom </h2>
@@ -49,6 +53,9 @@ function Detail() {
         <hgroup>
           <h2> Description </h2>
           <p>{data.description}</p>
+          <div className="div-button">
+            <FavoriteButton />
+          </div>
         </hgroup>
       </section>
     </main>

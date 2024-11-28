@@ -22,7 +22,7 @@ function NavBar() {
       </div>
 
       <h1 className="title">
-        {user ? `Hello ${user.userFirstName}` : "Series is Coming"}
+        {user ? `Hello ${user.userFirstName}` : "Series are Coming"}
       </h1>
       <ul>
         <li>
@@ -57,7 +57,7 @@ function NavBar() {
         </li>
 
         <li className="dropdown">
-          <h3 className="navbar-title"> Plus de Séries</h3>
+          <h3 className="series-drop"> Plus de Séries</h3>
           <div className="arrow">▼</div>
           <img
             className="logo2"
