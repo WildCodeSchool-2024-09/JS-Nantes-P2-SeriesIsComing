@@ -1,6 +1,6 @@
 import "./Detail.css";
 import { useLoaderData } from "react-router-dom";
-import type CharactersI from "../assets/interfaces/CharctersI";
+import type CharactersI from "../assets/interfaces/CharactersI";
 import FavoriteButton from "../components/ButtonFavorite";
 
 function Detail() {

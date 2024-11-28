@@ -1,3 +1,45 @@
+/* Switch title with userContext*/
+
+.logofit {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+nav > ul,
+nav > ul > li > ul {
+  list-style: none;
+  padding-right: 25px;
+}
+
+/* Switch title with userContext*/
+
+.logofit {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+nav > ul,
+nav > ul > li > ul {
+  list-style: none;
+  padding-right: 25px;
+}
+
 nav > h1 {
   text-align: center;
   margin: 0;
@@ -14,22 +56,21 @@ nav {
 }
 
 .logo {
-  height: auto;
-  width: 150px;
+  height: 80px;
+  width: auto;
+  border: #000 solid;
+  height: 80px;
+  width: auto;
+  border: #000 solid;
 }
-#logo2 {
+
+.logo2 {
   display: none;
 }
 
-nav > ul {
-  display: flex;
-  gap: 4rem;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-
 nav ul li {
-  width: 350px;
+  width: 200px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +80,7 @@ nav ul li {
   text-decoration: none;
   color: #000;
   transition: background-color 0.3s;
+  flex: 1;
 }
 nav ul li:hover {
   background-color: rgb(231, 230, 230);
@@ -80,22 +122,9 @@ nav ul li:hover {
   font-size: 2.5rem;
   transition: all 0.3s ease-in-out;
 }
-
-#favorit-title {
+.navbar-title {
   color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 4s infinite;
-}
-#about-title {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 5s infinite;
-}
-#contact-title {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 6s infinite;
-}
-#series-title {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 7s infinite;
+  animation: wheelHueColor 20s infinite;
 }
 
 .title {
@@ -104,7 +133,6 @@ nav ul li:hover {
 }
 
 /* etat responsive */
-
 @media (max-width: 800px) {
   .logo {
     width: 100px;
@@ -145,16 +173,7 @@ nav ul li:hover {
     display: none;
   }
 
-  #favorite {
-    display: none;
-  }
-  #contacter {
-    display: none;
-  }
-  #propos {
-    display: none;
-  }
-  #serie {
+  .navbar-title {
     display: none;
   }
 }
