@@ -34,6 +34,7 @@ p,
 h1,
 h2,
 h3,
+h4,
 figcaption,
 label {
   font-family: var(--all-font-style);
@@ -50,13 +51,14 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   margin-top: 2vw;
   padding: 1vw;
-  font-size: 24px;
+  font-size: 32px;
   color: white;
 }
 
-h3 {
-  font-size: 16px;
+h4 {
+  text-align: center;
+  font-size: 24px;
+  color: white;
 }

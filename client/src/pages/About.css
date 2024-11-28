@@ -7,6 +7,7 @@
   font-size: 40px;
   font-weight: bolder;
   color: white;
+  text-decoration: underline;
 }
 
 .welcome {
@@ -17,12 +18,8 @@
   color: white;
 }
 
-#div-a-propos h2 {
-  /* padding: 4vw;
-  text-align: center;
-  font-size: 32px;
+.teamproject {
   text-decoration: underline;
-  color: white; */
 }
 
 .profil {
@@ -35,11 +32,11 @@
   flex: 1 1 45%;
 }
 
-#emma,
-#lucas,
-#sofia,
-#karim,
-#julie {
+#clement,
+#romain,
+#quentin,
+#jean-louis,
+#alexandre {
   justify-content: center;
   text-align: center;
   padding: 2vw;
