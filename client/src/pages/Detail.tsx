@@ -7,7 +7,7 @@ function Detail() {
   const data = useLoaderData() as CharactersI;
 
   return (
-    <body className="detail">
+    <main className="detail">
       <section className="section-detail">
         <hgroup>
           <img
@@ -32,7 +32,7 @@ function Detail() {
           </div>
         </hgroup>
       </section>
-    </body>
+    </main>
   );
 }
 
