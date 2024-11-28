@@ -1,8 +1,30 @@
 .detail {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: white;
   flex-direction: column;
   padding: 60px;
+}
+
+section-detail {
+  padding: 20px;
+}
+
+.img-detail {
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+h2 {
+  padding: 10px;
+}
+
+p {
+  padding: 10px;
+}
+
+.div-button {
+  padding: 10px;
 }
