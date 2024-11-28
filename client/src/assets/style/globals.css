@@ -44,6 +44,17 @@ label {
 h1 {
   color: var(--main-font-color);
   font-size: var(--title-size);
+  text-align: center;
+  margin-top: 2vw;
+  padding: 2vw;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2vw;
+  padding: 1vw;
+  font-size: 24px;
+  color: white;
 }
 
 h3 {

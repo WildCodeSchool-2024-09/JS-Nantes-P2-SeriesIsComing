@@ -9,14 +9,14 @@ function About() {
       <div id="div-a-propos">
         <p className="a-propos">A propos</p>
 
-        <h1>
+        <h2>
           Les récits nous emportent vers d’autres horizons. Ils éveillent en
           nous des sentiments inédits, élargissent notre vision du monde et
           tissent des liens entre nous.
-        </h1>
+        </h2>
 
         <p className="welcome">
-          Bienvenue sur Series is Coming, votre portail incontournable pour
+          Bienvenue sur Series are Coming, votre portail incontournable pour
           plonger dans le monde fascinant des séries ! Découvrez un univers où
           chaque histoire vous transporte dans des intrigues captivantes et des
           univers variés, peuplés de personnages attachants et complexes. Ici,
