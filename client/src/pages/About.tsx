@@ -7,7 +7,7 @@ function About() {
   return (
     <>
       <p className="about">À propos</p>
-      <h4 className="teamproject">Découvrez l’équipe 🧑🏻‍💻</h4>
+      <h4 className="team-project">Découvrez l’équipe 🧑🏻‍💻</h4>
 
       <section className="profil">
         {profil.map((elem) => (
