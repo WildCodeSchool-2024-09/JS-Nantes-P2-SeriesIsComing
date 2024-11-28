@@ -3,34 +3,8 @@ import { useLoaderData } from "react-router-dom";
 import type CharactersI from "../assets/interfaces/CharactersI";
 import FavoriteButton from "../components/ButtonFavorite";
 
-import type { FavoriteCharI } from "../assets/interfaces/FavoriteCharI";
-
 function Detail() {
   const data = useLoaderData() as CharactersI;
-
-  const retrieveData = localStorage.getItem("favorites");
-
-  const char: FavoriteCharI = {
-    firstName: data.firstName,
-    lastName: data.lastName,
-    id: data.id,
-    img: data.imageUrl,
-  };
-
-  if (!retrieveData) {
-    const dataToStorage = JSON.stringify([char]);
-    localStorage.setItem("favorites", dataToStorage);
-    console.warn(dataToStorage, "coucou");
-  } else {
-    const parseData = JSON.parse(retrieveData) as undefined | FavoriteCharI[];
-    if (parseData) {
-      if (!parseData.find((el) => el.firstName === data.firstName)) {
-        parseData.push(char);
-        const updatedParseData = JSON.stringify(parseData);
-        localStorage.setItem("favorites", updatedParseData);
-      }
-    }
-  }
 
   return (
     <main className="detail">
@@ -54,7 +28,7 @@ function Detail() {
           <h2> Description </h2>
           <p>{data.description}</p>
           <div className="div-button">
-            <FavoriteButton />
+            <FavoriteButton data={data} />
           </div>
         </hgroup>
       </section>

@@ -14,7 +14,10 @@ function Favorite() {
         {parseData ? (
           parseData.map((el) => (
             <figure key={el.id} className="card-fav">
-              <img src={el.img} alt={`Representation of ${el.firstName}`} />
+              <img
+                src={el.imageUrl}
+                alt={`Representation of ${el.firstName}`}
+              />
               <figcaption>
                 {el.firstName} {el.lastName}
               </figcaption>
