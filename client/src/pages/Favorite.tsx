@@ -13,7 +13,7 @@ function Favorite() {
       <section className="card-container">
         {parseData ? (
           parseData.map((el) => (
-            <figure key={el.id}>
+            <figure key={el.id} className="card-fav">
               <img src={el.img} alt={`Representation of ${el.firstName}`} />
               <figcaption>
                 {el.firstName} {el.lastName}
