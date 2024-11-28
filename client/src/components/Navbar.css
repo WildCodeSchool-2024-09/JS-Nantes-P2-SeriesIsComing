@@ -19,27 +19,6 @@ nav > ul > li > ul {
   padding-right: 25px;
 }
 
-/* Switch title with userContext*/
-
-.logofit {
-  padding-left: 15px;
-  padding-top: 20px;
-}
-
-nav > ul {
-  list-style: none;
-  display: flex;
-  gap: 3rem;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-
-nav > ul,
-nav > ul > li > ul {
-  list-style: none;
-  padding-right: 25px;
-}
-
 nav > h1 {
   text-align: center;
   margin: 0;
@@ -59,9 +38,6 @@ nav {
   height: 80px;
   width: auto;
   border: #000 solid;
-  height: 80px;
-  width: auto;
-  border: #000 solid;
 }
 
 .logo2 {
@@ -69,12 +45,11 @@ nav {
 }
 
 nav ul li {
-  width: 200px;
-  width: 200px;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 5px 0;
   border: 2px solid #000;
   border-radius: 15px;
   text-decoration: none;
@@ -113,18 +88,35 @@ nav ul li:hover {
 .dropdown-content li {
   text-decoration: none;
   background-color: white;
-  width: 75%;
+  width: 100%;
   display: block;
-  padding: 8px 16px;
   transition: background-color 0.3s;
 }
 .dropdown:hover h1 {
   font-size: 2.5rem;
   transition: all 0.3s ease-in-out;
 }
+
 .navbar-title {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 20s infinite;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.navbar-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: 0.4s width;
+}
+
+.navbar-title:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .title {
@@ -142,7 +134,7 @@ nav ul li:hover {
     display: none;
   }
 
-  #logo2 {
+  .logo2 {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -172,7 +164,7 @@ nav ul li:hover {
   nav > ul > img {
     display: none;
   }
-
+  .series-drop,
   .navbar-title {
     display: none;
   }
