@@ -19,6 +19,27 @@ nav > ul > li > ul {
   padding-right: 25px;
 }
 
+/* Switch title with userContext*/
+
+.logofit {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+nav > ul,
+nav > ul > li > ul {
+  list-style: none;
+  padding-right: 25px;
+}
+
 nav > h1 {
   text-align: center;
   margin: 0;
@@ -38,6 +59,9 @@ nav {
   height: 80px;
   width: auto;
   border: #000 solid;
+  height: 80px;
+  width: auto;
+  border: #000 solid;
 }
 
 .logo2 {
@@ -45,6 +69,7 @@ nav {
 }
 
 nav ul li {
+  width: 200px;
   width: 200px;
   display: flex;
   justify-content: center;
@@ -97,7 +122,6 @@ nav ul li:hover {
   font-size: 2.5rem;
   transition: all 0.3s ease-in-out;
 }
-
 .navbar-title {
   color: hsl(324, 70%, 45%);
   animation: wheelHueColor 20s infinite;
