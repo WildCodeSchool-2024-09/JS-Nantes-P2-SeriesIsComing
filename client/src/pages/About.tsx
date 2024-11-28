@@ -6,8 +6,8 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 function About() {
   return (
     <>
-      <div id="div-a-propos">
-        <p className="a-propos">À propos</p>
+      <section id="sec-about">
+        <p className="about">À propos</p>
         <h4 className="teamproject">Découvrez l’équipe 🧑🏻‍💻</h4>
 
         <section className="profil">
@@ -20,7 +20,7 @@ function About() {
           ))}
         </section>
         <ScrollToTopButton />
-      </div>
+      </section>
     </>
   );
 }
