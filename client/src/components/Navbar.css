@@ -131,8 +131,9 @@ nav ul li:hover {
 }
 
 .title {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 3s infinite;
+  color: black;
+  /* color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 3s infinite;*/
 }
 
 /* Media Queries */

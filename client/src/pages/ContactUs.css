@@ -20,7 +20,7 @@
 }
 
 .section-contact-us {
-  height: 45vw;
+  height: 100%;
 }
 
 .section-contact-us > h2 {
@@ -90,6 +90,7 @@
   & p {
     text-align: center;
     padding: 0 0 2px 0;
+    color: #000;
   }
 }
 
@@ -101,8 +102,20 @@
   color: var(--title-font-color);
   text-align: center;
   text-decoration: underline;
+  padding: 0 0 20px 0;
 }
 
 #legal-status:hover {
   font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  #form-contact {
+    gap: 4px;
+  }
+
+  .user-input {
+    width: 30%;
+    text-align: center;
+  }
 }

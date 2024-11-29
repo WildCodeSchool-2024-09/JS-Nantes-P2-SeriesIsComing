@@ -34,6 +34,7 @@
 
 .sidebar > h3 {
   text-align: center;
+  color: #000;
 }
 
 .logo-button {
@@ -62,6 +63,7 @@
 }
 
 .sidebar figcaption {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 4s infinite;
+  color: black;
+  /* color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 4s infinite; */
 }
