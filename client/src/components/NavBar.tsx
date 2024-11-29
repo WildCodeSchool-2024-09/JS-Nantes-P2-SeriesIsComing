@@ -27,7 +27,7 @@ function NavBar() {
       <ul>
         <li>
           <NavLink to={"/Favorite"} className="link-nav">
-            <h3 className="navbar-title">Favorite</h3>
+            <h3 className="navbar-title">Favoris</h3>
             <img
               className="logo2"
               src="https://th.bing.com/th/id/R.16c5c695e3d4bbde7862ceb91e21770e?rik=zaHaF1R4zBlxGQ&pid=ImgRaw&r=0"
@@ -57,8 +57,7 @@ function NavBar() {
         </li>
 
         <li className="dropdown">
-          <h3 className="series-drop"> Plus de Séries</h3>
-          <div className="arrow">▼</div>
+          <h3 className="series-drop"> Plus de Séries ▼</h3>
           <img
             className="logo2"
             src="https://cdn-icons-png.flaticon.com/512/275/275201.png"
