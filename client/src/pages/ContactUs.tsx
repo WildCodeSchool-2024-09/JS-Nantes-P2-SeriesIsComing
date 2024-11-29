@@ -62,7 +62,9 @@ function ContactUs() {
         </article>
 
         <article id="newsletter">
-          <label htmlFor="newsletter">Abonne toi à notre newlester</label>
+          <label className="subscribe" htmlFor="newsletter">
+            Abonne toi à notre newlester
+          </label>
           <input type="checkbox" name="newsletter" />
         </article>
 

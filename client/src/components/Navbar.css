@@ -1,6 +1,6 @@
 .logofit {
   padding-left: 15px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 nav > ul {
@@ -36,6 +36,13 @@ nav {
   height: 80px;
   width: auto;
   border: #000 solid;
+  transition: 1s;
+}
+
+.logo:hover {
+  transform: scale(1.1, 1.1);
+  opacity: 0.65;
+  border-radius: 10px;
 }
 
 .logo2 {
@@ -47,7 +54,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 0;
+  padding: 15px 0;
   border: 2px solid #000;
   border-radius: 15px;
   text-decoration: none;
@@ -76,6 +83,7 @@ nav ul li:hover {
 }
 .dropdown-content a {
   text-align: center;
+  color: #000;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
@@ -118,6 +126,10 @@ nav ul li:hover {
   left: 0;
 }
 
+.series-drop {
+  color: #000;
+}
+
 .title {
   color: hsl(324, 70%, 45%);
   animation: wheelHueColor 3s infinite;
@@ -152,10 +164,6 @@ nav ul li:hover {
   }
   .dropdown-content {
     box-shadow: none;
-  }
-
-  .arrow {
-    display: none;
   }
 
   .title {

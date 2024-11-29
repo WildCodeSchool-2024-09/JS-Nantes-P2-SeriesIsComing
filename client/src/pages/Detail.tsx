@@ -9,27 +9,32 @@ function Detail() {
   return (
     <main className="detail">
       <section className="section-detail">
+        <section className="img-center">
+          <hgroup>
+            <img
+              className="img-detail"
+              src={data.imageUrl}
+              alt={data.firstName}
+            />
+          </hgroup>
+          <section className="card-center">
+            <hgroup>
+              <h2> Prenom </h2>
+              <p>{data.firstName}</p>
+            </hgroup>
+            <hgroup>
+              <h2> Nom </h2>
+              <p>{data.lastName}</p>
+            </hgroup>
+            <div className="div-button">
+              <FavoriteButton data={data} />
+            </div>
+          </section>
+        </section>
+
         <hgroup>
-          <img
-            className="img-detail"
-            src={data.imageUrl}
-            alt={data.firstName}
-          />
-        </hgroup>
-        <hgroup>
-          <h2> Prenom </h2>
-          <p>{data.firstName}</p>
-        </hgroup>
-        <hgroup>
-          <h2> Nom </h2>
-          <p>{data.lastName}</p>
-        </hgroup>
-        <hgroup>
-          <h2> Description </h2>
+          <h2 className="description-style"> Description </h2>
           <p>{data.description}</p>
-          <div className="div-button">
-            <FavoriteButton data={data} />
-          </div>
         </hgroup>
       </section>
     </main>

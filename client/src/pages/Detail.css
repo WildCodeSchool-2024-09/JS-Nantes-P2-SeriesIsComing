@@ -1,30 +1,49 @@
 .detail {
   display: flex;
   justify-content: center;
-  background-color: white;
   flex-direction: column;
   padding: 60px;
 }
 
-section-detail {
+.section-detail {
   padding: 20px;
 }
 
+.img-center {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .img-detail {
-  height: 300px;
+  object-fit: cover;
+  height: 400px;
   width: 300px;
   padding: 20px;
   border-radius: 40px;
 }
 
-h2 {
-  padding: 10px;
+.card-center {
+  flex-wrap: wrap;
 }
 
-p {
-  padding: 10px;
+.card-center > hgroup > h2 {
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+.card-center > hgroup > p {
+  padding: 20px;
+  font-size: 20px;
 }
 
 .div-button {
-  padding: 10px;
+  padding-top: 20px;
+}
+
+.description-style {
+  padding: 0;
+  text-decoration: underline;
 }
