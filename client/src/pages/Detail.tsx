@@ -28,7 +28,7 @@ function Detail() {
           <h2> Description </h2>
           <p>{data.description}</p>
           <div className="div-button">
-            <FavoriteButton />
+            <FavoriteButton data={data} />
           </div>
         </hgroup>
       </section>
