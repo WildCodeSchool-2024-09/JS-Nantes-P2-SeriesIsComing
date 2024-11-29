@@ -10,9 +10,11 @@ export function useFilter({
     if (id === "1") {
       result = el.lastName?.includes(seriesFilter);
     } else if (id === "2") {
-      result = el.about?.includes(seriesFilter);
+      result = el.about?.toLowerCase().includes(seriesFilter.toLowerCase());
     } else if (id === "3" || id === "4") {
-      result = el.description?.includes(seriesFilter);
+      result = el.description
+        ?.toLowerCase()
+        .includes(seriesFilter.toLowerCase());
     } else {
       throw new Error("No valid page");
     }

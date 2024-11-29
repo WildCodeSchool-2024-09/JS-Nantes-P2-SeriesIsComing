@@ -49,10 +49,6 @@ export const filterSeries = [
         image:
           "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-group-icon-png-image_1796653.jpg",
       },
-      {
-        name: "Les autres",
-        image: "https://cdn-icons-png.flaticon.com/512/5746/5746685.png",
-      },
     ],
   },
   {
@@ -60,14 +56,9 @@ export const filterSeries = [
     name: "Breaking Bad",
     tableFilter: [
       {
-        name: "drogue",
+        name: "Drogue",
         image:
           "https://th.bing.com/th/id/R.21cbab467bba4128f2affe32c71757be?rik=IOS%2bJma4fmbVVw&pid=ImgRaw&r=0",
-      },
-      {
-        name: "nope",
-        image:
-          "https://www.pngitem.com/pimgs/m/115-1150419_stark-game-of-thrones-stark-logo-png-transparent.png",
       },
     ],
   },
@@ -78,10 +69,6 @@ export const filterSeries = [
       {
         name: "Compagnie",
         image: "https://cdn-icons-png.flaticon.com/512/5642/5642460.png",
-      },
-      {
-        name: "nope",
-        image: "https://cdn-icons-png.flaticon.com/512/5300/5300098.png",
       },
     ],
   },

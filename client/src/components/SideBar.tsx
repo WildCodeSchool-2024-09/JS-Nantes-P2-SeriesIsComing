@@ -23,7 +23,7 @@ function SideBar({ seriesFilter, setSeriesFilter, id }: SeriesFiltersI) {
 
   return (
     <div className="sidebar">
-      <h3>Choisi ton filtre !</h3>
+      <h3>Choisis ton filtre !</h3>
       {toFilter?.map((series) => (
         <button type="button" key={series.name} onClick={handleClick}>
           <figure>
