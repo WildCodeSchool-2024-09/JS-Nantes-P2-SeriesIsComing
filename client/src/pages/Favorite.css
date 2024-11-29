@@ -1,3 +1,7 @@
+.favorite {
+  height: 45vw;
+}
+
 .card-container {
   display: flex;
   justify-content: center;

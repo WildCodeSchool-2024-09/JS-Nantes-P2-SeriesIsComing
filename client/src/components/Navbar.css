@@ -97,6 +97,7 @@ nav ul li:hover {
 
 .navbar-title {
   text-decoration: none;
+  text-align: center;
   color: #000;
   position: relative;
 }
@@ -135,8 +136,8 @@ nav ul li:hover {
 
   .logo2 {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    object-fit: cover;
   }
 
   nav > ul {

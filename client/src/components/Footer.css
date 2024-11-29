@@ -42,3 +42,9 @@ footer > section > a {
   transform: scale(1.5);
   transition: 1s;
 }
+
+@media (max-width: 800px) {
+  footer > section > a > img {
+    width: 20px;
+  }
+}
