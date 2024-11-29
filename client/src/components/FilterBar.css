@@ -13,6 +13,9 @@
 
 .research-card {
   font-size: 20px;
+  border-radius: 10px;
+  padding-left: 15px;
+  height: 30px;
 }
 
 .size-filter {

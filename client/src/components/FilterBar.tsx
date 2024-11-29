@@ -22,7 +22,7 @@ function FilterBar({ search, setSearch }: SearchI) {
         <input
           type="text"
           name="filter-bar"
-          placeholder="Filtre les personnages"
+          placeholder="Filtre les personnages !"
           value={search}
           onChange={handleChange}
           className={
