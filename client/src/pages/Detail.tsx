@@ -9,15 +9,15 @@ function Detail() {
   return (
     <main className="detail">
       <section className="section-detail">
-        <section className="card-center">
-          <section className="img-center">
-            <hgroup>
-              <img
-                className="img-detail"
-                src={data.imageUrl}
-                alt={data.firstName}
-              />
-            </hgroup>
+        <section className="img-center">
+          <hgroup>
+            <img
+              className="img-detail"
+              src={data.imageUrl}
+              alt={data.firstName}
+            />
+          </hgroup>
+          <section className="card-center">
             <hgroup>
               <h2> Prenom </h2>
               <p>{data.firstName}</p>
@@ -33,7 +33,7 @@ function Detail() {
         </section>
 
         <hgroup>
-          <h2> Description </h2>
+          <h2 className="description-style"> Description </h2>
           <p>{data.description}</p>
         </hgroup>
       </section>

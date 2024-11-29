@@ -85,6 +85,7 @@ nav ul li:hover {
 }
 .dropdown-content a {
   text-align: center;
+  color: #000;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
@@ -124,6 +125,10 @@ nav ul li:hover {
 .navbar-title:hover::after {
   width: 100%;
   left: 0;
+}
+
+.series-drop {
+  color: #000;
 }
 
 .title {
