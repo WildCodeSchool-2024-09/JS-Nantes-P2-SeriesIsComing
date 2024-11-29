@@ -29,12 +29,14 @@
   flex-wrap: wrap;
 }
 
-h2 {
+.card-center > hgroup > h2 {
   padding-bottom: 20px;
+  text-decoration: underline;
 }
 
-p {
+.card-center > hgroup > p {
   padding: 20px;
+  font-size: 20px;
 }
 
 .div-button {
@@ -42,5 +44,6 @@ p {
 }
 
 .description-style {
+  padding: 0;
   text-decoration: underline;
 }
