@@ -1,8 +1,15 @@
+// Import React Modules
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import { logos } from "../assets/data/dataLogo";
-import LogoHome from "../assets/images/LogoHome.png";
+
+// Import Custom Hook to consume Context
 import useUser from "../utils/useUser";
+
+// Import Data
+import { logos } from "../assets/data/dataLogo";
+
+// Import Image
+import LogoHome from "../assets/images/LogoHome.png";
 
 function NavBar() {
   const { user } = useUser();
@@ -31,7 +38,7 @@ function NavBar() {
             <img
               className="logo2"
               src="https://th.bing.com/th/id/R.16c5c695e3d4bbde7862ceb91e21770e?rik=zaHaF1R4zBlxGQ&pid=ImgRaw&r=0"
-              alt="coeur qui represente les favorits"
+              alt="coeur qui represente les favoris"
             />
           </NavLink>
         </li>

@@ -1,8 +1,15 @@
-import "../pages/ContactUs.css";
+// Import React Modules
 import type { FormEvent } from "react";
 import { NavLink } from "react-router-dom";
-import type { UserI } from "../assets/interfaces/UserI";
+
+// Import Custom Hook
 import useUser from "../utils/useUser";
+
+// Import Interfaces
+import type { UserI } from "../assets/interfaces/UserI";
+
+// Import Style
+import "../pages/ContactUs.css";
 
 function ContactUs() {
   const { user, setUser } = useUser();
@@ -24,14 +31,14 @@ function ContactUs() {
         <input
           className="user-input"
           type="text"
-          placeholder="Nom"
+          placeholder="Prénom"
           name="userFirstName"
         />
         <input
           name="userLastName"
           className="user-input"
           type="text"
-          placeholder="Prenom"
+          placeholder="Nom"
         />
         <input
           name="userMail"
@@ -40,7 +47,7 @@ function ContactUs() {
           placeholder="Adresse mail"
         />
         <label htmlFor="seriesName">
-          Des series que tu souhaites voir sur le site ?
+          Quelle série souhaiterais-tu voir sur notre site ?
         </label>
         <input
           type="text"
@@ -60,7 +67,7 @@ function ContactUs() {
         </article>
 
         <button type="submit" id="validation-button">
-          Valide ta demande
+          <p>Valide ta demande</p>
         </button>
       </form>
       <NavLink to={"/about"}>

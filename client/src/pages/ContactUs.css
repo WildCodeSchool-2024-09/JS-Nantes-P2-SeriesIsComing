@@ -20,7 +20,7 @@
 }
 
 .section-contact-us {
-  height: 35vw;
+  height: 45vw;
 }
 
 .section-contact-us > h2 {
@@ -78,8 +78,27 @@
 
 #validation-button {
   margin: auto;
+  background-color: var(--overlay-background-color);
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+
+  & p {
+    text-align: center;
+    padding: 0 0 2px 0;
+  }
 }
+
+#validation-button:hover {
+  opacity: 0.75;
+}
+
 #legal-status {
   color: var(--title-font-color);
   text-align: center;
+  text-decoration: underline;
+}
+
+#legal-status:hover {
+  font-weight: bold;
 }

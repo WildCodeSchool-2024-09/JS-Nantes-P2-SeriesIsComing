@@ -2,18 +2,17 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-// Import page components
+// Import Components
 import Card from "../components/Card";
-import "./Series.css";
 import FilterBar from "../components/FilterBar";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import SideBar from "../components/SideBar";
 
-// Import page style sheet
-import "./Series.css";
-
 // Import data interfaces
 import type { SeriesI } from "../assets/interfaces/SeriesI";
+
+// Import page style sheet
+import "./Series.css";
 
 function Series() {
   const { id } = useParams<string>();

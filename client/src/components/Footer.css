@@ -1,7 +1,7 @@
 footer {
-  margin-top: 10 px;
+  margin-top: 10px;
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: space-between;
   background-color: var(--overlay-background-color);
   flex-wrap: wrap;
@@ -25,6 +25,14 @@ footer > section > a {
   color: black;
 }
 
+.logo1 {
+  text-decoration: underline;
+}
+
+.logo1:hover {
+  font-weight: bold;
+}
+
 .logo-insta:hover,
 .logo-fb:hover,
 .logo-X:hover,
@@ -33,4 +41,10 @@ footer > section > a {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   transition: 1s;
+}
+
+@media (max-width: 800px) {
+  footer > section > a > img {
+    width: 20px;
+  }
 }

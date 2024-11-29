@@ -1,7 +1,11 @@
-import "../pages/About.css";
-import "../components/ScrollToTopButton";
-import profil from "../assets/data/profil";
+// Import Components
 import ScrollToTopButton from "../components/ScrollToTopButton";
+
+// Import Data
+import profil from "../assets/data/profil";
+
+// Import Style Sheet
+import "../pages/About.css";
 
 function About() {
   return (
