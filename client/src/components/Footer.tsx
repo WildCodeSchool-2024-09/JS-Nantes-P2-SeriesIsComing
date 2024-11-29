@@ -54,7 +54,7 @@ function Footer() {
           </a>
         </section>
 
-        <p id="logo1">CGU</p>
+        <p className="logo1">CGU</p>
       </footer>
     </>
   );
