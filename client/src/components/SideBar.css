@@ -33,14 +33,14 @@
 }
 
 .sidebar button:hover {
-  transform: scale(1.2);
-  border: #000 solid;
-  border-radius: 10px;
+  transform: scale(1.1);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .sidebar button {
   width: 90px;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .sidebar > h3 {

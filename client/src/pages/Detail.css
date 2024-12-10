@@ -7,14 +7,19 @@
 
 .section-detail {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-center {
   display: flex;
-  height: 50%;
-  width: 100%;
+  width: 45%;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  border-radius: 15px;
 }
 
 .img-detail {
@@ -27,16 +32,21 @@
 
 .card-center {
   flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .card-center > hgroup > h2 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-decoration: underline;
+  color: black;
 }
 
 .card-center > hgroup > p {
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
+  color: black;
 }
 
 .div-button {
