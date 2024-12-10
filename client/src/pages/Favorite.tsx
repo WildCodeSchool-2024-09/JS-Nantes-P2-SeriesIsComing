@@ -24,7 +24,7 @@ function Favorite() {
             </figure>
           ))
         ) : (
-          <p>No data!</p>
+          <p>Aucun personnage ajouté aux favoris !</p>
         )}
       </section>
     </div>
