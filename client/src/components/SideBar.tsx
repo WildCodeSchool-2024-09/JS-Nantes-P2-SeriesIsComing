@@ -23,7 +23,6 @@ function SideBar({ seriesFilter, setSeriesFilter, id }: SeriesFiltersI) {
 
   return (
     <div className="sidebar">
-      <h3>Choisis ton filtre !</h3>
       {toFilter?.map((series) => (
         <button type="button" key={series.name} onClick={handleClick}>
           <figure>
@@ -36,6 +35,7 @@ function SideBar({ seriesFilter, setSeriesFilter, id }: SeriesFiltersI) {
           </figure>
         </button>
       ))}
+      <h3 className="text-sidebar">Choisis ton filtre !</h3>
     </div>
   );
 }
