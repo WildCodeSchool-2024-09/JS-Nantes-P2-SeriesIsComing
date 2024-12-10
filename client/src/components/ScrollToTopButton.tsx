@@ -48,7 +48,7 @@ const ScrollToTopButton = () => {
       <div
         className="progress-circle"
         style={{
-          borderImage: `conic-gradient(#000000 ${scrollProgress}%, transparent 0%) 1`,
+          borderImage: `conic-gradient(white ${scrollProgress}%, transparent 0%) 1`,
         }}
       >
         <button onClick={scrollToTop} type="button">

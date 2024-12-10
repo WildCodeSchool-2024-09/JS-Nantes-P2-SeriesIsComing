@@ -1,6 +1,6 @@
 .scroll-to-top-button {
   position: fixed;
-  bottom: 2em;
+  bottom: 10em;
   right: 2em;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -36,7 +36,7 @@
       transform: translate(-50%, -50%) rotate(-135deg);
       width: 1.5em;
       height: 1.5em;
-      border: solid  black;
+      border: solid  white;
       border-width: 0 0.2em 0.2em 0;
       display: inline-block;
       border-radius: 0.2em;
