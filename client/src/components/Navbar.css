@@ -24,6 +24,8 @@ nav > h1 {
 }
 
 nav {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -131,8 +133,7 @@ nav ul li:hover {
 }
 
 .title {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 3s infinite;
+  color: var(--main-background-color);
 }
 
 /* Media Queries */

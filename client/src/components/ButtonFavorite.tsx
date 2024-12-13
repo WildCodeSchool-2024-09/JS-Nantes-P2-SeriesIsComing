@@ -1,18 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./ButtonFavorite.css";
 import type CharactersI from "../assets/interfaces/CharactersI";
 
-const FavoriteButton = ({ data }: { data: CharactersI }) => {
-  const [isFavorited, setIsFavorited] = useState<boolean>(false);
-
+const FavoriteButton = ({
+  data,
+  seriesId,
+}: { data: CharactersI; seriesId: string | undefined }) => {
   const char: CharactersI = {
     firstName: data.firstName,
     lastName: data.lastName,
     id: data.id,
     imageUrl: data.imageUrl,
+    seriesId: seriesId,
   };
 
+  const [isFavorited, setIsFavorited] = useState<boolean>(false);
   const retrieveData = localStorage.getItem("favorites");
+
+  useEffect(() => {
+    if (retrieveData) {
+      const parseRetrieveData = JSON.parse(retrieveData);
+      if (parseRetrieveData.length > 0) {
+        const upDatedData = parseRetrieveData.find(
+          (el: CharactersI) => el.firstName === char.firstName,
+        );
+        if (upDatedData && upDatedData.firstName === char.firstName) {
+          setIsFavorited(true);
+        }
+      }
+    }
+  });
 
   const toggleFavorite = (): void => {
     setIsFavorited(!isFavorited);

@@ -7,6 +7,7 @@ interface CharactersI {
   description?: string;
   imageUrl: string;
   saison?: string | undefined;
+  seriesId?: string | undefined;
 }
 
 export default CharactersI;
