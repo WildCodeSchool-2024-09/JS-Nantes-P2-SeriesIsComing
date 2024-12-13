@@ -3,10 +3,11 @@
   position: relative;
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  left: 10px;
+  left: 5px;
   color: var(--main-background-color);
   font-weight: bold;
   font-size: 1.3rem;
+  align-self: flex-end;
 }
 
 .sidebar {
