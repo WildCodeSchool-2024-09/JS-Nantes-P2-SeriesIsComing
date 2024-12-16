@@ -1,0 +1,78 @@
+/* components/Sidebar.css */
+.text-sidebar {
+  position: relative;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  left: 5px;
+  color: var(--main-background-color);
+  font-weight: bold;
+  font-size: 1.3rem;
+  align-self: flex-end;
+}
+
+.sidebar {
+  width: 150px;
+  background-color: rgba(244, 244, 244, 0.7);
+  padding: 12px;
+  gap: 12px;
+  position: fixed;
+  top: 0;
+  left: -135px;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sidebar:hover {
+  left: 0;
+  z-index: 1;
+}
+
+.sidebar button:hover {
+  transform: scale(1.1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar button {
+  width: 90px;
+  transition: 0.3s;
+}
+
+.sidebar > h3 {
+  text-align: center;
+}
+
+.logo-button {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform .1s;
+}
+
+.sidebar figcaption {
+  text-align: center;
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+.sidebar figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar figcaption {
+  color: var(--main-background-color);
+}

@@ -1,0 +1,51 @@
+footer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--overlay-background-color);
+  flex-wrap: wrap;
+  padding: 10px 0;
+  height: 40px;
+}
+
+footer > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > section > a > img {
+  width: 3vw;
+  padding: 0.5vw;
+}
+
+footer > a,
+footer > section > a {
+  padding: 1vw;
+  color: black;
+}
+
+.logo1 {
+  text-decoration: underline;
+}
+
+.logo1:hover {
+  font-weight: bold;
+}
+
+.logo-insta:hover,
+.logo-fb:hover,
+.logo-X:hover,
+.logo-gh:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+@media (max-width: 800px) {
+  footer > section > a > img {
+    width: 20px;
+  }
+}

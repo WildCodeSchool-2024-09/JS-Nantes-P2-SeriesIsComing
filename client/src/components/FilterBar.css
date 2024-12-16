@@ -1,0 +1,28 @@
+.length-maximum-reached {
+  background-color: rgb(250, 173, 173);
+}
+
+.length-ok {
+  background-color: var(--button-content-color);
+  width: 20%;
+}
+
+.label-search {
+  display: none;
+}
+
+.research-card {
+  font-size: 20px;
+  border-radius: 10px;
+  padding-left: 15px;
+  height: 30px;
+}
+
+.size-filter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,64 @@
+.about {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  text-decoration: underline;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 16px;
+  padding: 2vw;
+  margin: 64px 0px 64px;
+  color: white;
+}
+
+.teamproject {
+  text-decoration: underline;
+}
+
+.profil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profil-item {
+  flex: 1 1 45%;
+}
+
+#clement,
+#romain,
+#quentin,
+#jean-louis,
+#alexandre {
+  justify-content: center;
+  text-align: center;
+  padding: 2vw;
+}
+
+.pic {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 2px solid white;
+  padding: 0;
+}
+
+.post {
+  padding: 1.5vw;
+  font-size: 24px;
+  text-decoration: underline;
+  color: white;
+}
+
+.role {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1vw;
+  font-size: 16px;
+  color: white;
+}

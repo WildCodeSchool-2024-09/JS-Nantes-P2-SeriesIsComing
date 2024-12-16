@@ -1,0 +1,108 @@
+#form-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+#form-contact > label,
+.user-comments > label {
+  color: var(--title-font-color);
+  font-size: 1.5rem;
+  font-family: var(--all-font-style);
+  width: 100%;
+  text-align: center;
+}
+
+.user-input {
+  width: 20%;
+  text-align: center;
+}
+
+.section-contact-us {
+  height: 45vw;
+}
+
+.section-contact-us > h2 {
+  text-align: center;
+  color: var(--title-font-color);
+  font-size: 2rem;
+  padding: 15px 0;
+}
+
+.user-comments {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  && label {
+    padding: 0 0 15px 0;
+  }
+
+  && textarea {
+    border-radius: 20px;
+    padding: 20px 0 10px 0;
+    width: 1000px;
+    height: 80px;
+  }
+}
+
+.user-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--title-font-color);
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.mentions-contain {
+  display: flex;
+  justify-content: center;
+}
+
+#newsletter {
+  width: 300px;
+  margin: auto;
+  height: 40px;
+  background-color: var(--title-font-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  && label {
+    padding: 0 10px 0 10px;
+  }
+}
+
+.subscribe {
+  color: #000;
+}
+
+#validation-button {
+  margin: auto;
+  background-color: var(--overlay-background-color);
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+
+  & p {
+    text-align: center;
+    padding: 0 0 2px 0;
+  }
+}
+
+#validation-button:hover {
+  opacity: 0.75;
+}
+
+#legal-status {
+  color: var(--title-font-color);
+  text-align: center;
+  text-decoration: underline;
+}
+
+#legal-status:hover {
+  font-weight: bold;
+}
