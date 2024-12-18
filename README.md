@@ -1,4 +1,4 @@
-# superSelf Project
+# Series Is Coming / Series Are Coming
 
 Context : Wild Code School 2nd Project - code a website running on ReactJS and TypeScript for the first time, and that mobilizes main React features (props, React hooks, router, etc.).
 This project has been conducted under Scrum methodology during 4 weeks, including modeling on excalidraw and then Figma and an oral presentation. 
