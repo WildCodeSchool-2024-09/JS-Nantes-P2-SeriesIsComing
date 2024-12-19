@@ -37,7 +37,7 @@ Perspectives :
 - Provide pre-render of the images and handle for errors.
 
 Project team members : 
-- Alexandre
-- Romain Christophe
-- Quentin Loquais
-- Jean-louis Roger
+- <a href="https://github.com/FAlex357">Alexandre</a>
+- <a href="https://github.com/Romain-Christophe">Romain Christophe</a>
+- <a href="https://github.com/quentinlqs">Quentin Loquais</a>
+- <a href="https://github.com/JLRWOLF44">Jean-louis Roger</a>
