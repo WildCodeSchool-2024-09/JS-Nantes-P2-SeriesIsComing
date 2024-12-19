@@ -14,10 +14,18 @@ Objectives :
 - Contact page is a classic form page, where the input fields are controlled and retrieved to the console after submission (prior to potential Back End instruction). A context is use to display the user filled name in the header section of the App after the form submission.
 
 Technologies : 
-- ReactJS (loader, context, local storage manipulation, custom Hooks, useEffect, useState, fetch from homemade Express API, map and filter methods)
+- ReactJS
 - TypeScript
-- HTML and CSS/SCSS
+- HTML and CSS/SASS
 - NodeJS
+
+ReactJS features implemented :
+- loader,
+- context,
+- hooks (useEffect, useState),
+- custom hooks (useUser, useFilter),
+- local storage manipulation,
+- JS table methods (filter, maps, find).
 
 Screenshots :
 
